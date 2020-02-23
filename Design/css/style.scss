@@ -26,10 +26,11 @@
   }
   
   .wrapper{
-    background: #fdfbff;
+    background: url('https://www.business.com/images/content/5ca/3db965a215e8a458b9d66/0-800-');
     height: 100vh;
     padding-top: 50px;
-    overflow-y: hidden;;
+    overflow-y: hidden;
+    background-size: cover;
   }
   .tip {
     font-size: 20px;
@@ -101,7 +102,7 @@
       top: 0;
       width: $contW;
       height: 100%;
-      background-image: $loginBgImg;
+      background: $loginBgImg;
       background-size: cover;
       transition: transform $switchAT ease-in-out;
     }
@@ -218,7 +219,12 @@
     text-align: center;
   }
   
-  
+  .form h2{
+    color: $formTextColor;
+  }
+  .labelColor{
+    color: $formTextColor;
+  }
   .forgot-pass {
     margin-top: 15px;
     text-align: center;
@@ -281,4 +287,18 @@
       left: auto;
       right: 5px;
     }
+  }
+  .menubox{
+    // padding: 10px;
+    margin: 10px;
+    background: $menuBoxColor;
+    box-shadow: 0px 0px 5px #bfbdbd;
+    border-radius: 6px;
+  }
+  .icon-box{
+    text-align: center;
+    padding: 32px 0;
+    background: #d664ed;
+    color: #fff;
+    height: 16vh;
   }

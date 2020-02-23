@@ -17,10 +17,11 @@ input, button {
 }
 
 .wrapper {
-  background: #fdfbff;
+  background: url("https://www.business.com/images/content/5ca/3db965a215e8a458b9d66/0-800-");
   height: 100vh;
   padding-top: 50px;
   overflow-y: hidden;
+  background-size: cover;
 }
 
 .tip {
@@ -92,7 +93,7 @@ button {
   top: 0;
   width: 900px;
   height: 100%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg");
+  background: #eee;
   background-size: cover;
   transition: transform 1.2s ease-in-out;
 }
@@ -187,6 +188,14 @@ h2 {
   text-align: center;
 }
 
+.form h2 {
+  color: #8a2be2;
+}
+
+.labelColor {
+  color: #8a2be2;
+}
+
 .forgot-pass {
   margin-top: 15px;
   text-align: center;
@@ -197,7 +206,7 @@ h2 {
 .submit {
   margin-top: 40px;
   margin-bottom: 20px;
-  background: #8ee21e;
+  background: #49c5f5;
   text-transform: uppercase;
   color: #fff;
 }
@@ -241,6 +250,21 @@ h2 {
 .icon-link--twitter {
   left: auto;
   right: 5px;
+}
+
+.menubox {
+  margin: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 5px #bfbdbd;
+  border-radius: 6px;
+}
+
+.icon-box {
+  text-align: center;
+  padding: 32px 0;
+  background: #d664ed;
+  color: #fff;
+  height: 16vh;
 }
 
 /*# sourceMappingURL=style.css.map */
