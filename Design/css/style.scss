@@ -9,6 +9,8 @@
   body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     background: #fff;
+    overflow: hidden !important;
+    overflow-y: auto !important;
   }
   
   input, button {
@@ -297,8 +299,22 @@
   }
   .icon-box{
     text-align: center;
-    padding: 32px 0;
+    padding: 20px 0;
     background: #d664ed;
     color: #fff;
-    height: 16vh;
+    height: 11vh;
+  }
+  
+  .header-top-menu{
+    color: #fff;
+    top: 13px;
+    position: absolute;
+    p{
+      background: black;
+      padding: 7px 25px;
+    }
+    span{
+      font-weight: 600;
+      color: #3ad9de;
+    }
   }

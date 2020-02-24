@@ -42,7 +42,7 @@
 /*----------------------------------------*/
 /*  1. Common
 /*----------------------------------------*/
-html, body {height: 100%; font-family: 'Roboto', sans-serif;font-weight:400;background:#F6F8FA;overflow-x: hidden;}
+html, body {height: 100%; font-family: 'Roboto', sans-serif;font-weight:400;background:#F6F8FA;}
 .floatleft {float:left}
 .floatright {float:right}
 .alignleft {float:left;margin-right:15px;margin-bottom: 15px}
@@ -3211,7 +3211,7 @@ td.text-right.mail-date {
 	color:#303030;
 }
 .basic-choropleth {
-    height: 400px;
+    height: 300px;
     width: 100%;
 }
 .alert-title.dropzone-custom-sys h2, .download-custom h2, .alert-title h2, .code-editor-single h2 {
@@ -3724,7 +3724,7 @@ div#sparklinehome canvas {
 }
 .footer-copyright-area {
     background: #006DF0;
-	padding: 20px 0px;
+	padding: 10px 0px;
     text-align: center;
     position: fixed;
     width: -webkit-fill-available;
