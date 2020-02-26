@@ -73,7 +73,6 @@ margin: 0;
 padding: 0
 }
 .clear{clear:both}
-body {}
 @font-face {
   font-family: 'educate-icon';
   src:
@@ -133,7 +132,9 @@ body {}
 /*----------------------------------------*/
 .product-sales-chart, .analytics-info-cs, .tranffic-als-inner, .analytics-rounded, .single-new-trend, .personal-info-wrap, .author-widgets-single, .calender-inner, .product-status-wrap, .review-tab-pro-inner, .income-dashone-total, .analytics-edu-wrap, .analytics-sparkle-line, .analysis-progrebar, .sparkline8-list, .sparkline9-list, .sparkline7-list, .sparkline10-list, .sparkline12-list, .sparkline13-list, .sparkline14-list, .sparkline13-list, .sparkline11-list, .x-editable-list, .code-editor-single, .blog-details-inner, .charts-single-pro, .about-sparkline, .sparkline-list, .button-ad-wrap, .tab-content-details, .sparkline16-list, .sparkline15-list, .tinymce-single, .single-product-item, .courses-inner, .single-latest-item, .product-payment-inner-st, .profile-info-inner, .contact-panel, .widget-int-shape, .social-media-edu{
 	padding:20px;
-	background:#fff;
+    background:#fff;
+    box-shadow: 0px 0px 5px #ccc;
+    border-radius: 2px;
 }
 /*----------------------------------------*/
 /*  4. left sidebar
@@ -194,7 +195,7 @@ body {}
     margin-bottom: 5px;
 }
 #sidebar.active .sidebar-header .main-logo{
-	display:none;
+	display:block;
 }
 #sidebar.active .sidebar-header h3{
 	display:none;
@@ -398,9 +399,7 @@ body {}
 	display:block;
 	padding:18px 10px;
 }
-.header-right-info {
-	
-}
+
 .header-right-info ul.header-right-menu li{
 	display:inline-block;
 }
@@ -2023,7 +2022,7 @@ ul.two-part-sp li{
     background: -webkit-linear-gradient(178deg, #e12503 0%, #85060c 100%);
     background: linear-gradient(178deg, #e12503 0%, #85060c 100%);
     z-index: 99;
-    left: 0px;
+    left: 200px;
     right: 0;
     top: 0;
     margin: 0 auto;
