@@ -53,7 +53,24 @@
             });
 
             c3.generate({
-                bindto: '#stocked',
+                bindto: '#stocked1',
+                data:{
+                    columns: [
+                        ['data1', 30,100,100,300,150,250],
+                        ['data2', 50,20,10,80,15,10]
+                    ],
+                    colors:{
+                        data1: '#460eed',
+                        data2: '#82c910'
+                    },
+                    type: 'bar',
+                    groups: [
+                        ['data1', 'data2']
+                    ]
+                }
+            });
+            c3.generate({
+                bindto: '#stocked2',
                 data:{
                     columns: [
                         ['data1', 30,200,100,400,150,250],
@@ -71,10 +88,38 @@
             });
 
             c3.generate({
-                bindto: '#gauge',
+                bindto: '#gauge1',
                 data:{
                     columns: [
-                        ['data', 91.4]
+                        ['data', 50.4]
+                    ],
+
+                    type: 'gauge'
+                },
+                color:{
+                    pattern: ['#006DF0', '#933EC5']
+
+                }
+            });
+            c3.generate({
+                bindto: '#gauge2',
+                data:{
+                    columns: [
+                        ['data', 80.4]
+                    ],
+
+                    type: 'gauge'
+                },
+                color:{
+                    pattern: ['#006DF0', '#933EC5']
+
+                }
+            });
+            c3.generate({
+                bindto: '#gauge3',
+                data:{
+                    columns: [
+                        ['data', 30.4]
                     ],
 
                     type: 'gauge'
@@ -86,15 +131,30 @@
             });
 
             c3.generate({
-                bindto: '#pie',
+                bindto: '#pie1',
                 data:{
                     columns: [
                         ['data1', 30],
                         ['data2', 120]
                     ],
                     colors:{
-                        data1: '#006DF0',
+                        data1: '#00f0bc',
                         data2: '#933EC5'
+                    },
+                    type : 'pie'
+                }
+            });
+
+            c3.generate({
+                bindto: '#pie2',
+                data:{
+                    columns: [
+                        ['data1', 50],
+                        ['data2', 100]
+                    ],
+                    colors:{
+                        data1: '#4800f0',
+                        data2: '#00f0bc'
                     },
                     type : 'pie'
                 }
