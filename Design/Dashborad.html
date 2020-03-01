@@ -87,7 +87,14 @@
 								   <span class="mini-click-non">Favorite</span>
 								</a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard</span></a></li>
+                                <li>
+                                    <a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard</span></a>
+                                    <ul class="submenu-angle" aria-expanded="true">
+                                        <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard 1</span></a></li>
+                                        <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard 2</span></a></li>
+                                    </ul>
+                                </li>
+                                
                             </ul>
                         </li>
                         <li>
@@ -208,8 +215,15 @@
                                                 </li>
                                                 <li class="nav-item"><a href="#" class="nav-link">Vendors</a>
                                                 </li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Accounting</a>
+                                                <li class="nav-item dropdown res-dis-nn">
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">Accounting </a>
+                                                    <div role="menu" class="dropdown-menu animated zoomIn">
+                                                        <a href="#" class="dropdown-item">Miscllaneous</a>
+                                                        <a href="#" class="dropdown-item">Journals</a>
+                                                        <a href="#" class="dropdown-item">Ledger</a>
+                                                    </div>
                                                 </li>
+                                
                                                 <li class="nav-item"><a href="#" class="nav-link">Reporting</a>
                                                 </li>
                                                 <li class="nav-item"><a href="#" class="nav-link">Configuration</a>
@@ -1089,124 +1103,174 @@
             </div> -->
         </div>
         
-        <div class="row" style="margin-top: 20px;">
-
-            <div class="col-lg-8" style="padding-right: 0;">
-                <div class="analytics-sparkle-area">
-                    <div class="container-fluid">
-        
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="padding-right: 0;">
-                                <div class="analytics-sparkle-line reso-mg-b-30">
-                                    <div class="sparkline11-graph">
-                                        <div id="gauge1"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="padding-right: 0;">
-                                <div class="analytics-sparkle-line reso-mg-b-30">
-                                    <div class="sparkline11-graph">
-                                        <div id="gauge2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                                <div class="analytics-sparkle-line reso-mg-b-30 table-mg-t-pro dk-res-t-pro-30">
-                                    <div class="sparkline11-graph">
-                                        <div id="gauge3"></div>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="row" style="margin:20px 10px">
+            <div class="col-lg-3" style="padding-right: 0;">
+                <div class="analytics-sparkle-line" style="padding: 0;margin-bottom: 5px;">
+                    <div class="sparkline11-graph">
+                        <div style="background:rgb(54, 54, 54);padding: 5px 10px;color:#fff;">
+                            <p style="margin-bottom: 0;"><b>Key Performance Indicators</b></p>
                         </div>
+                        <p style="background: rgb(207, 205, 205);padding: 5px 10px;">Payables</p>
+                        <table class="table" style="margin-bottom: 0;">
+                            <tr>
+                                <td>Today</td>
+                                <td>$2563</td>
+                            </tr>
+                            <tr>
+                                <td>Same day last month</td>
+                                <td>$2563</td>
+                            </tr>
+                        </table>
+                        <p style="background: rgb(207, 205, 205);padding: 5px 10px;">Profit</p>
+                        <table class="table">
+                            <tr>
+                                <td>Last Period</td>
+                                <td>$15263</td>
+                            </tr>
+                            <tr>
+                                <td>Same day last month</td>
+                                <td>$2563</td>
+                            </tr>
+                        </table>
                     </div>
-                </div>
-                <div class="product-sales-area" style="margin-top: 10px;margin-bottom: 10px;">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="product-sales-chart" style="height: 530px;">
-                                    <div class="portlet-title">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                <div class="caption pro-sl-hd">
-                                                    <span class="caption-subject"><b>University Earnings</b></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                <div class="actions graph-rp graph-rp-dl">
-                                                    <p>All Earnings are in million $</p>
-                                                </div>
+                </div> 
+                <div class="analytics-sparkle-line" style="padding: 0;">
+                    <div class="sparkline11-graph">
+                        <div style="background:rgb(54, 54, 54);padding: 5px 10px;color:#fff;">
+                            <p style="margin-bottom: 0;"><b>My Activities</b></p>
+                        </div>
+                        <div style="padding: 10px;height: 500px;">
+                            <p>cvndbvmdvbnv c dnbk</p>
+                        </div>
+                        
+                    </div>
+                </div> 
+            </div>
+            <div class="col-lg-9" style="padding-right: 0;padding-left: 0;">
+                <div class="row">
+                    <div  class="col-lg-8" style="padding-right: 0;">
+                        <div class="analytics-sparkle-area">
+                            <div class="container-fluid">
+                
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="padding-right: 0;">
+                                        <div class="analytics-sparkle-line reso-mg-b-30">
+                                            <div class="sparkline11-graph">
+                                                <!-- <div id="gauge1"></div> -->
+                                                <img src="img/c3-graph2.png">
                                             </div>
                                         </div>
                                     </div>
-                                    <ul class="list-inline cus-product-sl-rp">
-                                        <li>
-                                            <h5><i class="fa fa-circle" style="color: #006DF0;"></i>CSE</h5>
-                                        </li>
-                                        <li>
-                                            <h5><i class="fa fa-circle" style="color: #933EC5;"></i>Accounting</h5>
-                                        </li>
-                                        <li>
-                                            <h5><i class="fa fa-circle" style="color: #65b12d;"></i>Electrical</h5>
-                                        </li>
-                                    </ul>
-                                    
-                                    <img src="img/bar-graph.png" style="width:100%;">
-                                    <!-- <div id="morris-bar-chart" ></div> -->
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="padding-right: 0;">
+                                        <div class="analytics-sparkle-line reso-mg-b-30">
+                                            <div class="sparkline11-graph">
+                                                <!-- <div id="gauge2"></div> -->
+                                                <img src="img/c3-graph2.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="analytics-sparkle-line reso-mg-b-30" style="height: 127px;">
+                                            <div class="sparkline11-graph">
+                                                <!-- <div id="gauge2"></div> -->
+                                                <img src="img/c3-graph2.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-sales-area" style="margin-top: 10px;margin-bottom: 10px;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="product-sales-chart" style="height: 300px;">
+                                            <div class="portlet-title">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="caption pro-sl-hd">
+                                                            <span class="caption-subject"><b>University Earnings</b></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="actions graph-rp graph-rp-dl">
+                                                            <p>All Earnings are in million $</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="list-inline cus-product-sl-rp">
+                                                <li>
+                                                    <h5><i class="fa fa-circle" style="color: #006DF0;"></i>CSE</h5>
+                                                </li>
+                                                <li>
+                                                    <h5><i class="fa fa-circle" style="color: #933EC5;"></i>Accounting</h5>
+                                                </li>
+                                                <li>
+                                                    <h5><i class="fa fa-circle" style="color: #65b12d;"></i>Electrical</h5>
+                                                </li>
+                                            </ul>
+                                            
+                                            <img src="img/bar-graph.png" style="width:100%;">
+                                            <!-- <div id="morris-bar-chart" ></div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" style="padding-left: 0;">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="analytics-sparkle-line reso-mg-b-30 table-mg-t-pro dk-res-t-pro-30" style="margin-bottom: 20px;">
+                                    <div class="analytics-content">
+                                        <div class="sparkline9-graph">
+                                            <!-- <div id="stocked1"></div> -->
+                                            <img src="img/c3-graph1.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="analytics-sparkle-line reso-mg-b-30 table-mg-t-pro dk-res-t-pro-30" style="height: 214px;">
+                                    <div class="analytics-content">
+                                        <div class="sparkline9-graph">
+                                            <!-- <div id="stocked2"></div> -->
+                                            <img src="img/c3-graph1.png">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                
-                
-                
-            </div>
-            <div class="col-lg-4" style="padding-left: 0;">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="analytics-sparkle-line reso-mg-b-30 table-mg-t-pro dk-res-t-pro-30" style="margin-bottom: 20px;">
+                <div class="row" style="margin:0px 5px;">
+                    <div class="col-lg-6" style="padding-right: 0;">
+                        <div class="analytics-sparkle-line reso-mg-b-30">
                             <div class="analytics-content">
-                                <div class="sparkline9-graph">
-                                    <div id="stocked1"></div>
+                                <div class="sparkline10-graph">
+                                    <div id="pie1"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="analytics-sparkle-line reso-mg-b-30 table-mg-t-pro dk-res-t-pro-30" style="margin-bottom: 20px;">
+                    <div class="col-lg-6" style="padding-right: 0;">
+                        <div class="analytics-sparkle-line reso-mg-b-30">
                             <div class="analytics-content">
-                                <div class="sparkline9-graph">
-                                    <div id="stocked2"></div>
+                                <div class="sparkline10-graph">
+                                    <div id="pie2"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                   
             </div>
+            
         </div>
         
-        <div class="row" style="margin:0px 5px;">
-            <div class="col-lg-6" style="padding-right: 0;">
-                <div class="analytics-sparkle-line reso-mg-b-30">
-                    <div class="analytics-content">
-                        <div class="sparkline10-graph">
-                            <div id="pie1"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6" style="padding-right: 0;">
-                <div class="analytics-sparkle-line reso-mg-b-30">
-                    <div class="analytics-content">
-                        <div class="sparkline10-graph">
-                            <div id="pie2"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         
     </div>
     <div class="footer-copyright-area">
