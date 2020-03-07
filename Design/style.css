@@ -140,7 +140,7 @@ padding: 0
 /*  4. left sidebar
 /*----------------------------------------*/
 .all-content-wrapper {
-    margin-left: 200px;
+    margin-left: 185px;
     transition: all 0.3s;
 }
 .left-sidebar-pro {
@@ -180,7 +180,8 @@ padding: 0
 .bar-button-pro {
     margin: 13px 0px;
 	font-size:16px;
-	color:#fff;
+    color:#fff;
+    width: auto;
 }
 #sidebar .sidebar-header strong {
     display: none;
