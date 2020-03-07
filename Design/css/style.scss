@@ -300,21 +300,128 @@
   .icon-box{
     text-align: center;
     padding: 20px 0;
-    background: #d664ed;
-    color: #fff;
-    height: 11vh;
+    background: $iconBoxColor;
+    color: $iconBoxTextColor;
+    height: 12vh;
   }
   
-  .header-top-menu{
-    color: #fff;
+  // Landing and Dashboard
+  .headerfooter-bgcolor{
+    background: $headerBgColor;
+  }
+  .header-top-menu .navbar-nav > .nav-text-color > a , .header-right-info ul.header-right-menu > .nav-text-color > a {
+    color: $navTextColor;
+  }
+  .btn-bgcolor {
+    background-color: $collapseBgColor;
+    border-color: $collapseBgColor;
+    color: $collapseTextColor;
+  }
+  .header-text{
+    color: $headerTextBoxTextColor;
     top: 13px;
     position: absolute;
     p{
-      background: black;
+      background: $headerTextBoxBgColor;
       padding: 7px 25px;
     }
     span{
       font-weight: 600;
-      color: #3ad9de;
+      color: $headerTextBoxSpanColor;
     }
+  }
+  .header-right-info .login-name-color{
+    color: $navTextColor;
+  }
+  .main-logo{
+    background-image: $headerLogo;
+  }
+  .sidebar-bgcolor{
+    background: $sidebarBgColor !important;
+  }
+  .sidebar-icon-color{
+    color: $sidebarIconColor;
+  }
+  .sidebar-text-color{
+    color: $sidebarTextColor;
+  }
+  .box-head-bar{
+    background: $boxHeadBgColor;
+    padding: 5px 10px;
+    color: $boxheadTextColor;
+
+    p{
+      margin-bottom: 0;
+    }
+  }
+  .box-subhead-bar{
+    background: $boxSubheadBgColor;
+    padding: 5px 10px;
+    color: $boxSubheadTextColor;
+  }
+  .box-one{
+    padding: 0;
+    margin-bottom: 5px;
+    background: #fff;
+  }
+  .height-129{
+    height: 129px;
+  }
+  .height-341{
+    height: 341px;
+  }
+  .height-203{
+    height: 217px;
+  }
+  .height-214{
+    height: 239px;
+  }
+  .height-360{
+    height: 360px;
+  }
+  .work-box-head{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    h3{
+      color:#00008b;
+    }
+
+    span{
+      color: #00008b;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+  }
+  .task-box{
+    display: flex;
+    justify-content: space-between;
+
+    p{
+      font-size: 17px;
+      color: blue;
+    }
+  }
+  .event-box{
+    display: flex;
+    justify-content: space-between;
+
+    p{
+      font-size: 17px;
+      color: rgb(232, 82, 15);
+    }
+  }
+  .plus-icon{
+    cursor:pointer; 
+    color: blue;
+    font-size: 19px;
+    margin-right: 5px;
+  }
+
+  .minus-icon{
+    cursor:pointer; 
+    color: rgb(250, 13, 4);
+    font-size: 19px;
   }
