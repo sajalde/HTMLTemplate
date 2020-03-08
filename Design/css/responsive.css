@@ -165,6 +165,7 @@
 		text-align: center;
 		margin: 0 auto;
 		max-width: 300px;
+		display: inline-flex;
 	}
 	.responsive-dn-stock{
 		display:none;
@@ -321,7 +322,47 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
-	.container {width:300px}
+	.pr-0{
+		padding-right: 15px;
+	}
+	.pl-0{
+		padding-left: 15px;
+	}
+	.mt-mb-70{
+		margin-top: 3px;
+		margin-bottom: 0px;
+	}
+	.content-bgcolor{
+		background: #fff;
+	}
+	.ml-mr-10{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.mt0-ml5{
+		margin: 0px;
+	}
+	.pr0-pl9{
+		padding: 0;
+	}
+	.height-203 {
+		height: 243px;
+	}
+	.container-fluid{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.height-129{
+		height: 214px;
+	}
+	.main-logo{
+		margin-top: 9px !important;
+		margin-left: 12px !important;
+	  }
+	.header-right-info .admin-name{
+		  display: none;
+	  }
+	.container {width:405px}
 	.left-sidebar-pro{
 		display:none;
 	}
@@ -348,6 +389,8 @@
 		text-align: center;
 		margin: 0 auto;
 		max-width: 300px;
+		display: inline-flex;
+		float: right;
 	}
 	.header-right-info ul.header-right-menu li .author-message-top {
 		left: 4px;
@@ -388,7 +431,7 @@
 		margin-bottom:30px;
 	}
 	.reso-mg-b-30{
-		margin-bottom:30px;
+		margin-bottom:10px;
 	}
 	.responsive-mg-b-0{
 		margin-bottom:0px;
@@ -670,12 +713,14 @@
 	}
 	.header-right-info ul.header-right-menu li.open .author-message-top, .header-right-info ul.header-right-menu li.open .notification-author, .header-right-info ul.header-right-menu li.open .author-log {
 		top: 214%;
+		left: -566%;
 	}
 	.header-right-info ul.header-right-menu li .admintab-wrap.menu-setting-wrap.menu-setting-wrap-bg.dropdown-menu {
 		top: 215%;
 	}
 	.header-right-info ul.header-right-menu li.open .author-log {
 		top: 190%;
+		left: -237%;
 	}
 	.header-right-info .author-message-top::before, .header-right-info .notification-author::before {
 		position: unset;
@@ -710,6 +755,15 @@
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+	.height-341 {
+		height: 378px;
+	}
+	.height-203 {
+		height: 347px;
+	}
+	.height-214 {
+		height: 346px;
+	}
 	.container {width:450px}
 	.fc-toolbar .fc-right {
 		float: right;
@@ -752,5 +806,6 @@
 	.profile-img {
 		text-align: center;
 	}
+	
 }
  
