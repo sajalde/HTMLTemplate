@@ -4865,3 +4865,6 @@ div#sparklinehome canvas {
     margin: 10px;
     font-size: 15px;
 }
+.modal-backdrop{
+    z-index: 0 !important;
+}
