@@ -333,9 +333,7 @@
   .header-right-info .login-name-color{
     color: $navTextColor;
   }
-  .main-logo{
-    background-image: $headerLogo;
-  }
+  
   .sidebar-bgcolor{
     background: $sidebarBgColor !important;
   }
@@ -424,4 +422,12 @@
     cursor:pointer; 
     color: rgb(250, 13, 4);
     font-size: 19px;
+  }
+
+  .main-logo{
+    margin-top: 7px;
+    margin-left: 12px;
+  }
+  .content-bgcolor{
+    background: $contentBgColor;
   }

@@ -301,10 +301,6 @@ h2 {
   color: #fff;
 }
 
-.main-logo {
-  background-image: url("../img/logo_praxis.gif");
-}
-
 .sidebar-bgcolor {
   background: #fff !important;
 }
@@ -401,6 +397,15 @@ h2 {
   cursor: pointer;
   color: #fa0d04;
   font-size: 19px;
+}
+
+.main-logo {
+  margin-top: 7px;
+  margin-left: 12px;
+}
+
+.content-bgcolor {
+  background: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
