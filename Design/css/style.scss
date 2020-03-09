@@ -377,17 +377,38 @@
   .height-360{
     height: 360px;
   }
+  .height-80{
+    height: 80px;
+  }
+  .height-215{
+    height: 215px;
+  }
+  .height-300{
+    height: 300px;
+  }
+  .height-441{
+    height: 441px;
+  }
+  .height-750{
+    height: 750px;
+  }
+  .display-img{
+    display: none;
+  }
+  .land-bgboxc-color{
+    background: $landBgBoxColor;
+  }
   .work-box-head{
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
 
     h3{
-      color:#00008b;
+      color:$workHeadTextColor;
     }
 
     span{
-      color: #00008b;
+      color: $workHeadTextColor;
       font-size: 15px;
       font-weight: 600;
     }
@@ -399,7 +420,7 @@
 
     p{
       font-size: 17px;
-      color: blue;
+      color: $workTaskColor;
     }
   }
   .event-box{
@@ -408,19 +429,19 @@
 
     p{
       font-size: 17px;
-      color: rgb(232, 82, 15);
+      color: $workEventColor;
     }
   }
   .plus-icon{
     cursor:pointer; 
-    color: blue;
+    color: $workTaskColor;
     font-size: 19px;
     margin-right: 5px;
   }
 
   .minus-icon{
     cursor:pointer; 
-    color: rgb(250, 13, 4);
+    color: $workEventColor;
     font-size: 19px;
   }
 
@@ -431,3 +452,4 @@
   .content-bgcolor{
     background: $contentBgColor;
   }
+  

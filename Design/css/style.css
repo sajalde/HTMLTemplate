@@ -354,6 +354,34 @@ h2 {
   height: 360px;
 }
 
+.height-80 {
+  height: 80px;
+}
+
+.height-215 {
+  height: 215px;
+}
+
+.height-300 {
+  height: 300px;
+}
+
+.height-441 {
+  height: 441px;
+}
+
+.height-750 {
+  height: 750px;
+}
+
+.display-img {
+  display: none;
+}
+
+.land-bgboxc-color {
+  background: #fff;
+}
+
 .work-box-head {
   display: flex;
   justify-content: space-between;
@@ -374,7 +402,7 @@ h2 {
 }
 .task-box p {
   font-size: 17px;
-  color: blue;
+  color: #00008b;
 }
 
 .event-box {
@@ -388,14 +416,14 @@ h2 {
 
 .plus-icon {
   cursor: pointer;
-  color: blue;
+  color: #00008b;
   font-size: 19px;
   margin-right: 5px;
 }
 
 .minus-icon {
   cursor: pointer;
-  color: #fa0d04;
+  color: #e8520f;
   font-size: 19px;
 }
 

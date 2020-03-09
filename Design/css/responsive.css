@@ -322,8 +322,21 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+	.display-img{
+		display: block;
+	}
+	.top-61{
+		top: 61px;
+	}
 	.pr-0{
 		padding-right: 15px;
+	}
+	.height-80{
+		height: 174px;
+	}
+	.resp-flex{
+		display: flex;
+		justify-content: space-between;
 	}
 	.pl-0{
 		padding-left: 15px;
@@ -755,6 +768,18 @@
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+	.icon-box{
+		height: 20vh;
+	}
+	.height-441 {
+		height: 600px;
+	}
+	.height-215 {
+		height: 304px;
+	}
+	.height-300 {
+		height: 320px;
+	}
 	.height-341 {
 		height: 378px;
 	}
@@ -763,6 +788,9 @@
 	}
 	.height-214 {
 		height: 346px;
+	}
+	.display-img{
+		display: block;
 	}
 	.container {width:450px}
 	.fc-toolbar .fc-right {
