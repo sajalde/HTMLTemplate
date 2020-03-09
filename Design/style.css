@@ -144,6 +144,9 @@ padding: 0
   .mt-10{
     margin-top: 10px;
   }
+  .mb-10{
+      margin-bottom: 10px;
+  }
   .mt0-ml5{
     margin:0px 5px;
   }
@@ -154,7 +157,18 @@ padding: 0
   .dropdown-submenu {
     position: relative;
 }
-
+.mt-0{
+    margin-top: 0 !important;
+}
+.p-0{
+    padding: 0;
+}
+.p-10{
+    padding: 10px;
+}
+.mr-0{
+    margin-right: 0 !important;
+}
 .dropdown-submenu>.dropdown-menu {
     top: 0;
     left: 100%;
