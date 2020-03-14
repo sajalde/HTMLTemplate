@@ -19,7 +19,7 @@
     <!-- Bootstrap CSS
 		============================================ -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <!-- owl.carousel CSS
 		============================================ -->
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -72,7 +72,7 @@
 	<![endif]-->
     <!-- Start Left menu area -->
     <div class="left-sidebar-pro">
-        <nav id="sidebar" class="sidebar-bgcolor">
+        <nav id="sidebar" class="sidebar-bgcolor" style="height: -webkit-fill-available;">
             <div class="sidebar-header">
                 <button type="button" id="sidebarCollapse" class="btn bar-button-pro btn-bgcolor header-drl-controller-btn navbar-btn">
                     <i class="fas fa-align-justify"></i>
@@ -88,7 +88,7 @@
                             </a>
                             <ul class="submenu-angle" aria-expanded="true">
                                 <li>
-                                    <a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard</span></a>
+                                    <a class="has-arrow" title="Dashboard v.1" href="index.html"><span class=" mini-sub-pro">Dashboard</span></a>
                                     <ul class="submenu-angle" aria-expanded="true">
                                         <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard 1</span></a></li>
                                         <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard 2</span></a></li>
@@ -98,7 +98,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="events.html" aria-expanded="false">
+                            <a class="has-arrow" href="events.html" aria-expanded="false">
                                 <i class="fas fa-folder sidebar-icon-color"></i>&nbsp;
                                 <span class="mini-click-non sidebar-text-color">Folders</span>
                             </a>
@@ -182,10 +182,10 @@
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
 
-                                                        <div class="modal-header" style="display: flex;">
+                                                        <div class="modal-header">
                                                             
-                                                            <h4 class="modal-title" id="myModalLabel">App </h4>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                            <span class="modal-title" id="myModalLabel">App </span>
+                                                            <i data-dismiss="modal" aria-label="Close" class="close fas fa-window-close"></i>
                                                         </div>
 
                                                         <div class="modal-body">
@@ -1192,7 +1192,7 @@
         </div>
         
         <div class="row mt-mb-70 ml-mr-10 content-bgcolor">
-            <div class="col-lg-3 col-xs-12 pr-0">
+            <div class="col-lg-3 col-xs-12 pr-0 mt-10">
                 <div class="analytics-sparkle-line box-one">
                     <div>
                         <div class="box-head-bar">
@@ -1227,7 +1227,7 @@
                         <div class="box-head-bar">
                             <p><b>My Activities</b></p>
                         </div>
-                        <div style="padding: 10px;height: 542px;">
+                        <div style="padding: 10px;height: 547px;">
                             <p>cvndbvmdvbnv c dnbk</p>
                         </div>
                         
@@ -1236,13 +1236,13 @@
             </div>
             <div class="col-lg-9 col-xs-12 pr-0 pl-0">
                 <div class="row">
-                    <div  class="col-lg-8 pr-0">
+                    <div  class="col-lg-8 pr-0 mt-10">
                         <div class="analytics-sparkle-area">
                             <div class="container-fluid">
                 
-                                <div class="row mt-10">
+                                <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 pr-0">
-                                        <div class="analytics-sparkle-line reso-mg-b-30 height-129">
+                                        <div id="d1" class="analytics-sparkle-line reso-mg-b-30 height-129px">
                                             <div class="sparkline11-graph">
                                                 <!-- <div id="gauge1"></div> -->
                                                 <img src="img/c3-graph2.png">
@@ -1250,7 +1250,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 pr-0">
-                                        <div class="analytics-sparkle-line reso-mg-b-30 height-129">
+                                        <div id="d2" class="analytics-sparkle-line reso-mg-b-30 height-129px">
                                             <div class="sparkline11-graph">
                                                 <!-- <div id="gauge2"></div> -->
                                                 <img src="img/c3-graph2.png">
@@ -1258,21 +1258,22 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 pr-0">
-                                        <div class="analytics-sparkle-line reso-mg-b-30 height-129">
+                                        <div id="d3" class="analytics-sparkle-line reso-mg-b-30 height-129px" >
                                             <div class="sparkline11-graph">
                                                 <!-- <div id="gauge2"></div> -->
                                                 <img src="img/c3-graph2.png">
                                             </div>
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="product-sales-area" style="margin-top: 10px;margin-bottom: 10px;">
+                        <div class="product-sales-area mt-10 mb-10">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="product-sales-chart height-341">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pr-0">
+                                        <div class="product-sales-chart height-357px">
                                             <div class="portlet-title">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -1307,20 +1308,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 pl-0">
+                    <div class="col-lg-4 mt-10">
                         <div class="row"> 
                             <div class="col-lg-12">
-                                <div class="analytics-sparkle-line reso-mg-b-30 table-mg-t-pro dk-res-t-pro-30 height-203" style="margin-bottom: 20px;">
-                                    <div class="analytics-content">
-                                        <div class="sparkline9-graph">
-                                            <!-- <div id="stocked1"></div> -->
-                                            <img src="img/c3-graph1.png">
-                                        </div>
-                                    </div>
+                                <div class="analytics-sparkle-line height-250px mb-10">
+                                   
+                                    <img src="img/c3-graph1.png">
+                                    
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="analytics-sparkle-line reso-mg-b-30 table-mg-t-pro dk-res-t-pro-30 height-214">
+                                <div class="analytics-sparkle-line mb-10 height-236px">
                                     <div class="analytics-content">
                                         <div class="sparkline9-graph">
                                             <!-- <div id="stocked2"></div> -->
@@ -1335,7 +1333,7 @@
                 
                 <div class="row mt0-ml5">
                     <div class="col-lg-6 pr0-pl9">
-                        <div class="analytics-sparkle-line reso-mg-b-30 height-360">
+                        <div class="analytics-sparkle-line reso-mg-b-30 height-360px">
                             <div class="analytics-content">
                                 <div class="sparkline10-graph">
                                     <div id="pie1"></div>
@@ -1343,8 +1341,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 pr0-pl9">
-                        <div class="analytics-sparkle-line reso-mg-b-30 height-360">
+                    <div class="col-lg-6 pr-0">
+                        <div class="analytics-sparkle-line reso-mg-b-30 height-360px">
                             <div class="analytics-content">
                                 <div class="sparkline10-graph">
                                     <div id="pie2"></div>
@@ -1439,6 +1437,21 @@
     <!-- tawk chat JS
 		============================================ -->
     <script src="js/tawk-chat.js"></script>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+            }
+
+            function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            }
+    </script>
 </body>
 
 </html>
