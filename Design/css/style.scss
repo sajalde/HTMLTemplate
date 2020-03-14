@@ -343,6 +343,15 @@
   .sidebar-text-color{
     color: $sidebarTextColor;
   }
+  .sidebar-nav .metismenu a:hover, .sidebar-nav .metismenu a:focus, .sidebar-nav .metismenu a:active {
+    background: $sidebarListHover !important;
+}
+.sidebar-nav ul{
+  background: $sidebarSubMenuBgColor !important;
+}
+.sidebar-nav .metismenu a {
+  color: $sidebarTextColor !important;
+}
   .box-head-bar{
     background: $boxHeadBgColor;
     padding: 5px 10px;
@@ -362,36 +371,15 @@
     margin-bottom: 5px;
     background: #fff;
   }
-  .height-129{
-    height: 129px;
+  
+  @each $x in $sizes {
+    .height-#{$x} {      
+      height: 100%;
+      min-height: $x;
+    }
   }
-  .height-341{
-    height: 341px;
-  }
-  .height-203{
-    height: 217px;
-  }
-  .height-214{
-    height: 239px;
-  }
-  .height-360{
-    height: 360px;
-  }
-  .height-80{
-    height: 80px;
-  }
-  .height-215{
-    height: 215px;
-  }
-  .height-300{
-    height: 300px;
-  }
-  .height-441{
-    height: 441px;
-  }
-  .height-750{
-    height: 750px;
-  }
+ 
+
   .display-img{
     display: none;
   }
@@ -452,4 +440,20 @@
   .content-bgcolor{
     background: $contentBgColor;
   }
-  
+  .sidebar-nav .metismenu,#sidebar .sidebar-header{
+    background: $sidebarBgColor !important;
+  }
+ .modal-content{
+  background: $modalBgColor;
+    .modal-header{
+      background-color: $modalHeaderBgColor
+   }
+   .modal-title{
+    color: #fff;
+  }
+  .close{
+    color: #fff;
+  }
+ }
+ 
+ 
