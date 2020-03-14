@@ -302,7 +302,7 @@ h2 {
 }
 
 .sidebar-bgcolor {
-  background: #fff !important;
+  background: #000 !important;
 }
 
 .sidebar-icon-color {
@@ -310,7 +310,19 @@ h2 {
 }
 
 .sidebar-text-color {
-  color: #006DF0;
+  color: #fff;
+}
+
+.sidebar-nav .metismenu a:hover, .sidebar-nav .metismenu a:focus, .sidebar-nav .metismenu a:active {
+  background: #042f63 !important;
+}
+
+.sidebar-nav ul {
+  background: #3e9ae6 !important;
+}
+
+.sidebar-nav .metismenu a {
+  color: #fff !important;
 }
 
 .box-head-bar {
@@ -334,44 +346,54 @@ h2 {
   background: #fff;
 }
 
-.height-129 {
-  height: 129px;
+.height-129px {
+  height: 100%;
+  min-height: 129px;
 }
 
-.height-341 {
-  height: 341px;
+.height-357px {
+  height: 100%;
+  min-height: 357px;
 }
 
-.height-203 {
-  height: 217px;
+.height-250px {
+  height: 100%;
+  min-height: 250px;
 }
 
-.height-214 {
-  height: 239px;
+.height-236px {
+  height: 100%;
+  min-height: 236px;
 }
 
-.height-360 {
-  height: 360px;
+.height-360px {
+  height: 100%;
+  min-height: 360px;
 }
 
-.height-80 {
-  height: 80px;
+.height-80px {
+  height: 100%;
+  min-height: 80px;
 }
 
-.height-215 {
-  height: 215px;
+.height-215px {
+  height: 100%;
+  min-height: 215px;
 }
 
-.height-300 {
-  height: 300px;
+.height-300px {
+  height: 100%;
+  min-height: 300px;
 }
 
-.height-441 {
-  height: 441px;
+.height-441px {
+  height: 100%;
+  min-height: 441px;
 }
 
-.height-750 {
-  height: 750px;
+.height-750px {
+  height: 100%;
+  min-height: 750px;
 }
 
 .display-img {
@@ -434,6 +456,23 @@ h2 {
 
 .content-bgcolor {
   background: #fff;
+}
+
+.sidebar-nav .metismenu, #sidebar .sidebar-header {
+  background: #000 !important;
+}
+
+.modal-content {
+  background: #e1dff7;
+}
+.modal-content .modal-header {
+  background-color: #170bcc;
+}
+.modal-content .modal-title {
+  color: #fff;
+}
+.modal-content .close {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
