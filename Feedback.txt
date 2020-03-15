@@ -1,13 +1,13 @@
-1. Menu Bar Height Change (like outlook or less)
-2. Settings:  Settings not in popup menu it should be like outlook Serttings
+1. Menu Bar Height Change (like outlook or less)-->Done
+2. Settings:  Settings not in popup menu it should be like outlook Serttings--> Done
 3. Top Right menu .. no annamittion require.
-4. Top Left App menu: Icon size reduce, Close Buton on right
-5. LEft Menu : reduce GAP , Font size 1 or 2 point less, 
-6. Multple corlor theme Dashbaord page
-7. Top Right FA Icon size should be less
-8. Logo space 
-9. Show and hide menu Button should be in left and small
+4. Top Left App menu: Icon size reduce, Close Buton on right --> Done
+5. LEft Menu : reduce GAP , Font size 1 or 2 point less, ---> Done
+6. Multple corlor theme Dashbaord page-->Done
+7. Top Right FA Icon size should be less --> Done
+8. Logo space --> Done
+9. Show and hide menu Button should be in left and small--> Done
 
 
 Landing page:-
-1. Menu card : Not FA icon .. place Image over there should be proper allign
+1. Menu card : Not FA icon .. place Image over there should be p	roper allign -->Done

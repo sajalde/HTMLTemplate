@@ -74,7 +74,7 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="sidebar-bgcolor" style="height: -webkit-fill-available;">
             <div class="sidebar-header">
-                <button type="button" id="sidebarCollapse" class="btn bar-button-pro btn-bgcolor header-drl-controller-btn navbar-btn">
+                <button type="button" id="sidebarCollapse" class="btn bar-button-pro btn-bgcolor header-drl-controller-btn navbar-btn btn-sidemenu-size">
                     <i class="fas fa-align-justify"></i>
                 </button>
             </div>
@@ -166,7 +166,7 @@
             </div>
         </div> -->
         <div class="header-advance-area">
-            <div class="header-top-area headerfooter-bgcolor">
+            <div class="header-top-area headerfooter-bgcolor" style="height: 56px;">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -190,11 +190,11 @@
 
                                                         <div class="modal-body">
                                                             <ul class="side_modal">
-                                                                <li><img src="img/outlook.png"> Outlook</li>
-                                                                <li><img src="img/word.png"> Word</li>
-                                                                <li><img src="img/powerpoint.png"> Powerpoint</li>
-                                                                <li><img src="img/excel.png"> Excel</li>
-                                                                <li><img src="img/onedrive.png"> OneDrive</li>
+                                                                <li><img src="img/outlook.png" style="width: 10%;"> Outlook</li>
+                                                                <li><img src="img/word.png" style="width: 10%;"> Word</li>
+                                                                <li><img src="img/powerpoint.png" style="width: 10%;"> Powerpoint</li>
+                                                                <li><img src="img/excel.png" style="width: 10%;"> Excel</li>
+                                                                <li><img src="img/onedrive.png" style="width: 10%;"> OneDrive</li>
                                                             </ul>
                                                             
                                                         </div>
@@ -480,11 +480,88 @@
                                                     </div>
                                                 </li>
                                                 <li class="nav-item nav-text-color dropdown">
-                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                    <a href="#" role="button" class="nav-link dropdown-toggle" data-toggle="modal" data-target="#myModal1">
                                                         <i class="fas fa-cog"></i>
                                                         <span class="indicator-ms"></span>
                                                     </a>
-                                                    <div role="menu" class="notification-author dropdown-menu animated zoomIn">
+                                                    
+                                                    <!-- Modal -->
+                                                    <div class="modal right fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+        
+                                                                <div class="modal-header">
+                                                                    
+                                                                    <span class="modal-title" id="myModalLabel1">Settings </span>
+                                                                    <i data-dismiss="modal" aria-label="Close" class="close fas fa-window-close"></i>
+                                                                </div>
+        
+                                                                <div class="modal-body">
+                                                                    <form class="navbar-form navbar-left" role="search">
+                                                                        <div class="form-group" style="display: flex;">
+                                                                          <input type="text" class="form-control" placeholder="Search"><i class="searchIcon fas fa-search"></i>
+                                                                        </div>
+                                                                      </form>
+                                                                    <h5>Theme</h5>
+                                                                    <ul style="display: flex;justify-content: space-evenly;">
+                                                                        <li><div style="padding: 20px;background: #006DF0;"></div></li>
+                                                                        <li><div style="padding: 20px;background: rgb(2, 134, 35);"></div></li>
+                                                                        <li><div style="padding: 20px;background: rgb(187, 9, 113);"></div></li>
+                                                                        <li><div style="padding: 20px;background: rgb(153, 4, 41);"></div></li>
+                                                                        <li><div style="padding: 20px;background: rgb(153, 93, 4);"></div></li>
+                                                                    </ul>
+
+                                                                    <div style="display: flex;justify-content: space-between;margin: 10px 0;">
+                                                                        <p><b>Dark Mode</b></p>
+                                                                        <label class="switch">
+                                                                            <input type="checkbox">
+                                                                            <span class="slider round"></span>
+                                                                          </label>
+                                                                    </div>
+                                                                    <div style="display: flex;justify-content: space-between;margin: 10px 0;">
+                                                                        <p><b>Focused Inbox</b></p>
+                                                                        <label class="switch">
+                                                                            <input type="checkbox">
+                                                                            <span class="slider round"></span>
+                                                                          </label>
+                                                                    </div>
+
+                                                                    <div style="display: flex;justify-content: space-between;margin: 10px 0;">
+                                                                        <p><b>Desktop Notification</b></p>
+                                                                        <label class="switch">
+                                                                            <input type="checkbox">
+                                                                            <span class="slider round"></span>
+                                                                          </label>
+                                                                    </div>
+
+                                                                    <p style="font-size: 16px;color: #006DF0;">Conversion view</p>
+                                                                    <div class="radio">
+                                                                        <label><input type="radio" name="optradio" checked>Newest messages on top</label>
+                                                                      </div>
+                                                                      <div class="radio">
+                                                                        <label><input type="radio" name="optradio">Newest messages on bottom</label>
+                                                                      </div>
+                                                                      <div class="radio disabled">
+                                                                        <label><input type="radio" name="optradio" disabled>Off</label>
+                                                                      </div>
+
+                                                                      <p style="font-size: 16px;color: #006DF0;">Reading Pane</p>
+                                                                      
+                                                                    <div class="radio">
+                                                                        <label><input type="radio" name="optradio" checked>Show on the right</label>
+                                                                      </div>
+                                                                      <div class="radio">
+                                                                        <label><input type="radio" name="optradio">Show on the bottom</label>
+                                                                      </div>
+                                                                      <div class="radio disabled">
+                                                                        <label><input type="radio" name="optradio" disabled>Hide</label>
+                                                                      </div>
+                                                                </div>
+        
+                                                            </div><!-- modal-content -->
+                                                        </div><!-- modal-dialog -->
+                                                    </div><!-- modal -->
+                                                    <!-- <div role="menu" class="notification-author dropdown-menu animated zoomIn">
                                                         <div class="notification-single-top">
                                                             <h1>Settings</h1>
                                                         </div>
@@ -525,7 +602,7 @@
                                                         <div class="notification-view">
                                                             <a href="#">View All Settings</a>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                 </li>   
                                                 <li class="nav-item nav-text-color"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                     
