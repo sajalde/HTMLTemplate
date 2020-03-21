@@ -85,6 +85,12 @@ padding: 0
 /*----------------------------------------*/
 /*  2. Helper Class
 /*----------------------------------------*/
+.text-right{
+    text-align: right;
+}
+.font-size-16{
+    font-size: 16px;
+}
 .mg-tb-30{
 	margin:30px 0px;
 }
@@ -115,6 +121,9 @@ padding: 0
 .mt-b-30{
 	margin-bottom:30px;
 }
+.m-10{
+    margin: 10px;
+}
 .bg-green {
     background: #006DF0;
 }
@@ -134,7 +143,7 @@ padding: 0
       padding-left: 0;
   }
   .mt-mb-70{
-      margin-top: 70px;
+      margin-top: 54px;
       margin-bottom: 20px;
   }
   .ml-mr-10{
@@ -161,7 +170,7 @@ padding: 0
     margin-top: 0 !important;
 }
 .p-0{
-    padding: 0;
+    padding: 0 !important;
 }
 .p-10{
     padding: 10px;
@@ -207,7 +216,7 @@ padding: 0
 /*----------------------------------------*/
 /*  3. All Nested Class
 /*----------------------------------------*/
-.product-sales-chart, .analytics-info-cs, .tranffic-als-inner, .analytics-rounded, .single-new-trend, .personal-info-wrap, .author-widgets-single, .calender-inner, .product-status-wrap, .review-tab-pro-inner, .income-dashone-total, .analytics-edu-wrap, .analytics-sparkle-line, .analysis-progrebar, .sparkline8-list, .sparkline9-list, .sparkline7-list, .sparkline10-list, .sparkline12-list, .sparkline13-list, .sparkline14-list, .sparkline13-list, .sparkline11-list, .x-editable-list, .code-editor-single, .blog-details-inner, .charts-single-pro, .about-sparkline, .sparkline-list, .button-ad-wrap, .tab-content-details, .sparkline16-list, .sparkline15-list, .tinymce-single, .single-product-item, .courses-inner, .single-latest-item, .product-payment-inner-st, .profile-info-inner, .contact-panel, .widget-int-shape, .social-media-edu{
+.product-sales-chart, .analytics-info-cs, .tranffic-als-inner, .analytics-rounded, .single-new-trend, .personal-info-wrap, .author-widgets-single, .calender-inner, .product-status-wrap, .review-tab-pro-inner, .income-dashone-total, .analytics-edu-wrap, .box-style, .analysis-progrebar, .sparkline8-list, .sparkline9-list, .sparkline7-list, .sparkline10-list, .sparkline12-list, .sparkline13-list, .sparkline14-list, .sparkline13-list, .sparkline11-list, .x-editable-list, .code-editor-single, .blog-details-inner, .charts-single-pro, .about-sparkline, .sparkline-list, .button-ad-wrap, .tab-content-details, .sparkline16-list, .sparkline15-list, .tinymce-single, .single-product-item, .courses-inner, .single-latest-item, .product-payment-inner-st, .profile-info-inner, .contact-panel, .widget-int-shape, .social-media-edu{
 	padding:20px;
     background:#fff;
     box-shadow: 0px 0px 5px #ccc;
@@ -232,7 +241,7 @@ padding: 0
     transition: all 0.3s;
 	/* z-index:999; */
     height:86%;
-    top: 55px;
+    top: 47px;
 }
 .mini-navbar .all-content-wrapper {
     margin-left: 80px;
@@ -255,7 +264,7 @@ padding: 0
     display:none;
 }
 .bar-button-pro {
-    margin: 13px 0px;
+    margin: 5px 0px;
 	font-size:16px;
     color:#fff;
     width: auto;
@@ -378,7 +387,7 @@ padding: 0
 /*  5. Header Top
 /*----------------------------------------*/
 .header-top-menu .navbar-nav>li>a{
-	padding: 20px 20px;
+	padding: 13px 20px;
 	color: #fff;
 	font-size:14px;
 }
@@ -431,7 +440,7 @@ padding: 0
 }
 .header-right-info .navbar-nav{
 	float:right;
-	padding: 20px 0px;
+	padding: 13px 0px;
     padding-bottom: 0;
 }
 .header-right-info ul.header-right-menu > li > a > i{
@@ -1075,11 +1084,11 @@ ul.breadcome-menu li a:hover{
 .analytics-edu4 .skill .progress-bar{
 	background: #933EC5 !important;
 }
-.analytics-sparkle-line .analytics-content h5, .analytics-rounded .analytics-rounded-content h5, .analysis-progrebar .analysis-progrebar-content h5{
+.box-style .analytics-content h5, .analytics-rounded .analytics-rounded-content h5, .analysis-progrebar .analysis-progrebar-content h5{
 	font-size:16px;
 	color:#303030;
 }
-.analytics-sparkle-line .analytics-content h2, .analytics-rounded .analytics-rounded-content h2, .analysis-progrebar .analysis-progrebar-content h2, .analytics-edu .skill .progress .lead-content h3{
+.box-style .analytics-content h2, .analytics-rounded .analytics-rounded-content h2, .analysis-progrebar .analysis-progrebar-content h2, .analytics-edu .skill .progress .lead-content h3{
 	font-size:20px;
 	color:#303030;
 }
@@ -1909,7 +1918,7 @@ ul.tab-custon-design li a, ul.tab-custon-design li a:hover, ul.tab-custon-design
 	font-size:14px;
 	color:#999;
 }
-ul.cus-product-sl-rp li i{
+ul.list-inline li i{
 	margin-right:5px;
 }
 .pro-sl-hd span{
@@ -3846,7 +3855,7 @@ div#sparklinehome canvas {
 .panel-group.edu-custon-design .accordion-head a:hover, .panel-group.edu-custon-design .accordion-head a:focus, .panel-group.edu-custon-design .accordion-head a:active {
     color: #fff;
 }
-.analytics-sparkle-line .analytics-content .tuition-fees {
+.box-style .analytics-content .tuition-fees {
     font-size: 14px;
     float: right;
     margin-top: 8px;
@@ -4200,7 +4209,7 @@ div#sparklinehome canvas {
 .projects-st-content.project-rating-cl .progress-bar.hd-tp-6{
 	background:#555;
 }
-.cus-product-sl-rp li h5{
+.list-inline li h5{
 	color:#999;
 	font-weight:300;
 }
