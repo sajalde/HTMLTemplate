@@ -394,6 +394,39 @@
     }
   }
  
+  @each $x in $sizes {
+    .box-style-#{$x} {      
+      height: 100%;
+      min-height: $x;
+      padding:20px;
+      // background:#fff;
+      box-shadow: 0px 0px 5px #ccc;
+      border-radius: 2px;
+      margin-right: 10px;
+      width: 24%;
+      margin-bottom: 10px;
+    }
+    .box-width-49{
+      width: 49%;
+      padding: 20px;
+      box-shadow: 0px 0px 5px #ccc;
+      border-radius: 2px;
+      margin-right: 10px;
+    }
+    .top-box-list{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .box-style-#{$x}:nth-last-child(1){
+      margin-right: 0 !important;
+    }
+    .box-width-#{$x}:nth-last-child(1){
+      margin-right: 0 !important;
+    }
+  }
+  
+  
 
   .display-img{
     display: none;
@@ -548,3 +581,13 @@ input:checked + .slider:before {
   font-size: 14px;
   color: #999;
 }
+
+.box-sm{
+  float: left;
+  width: 33.33%;
+  padding: 0px 10px;
+  height: 129px;/* Should be removed. Only for demonstration */
+}
+
+
+
