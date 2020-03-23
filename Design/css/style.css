@@ -1127,11 +1127,43 @@ input:checked + .slider:before {
 }
 
 .box-sm {
-  float: left;
-  width: 33.33%;
-  padding: 0px 10px;
-  height: 129px;
-  /* Should be removed. Only for demonstration */
+  padding: 20px;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 2px;
+  text-align: center;
+  height: 282px;
+}
+
+.box-md {
+  padding: 20px;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 2px;
+  text-align: center;
+  height: 300px;
+}
+
+.box-lg {
+  padding: 20px;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 2px;
+  text-align: center;
+  height: 100%;
+}
+
+.box-xs {
+  padding: 20px;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 2px;
+  text-align: center;
+  height: 200px;
+}
+
+.box-xl {
+  padding: 20px;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 2px;
+  text-align: center;
+  min-height: 282px;
 }
 
 /*# sourceMappingURL=style.css.map */
