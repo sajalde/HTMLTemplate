@@ -333,6 +333,12 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+	#main_navbar{
+	height:auto;
+	}
+	#navbarSupportedContent{
+      margin-left: 0px;
+     }
 	.box-sm{
 		height: 450px !important;
 		margin-bottom: 14px;

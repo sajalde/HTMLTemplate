@@ -266,7 +266,7 @@ h2 {
 }
 
 .headerfooter-bgcolor {
-  background: #006DF0;
+  background: #006DF0 !important;
 }
 
 .header-top-menu .navbar-nav > .nav-text-color > a, .header-right-info ul.header-right-menu > .nav-text-color > a {
@@ -351,7 +351,7 @@ h2 {
   background: #cfcdcd;
   padding: 5px 8px;
   color: #000;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .box-one {
@@ -1022,7 +1022,7 @@ h2 {
 }
 
 .main-logo {
-  margin-top: 8px;
+  margin-top: 2px;
   margin-left: 12px;
 }
 
@@ -1166,12 +1166,6 @@ input:checked + .slider:before {
   min-height: 282px;
 }
 
-.navbar-nav {
-  display: flex !important;
-  flex-direction: row;
-  position: relative;
-}
-
 .dropdown-submenu {
   position: relative;
   font-size: 14px;
@@ -1186,15 +1180,53 @@ input:checked + .slider:before {
 }
 
 .nav-link {
-  padding: 20px !important;
+  padding: 10px 14px !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
+  font-size: 14px;
 }
 
 .drop-caret::after {
   display: none;
+}
+
+#navbarSupportedContent {
+  justify-content: space-between;
+  margin-left: 60px;
+}
+
+.profile-dropdown {
+  left: -60px;
+}
+
+.notify-dropdown {
+  left: -60px;
+}
+
+.box-subhead-bar {
+  margin-bottom: 0;
+}
+
+.table td {
+  font-size: 14px;
+}
+
+.box-head-bar p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.collapse-btn {
+  margin: 0;
+}
+.collapse-btn span {
+  float: right;
+}
+
+.dropdown-item {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

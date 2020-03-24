@@ -307,7 +307,7 @@
   
   // Landing and Dashboard
   .headerfooter-bgcolor{
-    background: $headerBgColor;
+    background: $headerBgColor !important;
   }
   .header-top-menu .navbar-nav > .nav-text-color > a , .header-right-info ul.header-right-menu > .nav-text-color > a {
     color: $navTextColor;
@@ -379,7 +379,7 @@
     background: $boxSubheadBgColor;
     padding: 5px 8px;
     color: $boxSubheadTextColor;
-    font-size: 13px;
+    font-size: 14px;
   }
   .box-one{
     padding: 0;
@@ -481,7 +481,7 @@
   }
 
   .main-logo{
-    margin-top: 8px;
+    margin-top: 2px;
     margin-left: 12px;
   }
   .content-bgcolor{
@@ -647,11 +647,11 @@ input:checked + .slider:before {
 }
 
 
-.navbar-nav{
-  display: flex !important;
-  flex-direction:row;
-  position:relative;
-}
+// .navbar-nav{
+//   display: flex !important;
+//   flex-direction:row;
+//   position:relative;
+// }
 .dropdown-submenu{
   position: relative;
     font-size: 14px;
@@ -665,11 +665,41 @@ input:checked + .slider:before {
 }
 
 .nav-link{
-  padding:20px !important;
+  padding:10px 14px !important;
 }
 .navbar-dark .navbar-nav .nav-link{
   color:#fff;
+  font-size: 14px;
 }
 .drop-caret::after{
   display:none;
+}
+     #navbarSupportedContent{
+      justify-content: space-between;
+      margin-left: 60px;
+     }
+.profile-dropdown{
+  left:-60px;
+}
+.notify-dropdown{
+  left:-60px;
+}
+.box-subhead-bar{
+    margin-bottom: 0;
+}
+.table td{
+  font-size:14px;
+}
+.box-head-bar p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.collapse-btn{
+  margin:0;
+  span{
+    float:right;
+  }
+}
+.dropdown-item{
+  font-size:14px;
 }
