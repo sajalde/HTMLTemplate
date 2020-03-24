@@ -1127,43 +1127,74 @@ input:checked + .slider:before {
 }
 
 .box-sm {
-  padding: 20px;
   box-shadow: 0px 0px 5px #ccc;
   border-radius: 2px;
   text-align: center;
-  height: 282px;
+  box-sizing: border-box;
+  height: 200px;
 }
 
 .box-md {
-  padding: 20px;
   box-shadow: 0px 0px 5px #ccc;
   border-radius: 2px;
   text-align: center;
+  box-sizing: border-box;
   height: 300px;
 }
 
 .box-lg {
-  padding: 20px;
   box-shadow: 0px 0px 5px #ccc;
   border-radius: 2px;
   text-align: center;
+  box-sizing: border-box;
   height: 100%;
 }
 
 .box-xs {
-  padding: 20px;
   box-shadow: 0px 0px 5px #ccc;
   border-radius: 2px;
   text-align: center;
+  box-sizing: border-box;
   height: 200px;
 }
 
 .box-xl {
-  padding: 20px;
   box-shadow: 0px 0px 5px #ccc;
   border-radius: 2px;
   text-align: center;
+  box-sizing: border-box;
   min-height: 282px;
+}
+
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row;
+  position: relative;
+}
+
+.dropdown-submenu {
+  position: relative;
+  font-size: 14px;
+}
+
+.header-top-menu .navbar-nav > li .dropdown-menu a {
+  font-size: 14px;
+}
+
+#main_navbar {
+  height: 48px;
+}
+
+.nav-link {
+  padding: 20px !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.drop-caret::after {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

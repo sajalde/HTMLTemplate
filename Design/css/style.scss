@@ -583,15 +583,16 @@ input:checked + .slider:before {
 
 
 @mixin box-style {
-  padding:20px;
+  // padding:20px;
   box-shadow: 0px 0px 5px #ccc;
   border-radius: 2px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .box-sm{
   @include box-style;
-  height: 282px;
+  height: 200px;
 }
 // .box-sm-3{
 //   @include box-style;
@@ -646,3 +647,29 @@ input:checked + .slider:before {
 }
 
 
+.navbar-nav{
+  display: flex !important;
+  flex-direction:row;
+  position:relative;
+}
+.dropdown-submenu{
+  position: relative;
+    font-size: 14px;
+}
+.header-top-menu .navbar-nav>li .dropdown-menu a{
+  font-size: 14px;
+}
+
+#main_navbar{
+  height:48px
+}
+
+.nav-link{
+  padding:20px !important;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color:#fff;
+}
+.drop-caret::after{
+  display:none;
+}
