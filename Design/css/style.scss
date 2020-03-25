@@ -438,7 +438,7 @@
     justify-content: space-between;
     padding-bottom: 20px;
 
-    h3{
+    h5{
       color:$workHeadTextColor;
     }
 
@@ -592,7 +592,7 @@ input:checked + .slider:before {
 
 .box-sm{
   @include box-style;
-  height: 200px;
+  height: 441px;
 }
 // .box-sm-3{
 //   @include box-style;
@@ -631,6 +631,10 @@ input:checked + .slider:before {
   @include box-style;
   height: 200px;
 }
+.box-xxs{
+  @include box-style;
+  height: 68px;
+}
 // .box-xs-6{
 //   @include box-style;
 //   height: 200px;
@@ -643,7 +647,7 @@ input:checked + .slider:before {
 // }
 .box-xl{
   @include box-style;
-  min-height: 282px;
+  min-height: 750px;
 }
 
 
@@ -682,7 +686,12 @@ input:checked + .slider:before {
   left:-60px;
 }
 .notify-dropdown{
-  left:-60px;
+  left:-169px;
+  width: 330px;
+}
+.message-dropdown{
+  left:-88px;
+  width: 330px;
 }
 .box-subhead-bar{
     margin-bottom: 0;

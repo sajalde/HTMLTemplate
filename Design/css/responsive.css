@@ -136,6 +136,25 @@
 	 
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+
+	.box-sm{
+		height: 806px;
+	}
+	.box-xxs{
+		height:auto;
+	}
+	.icon-img{
+		width:50%;
+	}
+	.icon-box{
+		text-align:center;
+	}
+	#main_navbar{
+	height:auto;
+	}
+	#navbarSupportedContent{
+      margin-left: 0px;
+     }
 	.box-xs{
 		height: 156px;
 	}
@@ -333,6 +352,18 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+	.sub-cont{
+		display:none;
+	}
+	.box-xxs{
+		height:auto;
+	}
+	.icon-img{
+		width:33%;
+	}
+	.icon-box{
+		text-align:center;
+	}
 	#main_navbar{
 	height:auto;
 	}
