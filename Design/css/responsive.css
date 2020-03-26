@@ -136,7 +136,26 @@
 	 
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
+	.res-sign-text{
+		display:block !important;
+		font-size:20px;
+	}
+	.res-sign-color{
+		color:blue;
+	}
+	.wrapper{
+		overflow-y:scroll !important;
+	}
+	.form{
+		width: 100% !important;
+    	padding: 20px !important;
+	}
+	.cont{
+		width:100% !important;
+	}
+	.sub-cont{
+		display:none;
+	}
 	.box-sm{
 		height: 806px;
 	}
@@ -352,6 +371,21 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+	.res-sign-text{
+		display:block !important;
+		font-size:20px;
+	}
+	.res-sign-color{
+		color:blue;
+	}
+	.form{
+		width: 100% !important;
+    	padding: 20px !important;
+		height: 327px !important;
+	}
+	.cont{
+		width:100% !important;
+	}
 	.sub-cont{
 		display:none;
 	}

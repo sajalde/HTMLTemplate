@@ -18,6 +18,10 @@ input, button {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
+.res-sign-text {
+  display: none;
+}
+
 .wrapper {
   background: url("https://www.business.com/images/content/5ca/3db965a215e8a458b9d66/0-800-");
   height: 100vh;

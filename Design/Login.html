@@ -15,10 +15,10 @@
     
     <div class="container-fluid wrapper">
         <div class="cont">
-        <div class="form sign-in">
-            <h2>Welcome back,</h2>
+        <div  class="form sign-in">
+            <h2 class="d-none d-xl-block">Welcome back,</h2>
             <!-- SignIn Form -->
-            <form style="padding: 23px;">
+            <form id="signin" class="py-5">
                 <div class="form-group">
                   <label class="labelColor" for="exampleInputEmail1">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -29,9 +29,37 @@
                 </div>
                 <button type="button" class="submit" onclick="window.location.href='Landing.html'">Sign In</button>
                 <button type="button" class="fb-btn">Connect with <span>facebook</span></button>
+                <p class="res-sign-text text-center m-5">Not created an account? 
+                    <span class="res-sign-color"><a id="switchForm" href="#">SignUp</a></span>
+                </p>
+               
             </form>
             <!-- SignIn Form -->
+            <!-- SignUp Form -->
+                <form id="signup"  class="py-5 d-xl-none">
+                    <div class="form-group">
+                        <label class="labelColor">Name</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                    <label class="labelColor">Email address</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                    <label class="labelColor">Password</label>
+                    <input type="password" class="form-control">
+                    </div>
+                    <button type="button" class="submit">Sign Up</button>
+                    <button type="button" class="fb-btn">Connect with <span>facebook</span></button>
+                    <p class="res-sign-text text-center m-5">Already having an  account? 
+                    <span class="res-sign-color"><a id="switchForm1"  href="#">SignIn</a></span>
+                    </p>
+               
+                </form>
+                 
+            <!-- SignUp Form -->
         </div>
+        
         <div class="sub-cont">
             <div class="img">
             <div class="img__text m--up">
@@ -47,10 +75,10 @@
                 <span class="m--in">Sign In</span>
             </div>
             </div>
-            <div class="form sign-up">
+            <div  class="form sign-up">
             <h2>Time to feel like home,</h2>
             <!-- SignUp Form -->
-                <form style="padding: 23px;">
+                <form class="py-5">
                     <div class="form-group">
                         <label class="labelColor">Name</label>
                         <input type="email" class="form-control" aria-describedby="emailHelp">
@@ -65,7 +93,12 @@
                     </div>
                     <button type="button" class="submit">Sign Up</button>
                     <button type="button" class="fb-btn">Connect with <span>facebook</span></button>
+                    <p class="res-sign-text text-center m-5">Already having an  account? 
+                    <span class="res-sign-color"><a  href="#">SignIn</a></span>
+                    </p>
+               
                 </form>
+                 
             <!-- SignUp Form -->
             </div>
         </div>
@@ -82,6 +115,26 @@
         document.querySelector('.img__btn').addEventListener('click', function() {
         document.querySelector('.cont').classList.toggle('s--signup');
         });
+
+       
+        $("#switchForm").click(function(){
+        const isLoginVisible = $("#signin").is(':not(:hidden)');
+        if(isLoginVisible) {
+            $("#signin").hide();
+            $("#signup").show();
+        } 
+        })
+        $("#switchForm1").click(function(){
+        const isLoginVisible = $("#signin").is(':not(:hidden)');
+        if(isLoginVisible) {
+            $("#signin").hide();
+            $("#signup").show();
+        } else {
+            $("#signin").show();
+            $("#signup").hide();
+        }
+        })
+
     </script>
   </body>
 </html>
