@@ -3032,11 +3032,11 @@ td.text-right.mail-date {
     margin: 0px;
     padding: 5px 0px;
 }
-.input-group {
+/* .input-group {
     position: relative;
     display: table;
     border-collapse: separate;
-}
+} */
 .input-group-addon:first-child {
     border-right: 0;
 }
@@ -3063,7 +3063,7 @@ td.text-right.mail-date {
     white-space: nowrap;
     vertical-align: middle;
 }
-.input-group .form-control {
+/* .input-group .form-control {
     position: relative;
     z-index: 2;
     float: left;
@@ -3082,12 +3082,12 @@ td.text-right.mail-date {
     width: 100%;
 	height:40px;
 	box-shadow:none;
-}
-.form-control:focus {
+} */
+/* .form-control:focus {
     border-color: #006DF0;
     outline: 0;
     box-shadow: none;
-}
+} */
 .custom-go-button .btn-primary, .custom-dropdowns-button .dropdown-toggle, .dropdown-segmented .dropdown-toggle, .dropdown-segmented .btn-white {
     background-color: #006DF0;
     border-color: #006DF0;

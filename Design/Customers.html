@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard</title>
+    <title>Customers</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -775,245 +775,100 @@
         
         <div class="row mt-mb-70 ml-mr-10 content-bgcolor">
             <div class="container-fluid">
-                <div class="row mb-10">
-                    <div class="col-md-2 col-sm-3 pr-0">
-                        <div class="box-xs">
-                            <img src="img/c3-graph1.png">
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-3 pr-0">
-                        <div class="box-xs">
-                            <img src="img/c3-graph1.png">
-                        </div>
-                    </div>
-					
-					 <div class="col-md-2 col-sm-3 pr-0">
-                        <div class="box-xs">
-                            <img src="img/c3-graph3.png" style="width: 100%;height: 100%;">
-                        </div>
-                    </div>
-                </div>
+
+                <div class="row my-3">
                 
-                <div class="row mb-10">
-                    <div class="col-md-6 col-sm-6 pr-0">
-                        <div class="box-md p-0">
-                            <div>
-                                <div class="box-head-bar">
-                                    <p><b>Key Performance Indicators</b></p>
-                                </div>
-                                <p class="box-subhead-bar">Payables</p>
-                                <table class="table table-hover table-sm" style="margin-bottom: 0;">
-                                    <tr>
-                                        <td>Today</td>
-                                        <td>$2563</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Same day last month</td>
-                                        <td>$2563</td>
-                                    </tr>
-                                </table>
-                                <p class="box-subhead-bar">Profit</p>
-                                <table class="table table-hover table-sm">
-                                    <tr>
-                                        <td>Last Period</td>
-                                        <td>$15263</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Same day last month</td>
-                                        <td>$2563</td>
-                                    </tr>
-                                </table>
+                    <div class="col-md-6">
+                        <p >Customers</p>
+                        <button type="button" class="btn btn-primary btn-sm w-25">Create</button>
+                        <button type="button" class="btn btn-secondary btn-sm w-25">Import</button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="px-1 bg-light rounded rounded-pill shadow-sm d-flex mb-2">
+                            <div class="input-group">
+                            <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" 
+                            class="form-control border-0 bg-light font-size-14">
+                            <div class="input-group-append">
+                                <button id="button-addon1" type="submit" class="btn btn-link text-primary w-25 font-size-14">
+                                <i class="fa fa-search"></i></button>
+                            </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 pr-0">
-                        <div class="box-md p-0">
-                            <div>
-                                <div class="box-head-bar">
-                                    <p><b>My Activities</b></p>
-                                </div>
-                                <div style="padding: 10px;height: auto;">
-                                    <p>cvndbvmdvbnv c dnbk</p>
-                                </div>
-                            </div> 
+                        <div>
+                            <span class="font-size-14">Filter <i class="fas fa-filter"></i></span> 
+
                         </div>
                     </div>
                 </div>
 
-
-                 <div class="row mb-10">
-                    <div class="col-md-12 col-sm-12 pr-0">
-                        <div class="box-lg">
-                            <div>
-                                <div class="box-head-bar">
-                                    <p><b>Quarterly Score Card</b></p>
+               <div class="row my-3">
+                    <div class="col-md-3">
+                        <div class="box-xxs">
+                            <div class="row ">
+                                <div class="col-md-3 pr-0">
+                                    <div class="icon-box">
+                                    <img src="img/Growth-graph1.png"  class="icon-img">
+                                    </div>
                                 </div>
-                                <table class="table table-bordered table-sm">
-                                    <thead>
-                                    <tr>
-                                        <th>Metric</th>
-                                        <th>Target</th>
-                                        <th>Actual</th>
-                                        <th>% achieved</th>
-                                        <th>Weightage</th>
-                                        <th>Score</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Client Submissions</td>
-                                        <td>474.0</td>
-                                        <td></td>
-                                        <td>0.00%</td>
-                                        <td>2.00%</td>
-                                        <td>0.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Client Submissions</td>
-                                        <td>474.0</td>
-                                        <td></td>
-                                        <td>0.00%</td>
-                                        <td>2.00%</td>
-                                        <td>0.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Candidates attending L1 Interview</td>
-                                        <td>94.82</td>
-                                        <td></td>
-                                        <td>0.00%</td>
-                                        <td>8.00%</td>
-                                        <td>0.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Candidates attending L2 Interview</td>
-                                        <td>94.82</td>
-                                        <td></td>
-                                        <td>0.00%</td>
-                                        <td>8.00%</td>
-                                        <td>0.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Client Confirmation</td>
-                                        <td>94.82</td>
-                                        <td></td>
-                                        <td>0.00%</td>
-                                        <td>8.00%</td>
-                                        <td>0.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Candidates starts</td>
-                                        <td>2.96</td>
-                                        <td></td>
-                                        <td>0.00%</td>
-                                        <td>20.00%</td>
-                                        <td>0.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Wins</td>
-                                        <td>22.2</td>
-                                        <td></td>
-                                        <td>0.00%</td>
-                                        <td>35.00%</td>
-                                        <td>0.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="5"><b>Score for Quater</b></td>
-                                        
-                                        <td>0.00</td> 
-                                    </tr>
-                                    <tr>
-                                        <td colspan="5"><b>on target score for the quater</b></td>
-                                        
-                                        <td>100.00</td> 
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                
+                                <div class="col-md-9">
+                                <div class="p-10">
+                                    <p class="font-size-14 text-left">Customers Name</p>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row mb-10">
-                    <div class="col-md-3 col-sm-3 pr-0">
-                        <div class="box-xs">
-                            <img src="img/c3-graph1.png" style="width: 100%;height: 100%;">
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 pr-0">
-                        <div class="box-xs">
-                            <img src="img/c3-graph1.png" style="width: 100%;height: 100%;">
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 pr-0">
-                        <div class="box-xs">
-                            <img src="img/c3-graph1.png" style="width: 100%;height: 100%;">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row mb-10">
-                    <div class="col-md-3 col-sm-3 pr-0">
-                        <div class="box-xs">
-                            <img src="img/piechart.png">
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 pr-0">
-                        <div class="box-xs">
-                            <img src="img/piechart.png">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-3 pr-0">
-                        <div class="box-xs">
-                            
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="row mb-10">
-                    <div class="col-md-6 col-sm-6 pr-0">
-                        <div class="box-md">
-                            <div>   
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <span class="font-size-16"><b>University Earnings</b></span>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="text-right">
-                                            <p>All Earnings are in million $</p>
-                                        </div>
+                    <div class="col-md-3">
+                        <div class="box-xxs">
+                            <div class="row ">
+                                <div class="col-md-3 pr-0">
+                                    <div class="icon-box">
+                                    <img src="img/Growth-graph1.png"  class="icon-img">
                                     </div>
                                 </div>
-                                <img src="img/bar-graph.png" style="width:100%;">
-                            </div>    
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 pr-0">
-                        <div class="box-md">
-                            <div>   
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <span class="font-size-16"><b>University Earnings</b></span>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="text-right">
-                                            <p>All Earnings are in million $</p>
-                                        </div>
-                                    </div>
+                                <div class="col-md-9">
+                                <div class="p-10">
+                                    <p class="font-size-14 text-left">Customers Name</p>
                                 </div>
-                            </div>  
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-               
+               </div>
+
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            
-           
-            
+
         </div>
-        
-        
-        
+
     </div>
     <div class="footer-copyright-area headerfooter-bgcolor">
         <div class="container-fluid">
