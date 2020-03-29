@@ -776,10 +776,10 @@
         <div class="row mt-mb-70 ml-mr-10 content-bgcolor">
             <div class="container-fluid">
 
-                <div class="row my-3">
+                <div class="row my-3 pb-3 border-bottom">
                 
                     <div class="col-md-6">
-                        <p >Customers</p>
+                        <p class="title-text">Customers</p>
                         <button type="button" class="btn btn-primary btn-sm w-25">Create</button>
                         <button type="button" class="btn btn-secondary btn-sm w-25">Import</button>
                     </div>
@@ -794,9 +794,28 @@
                             </div>
                             </div>
                         </div>
-                        <div>
-                            <span class="font-size-14">Filter <i class="fas fa-filter"></i></span> 
-
+                        <div class="d-flex justify-content-between font-size-14">
+                            <div class="d-flex">
+                                <div class="dropdown-toggle mr-3">
+                                <span class="font-size-14">
+                                    <i class="fas fa-filter" style="font-size: 12px;"></i> 
+                                    Filter 
+                                </span> 
+                                </div>
+                                <div class="dropdown-toggle mr-3">
+                                    <span class="font-size-14">
+                                        <i class="fas fa-align-justify" style="font-size: 12px;"></i> 
+                                        Group By
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fas fa-th p-2"></i>
+                                <i class="fas fa-list p-2"></i>
+                                <i class="far fa-calendar-alt p-2"></i>
+                                <i class="far fa-chart-bar p-2"></i>
+                                <i class="fas fa-clock p-2"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -836,7 +855,7 @@
                     </div>
                </div>
 
-                <table class="table table-sm">
+                <table class="table table-sm table-hover">
                     <thead>
                         <tr>
                         <th scope="col">#</th>
@@ -846,31 +865,36 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr id="1">
                         <th scope="row">1</th>
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
                         </tr>
-                        <tr>
+                        <tr id="2">
                         <th scope="row">2</th>
                         <td>Jacob</td>
                         <td>Thornton</td>
                         <td>@fat</td>
                         </tr>
-                        <tr>
+                        <tr id="3">
                         <th scope="row">3</th>
                         <td colspan="2">Larry the Bird</td>
                         <td>@twitter</td>
                         </tr>
                     </tbody>
                 </table>
+
+                <div class="text-center">
+                    <img src="img/client.png">
+                    <p><b>Create New Customers<b></p>
+                </div>
             </div>
 
         </div>
 
     </div>
-    <div class="footer-copyright-area headerfooter-bgcolor">
+    <div class="footer-copyright-area headerfooter-bgcolor position-fixed">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">

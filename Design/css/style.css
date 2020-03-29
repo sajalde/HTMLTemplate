@@ -1247,4 +1247,12 @@ input:checked + .slider:before {
   font-size: 14px;
 }
 
+.title-text {
+  font-weight: bold;
+  color: #0b429f;
+  font-size: 20px;
+  /* margin: 4px 0; */
+  margin-bottom: 4px;
+}
+
 /*# sourceMappingURL=style.css.map */

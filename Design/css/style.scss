@@ -488,6 +488,7 @@
   }
   .content-bgcolor{
     background: $contentBgColor;
+ 
   }
   .sidebar-nav .metismenu,#sidebar .sidebar-header{
     background: $sidebarBgColor !important;
@@ -713,4 +714,12 @@ input:checked + .slider:before {
 }
 .dropdown-item{
   font-size:14px;
+}
+
+.title-text{
+  font-weight: bold;
+    color: #0b429f;
+    font-size: 20px;
+    /* margin: 4px 0; */
+    margin-bottom: 4px;
 }
