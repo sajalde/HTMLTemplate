@@ -1255,4 +1255,8 @@ input:checked + .slider:before {
   margin-bottom: 4px;
 }
 
+#myTable td:hover {
+  cursor: move;
+}
+
 /*# sourceMappingURL=style.css.map */
