@@ -687,8 +687,9 @@
                         <button type="button" class="btn btn-secondary btn-sm w-auto">Discard</button>
                     </div>
                 </div>
-
-               <div class="container border">
+                
+                <!--Entry Details Start-->
+               <div class="container shadow">
                     <div class="d-flex flex-row-reverse border-bottom">
                         <div class="p-2 border-left">
                             <div class="d-flex">
@@ -729,7 +730,9 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                        
+                            <div class="avt-img float-right">
+                            <img class="img-fluid" src="img/placeholder.png">
+                            </div>
                         </div>
                     </div>
 
@@ -756,7 +759,7 @@
                                     <div class="form-group row mb-1">
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Product Type</label>
                                         <div class="col-sm-9">
-                                        <select class="form-control form-control-sm">
+                                        <select class="form-control form-control-sm custom-input">
                                             <option selected>Open this select menu</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -767,7 +770,7 @@
                                     <div class="form-group row mb-1">
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Product Category</label>
                                         <div class="col-sm-9">
-                                        <select class="form-control form-control-sm">
+                                        <select class="form-control form-control-sm custom-input">
                                             <option selected>Open this select menu</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -778,13 +781,13 @@
                                     <div class="form-group row mb-1">
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Internal Reference</label>
                                         <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm" id="colFormLabelSm">
+                                        <input type="text" class="form-control form-control-sm custom-input" id="colFormLabelSm">
                                         </div>
                                     </div>
                                     <div class="form-group row mb-1">
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Barcode</label>
                                         <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm" id="colFormLabelSm">
+                                        <input type="text" class="form-control form-control-sm custom-input" id="colFormLabelSm">
                                         </div>
                                     </div>
                         
@@ -793,25 +796,25 @@
                                     <div class="form-group row mb-1">
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">HSN Code</label>
                                         <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm" id="colFormLabelSm">
+                                        <input type="text" class="form-control form-control-sm custom-input" id="colFormLabelSm">
                                         </div>
                                     </div>
                                     <div class="form-group row mb-1">
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">HSN Description</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm" id="colFormLabelSm">
+                                            <input type="text" class="form-control form-control-sm custom-input" id="colFormLabelSm">
                                         </div>
                                     </div>
                                     <div class="form-group row mb-1">
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Sales Price</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm" id="colFormLabelSm">
+                                            <input type="text" class="form-control form-control-sm custom-input" id="colFormLabelSm">
                                         </div>
                                     </div>
                                     <div class="form-group row mb-1">
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Customer Taxes</label>
                                         <div class="col-sm-9">
-                                        <select class="custom-select custom-select-sm ">
+                                        <select class="custom-select custom-select-sm custom-input">
                                             <option selected>Open this select menu</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -822,7 +825,7 @@
                                     <div class="form-group row mb-1">
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Cost</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm" id="colFormLabelSm">
+                                            <input type="text" class="form-control form-control-sm custom-input" id="colFormLabelSm">
                                         </div>
                                     </div>
                                 </div>
@@ -845,18 +848,20 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Sales Description</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>
                                     </div>
                                 </div>
                             </div>
+
+                           
                         </div>
                         <div class="tab-pane fade" id="nav-purchase" role="tabpanel" aria-labelledby="nav-purchase-tab">
-                            <table class="table table-sm font-size-13">
+                            <table class="table table-sm table-hover font-size-13">
                                 <thead>
                                     <tr>
-                                    <th scope="col">Vendor</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Price</th>
+                                    <th scope="col" class="w-50">Vendor</th>
+                                    <th scope="col" class="w-25">Quantity</th>
+                                    <th scope="col" class="w-25">Price</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -878,15 +883,79 @@
                             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLongTitle">Create Vendors</h5>
-                                        <button type="button" class="close w-auto" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLongTitle">Create Vendors</p>
+                                            <button type="button" class="close w-auto" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <p><b>Vendor</b></p>
+                                                        <div class="form-group row mb-1">
+                                                            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm font-size-13">Vendor</label>
+                                                            <div class="col-sm-8">
+                                                            <select class="form-control form-control-sm custom-input mb-2">
+                                                                <option selected>Open this select menu</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            </div>
+                                                            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm font-size-13"> Product Name</label>
+                                                            <div class="col-sm-8">
+                                                            <input type="text" class="form-control form-control-sm custom-input mb-2" id="colFormLabelSm">
+                                                            </div>
+                                                            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm font-size-13"> Product Code</label>
+                                                            <div class="col-sm-8">
+                                                            <input type="text" class="form-control form-control-sm custom-input mb-2" id="colFormLabelSm">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p><b>Price List</b></p>
+                                                        <div class="form-group row mb-1">
+                                                            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm font-size-13">Quantity</label>
+                                                            <div class="col-sm-8">
+                                                            <select class="form-control form-control-sm custom-input mb-2">
+                                                                <option selected>Open this select menu</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            </div>
+                                                            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm font-size-13">Price</label>
+                                                            <div class="col-sm-8">
+                                                            <input type="text" class="form-control form-control-sm custom-input mb-2" id="colFormLabelSm">
+                                                            </div>
+                                                            <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm font-size-13"> Validate</label>
+                                                            <div class="col-sm-8 d-flex">
+                                                            <select class="form-control form-control-sm custom-input mb-2">
+                                                                <option selected></option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            <span class="mx-2">to</span>
+                                                            <select class="form-control form-control-sm custom-input mb-2">
+                                                                <option selected></option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bordr-top">
+                                            <button type="button" class="btn btn-primary btn-sm w-auto">Save & Close</button>
+                                            <button type="button" class="btn btn-primary btn-sm w-auto">Save & New</button>
+                                            <button type="button" class="btn btn-secondary btn-sm w-auto" data-dismiss="modal">Discard</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -894,7 +963,7 @@
                             <div class="form-group row mb-1">
                                 <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Vendor Taxes</label>
                                 <div class="col-sm-9 mb-2">
-                                <select class="form-control form-control-sm ">
+                                <select class="form-control form-control-sm custom-input">
                                     <option selected>Open this select menu</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
@@ -929,7 +998,7 @@
                                     <div class="form-group row mb-1">
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Income Account</label>
                                         <div class="col-sm-9 mb-2">
-                                        <select class="form-control form-control-sm">
+                                        <select class="form-control form-control-sm custom-input">
                                             <option selected>Open this select menu</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -943,7 +1012,7 @@
                                     <div class="form-group row mb-1">
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Expense Account</label>
                                         <div class="col-sm-9 mb-2">
-                                        <select class="form-control form-control-sm">
+                                        <select class="form-control form-control-sm custom-input">
                                             <option selected>Open this select menu</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -952,7 +1021,7 @@
                                         </div>
                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Price Difference Account</label>
                                         <div class="col-sm-9 mb-2">
-                                        <select class="form-control form-control-sm">
+                                        <select class="form-control form-control-sm custom-input">
                                             <option selected>Open this select menu</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -962,13 +1031,78 @@
                                     </div> 
                                 </div>
                             </div>
+
+                            <div class="row border-top py-3">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label font-size-13">Password</label>
+                                        <div class="col-sm-9">
+                                        <input type="password" class="form-control form-control-sm font-size-13" id="inputPassword" placeholder="Password">
+                                        </div>
+                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Customer Taxes</label>
+                                        <div class="col-sm-9">
+                                        <select class="custom-select custom-select-sm font-size-13">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label font-size-13">Password</label>
+                                        <div class="col-sm-9">
+                                        <input type="password" class="form-control form-control-sm font-size-13" id="inputPassword" placeholder="Password">
+                                        </div>
+                                         <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm font-size-13">Customer Taxes</label>
+                                        <div class="col-sm-9">
+                                        <select class="custom-select custom-select-sm font-size-13">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div>
                         </div>
                     </div>
                </div>
-            </div>
-
+                <!--Entry Details End--> 
+            </div> 
         </div>
 
+        <div class="my-3 font-size-13">
+        <div class="log-bottom-content shadow-sm border-top">
+            <div class="row p-3">
+                <div class="col-md-6">
+                    <div class="log-content">
+                        <span>Send message</span>
+                        <span>Log Note</span>
+                        <span>Schecdule activity</span>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="float-right log-content">
+                        <span>0</span>
+                        <span>Follow</span>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+                <hr class="m-0" />
+            <div class="d-flex p-4">
+                <div>
+                    <p class="mb-0"><b>Meghna</b></p>
+                    <p>Creating new record</p>
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
     <div class="footer-copyright-area headerfooter-bgcolor position-fixed">
         <div class="container-fluid">
