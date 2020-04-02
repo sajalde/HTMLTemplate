@@ -766,4 +766,16 @@ input:checked + .slider:before {
 }
 .avt-img :hover{
   cursor:pointer;
+  display:block;
+}
+
+.form-control:disabled, .form-control[readonly]{
+  background-color: #fff !important;
+}
+.img-controls{
+    background: black;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    display:none;
 }
