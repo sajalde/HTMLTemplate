@@ -736,9 +736,9 @@ input:checked + .slider:before {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    color: #1136a0 !important;
-    border-bottom: 4px solid #101492  !important;
-    background-color:#e8d9fd  !important;
+    color: $customTabTextColor !important;
+    border-bottom: 4px solid $customTabBorderColor  !important;
+    background-color:$customTabBgColor  !important;
 }    
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
   border-color: #fff #fff #fff;
@@ -778,4 +778,8 @@ input:checked + .slider:before {
     padding: 5px;
     font-size: 12px;
     display:none;
+}
+.btn-custom-color{
+  background: $headerBgColor;
+  color: #fff;
 }

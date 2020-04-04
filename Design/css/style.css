@@ -1318,4 +1318,9 @@ input:checked + .slider:before {
   display: none;
 }
 
+.btn-custom-color {
+  background: #006DF0;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
