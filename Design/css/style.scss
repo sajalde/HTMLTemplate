@@ -779,7 +779,25 @@ input:checked + .slider:before {
     font-size: 12px;
     display:none;
 }
-.btn-custom-color{
+.btn-custom-active{
   background: $headerBgColor;
-  color: #fff;
+  a{
+    color: #fff;
+  }
+  
+}
+.btn-custom-secondary{
+  background: #fff;
+  a{
+    color: $headerBgColor;
+  }
+}
+.btn-custom-secondary:hover{
+  background: #f2f2f2;
+}
+.box-link a{
+  color:#000;
+  :hover{
+    color: $headerBgColor;
+  }
 }
