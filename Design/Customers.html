@@ -78,9 +78,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/TableDnD/1.0.3/jquery.tablednd.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js"></script>
+<script>
+
+</script>
 </head>
 
-<body style="overflow-x: hidden;">
+<body style="overflow-x: hidden;" >
+
+<!-- Preloader -->
+<div id="loader"></div>
     <!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -733,8 +739,8 @@
                                 </div>
                             </div>
                             <div>
-                                <i class="fas fa-th p-2"></i>
-                                <i class="fas fa-list p-2"></i>
+                                <i class="fas fa-th p-2" onclick="grid()"></i>
+                                <i class="fas fa-list p-2" onclick="list()"></i>
                                 <i class="far fa-calendar-alt p-2"></i>
                                 <i class="far fa-chart-bar p-2"></i>
                                 <i class="fas fa-clock p-2"></i>
@@ -742,41 +748,43 @@
                         </div>
                     </div>
                 </div>
-
-               <div class="row my-3">
-                    <div class="col-md-3">
+            <div >
+               <div class="row my-3" id="gridView">
+                    <div class="col-md-4 pr-0">
                         <div class="box-xxs box-link">
                             <a href="ViewCustomer.html">
                                 <div class="row ">
-                                    <div class="col-md-3 pr-0">
-                                        <div class="icon-box pt-2">
+                                    <div class="col-md-2 pr-0">
+                                        <div class="icon-box pt-3">
                                         <img src="img/Growth-graph1.png"  class="icon-img">
                                         </div>
                                     </div>
-                                    <div class="col-md-9">
-                                        <div class="p-10 text-left " >
-                                            <p class="font-size-14 mb-0"><b>Customers Name</b></p>
-                                            <span class="font-size-13">Lorem ipsum</span>
+                                    <div class="col-md-10 py-1">
+                                        <div class="text-left " >
+                                            <p class="font-size-14 mb-0"><b>Schwing Setter(India) pvt. Ltd.</b></p>
+                                            <p class="font-size-13 mb-0">Kolkata</p>
+                                            <p class="font-size-13 mb-0">033 3355 5588</p>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4 pr-0">
                         <div class="box-xxs box-link">
                             <a href="ViewCustomer.html">
                                 <div class="row ">
-                                    <div class="col-md-3 pr-0">
-                                        <div class="icon-box pt-2">
+                                    <div class="col-md-2 pr-0">
+                                        <div class="icon-box pt-3">
                                         <img src="img/Growth-graph1.png"  class="icon-img">
                                         </div>
                                     </div>
-                                    <div class="col-md-9">
-                                    <div class="p-10 text-left " >
-                                        <p class="font-size-14 mb-0"><b>Customers Name</b></p>
-                                        <span class="font-size-13">Lorem ipsum</span>
-                                    </div>
+                                    <div class="col-md-10 py-1">
+                                        <div class="text-left " >
+                                            <p class="font-size-14 mb-0"><b>Schwing Setter(India) pvt. Ltd.</b></p>
+                                            <p class="font-size-13 mb-0">Kolkata</p>
+                                            <p class="font-size-13 mb-0">033 3355 5588</p>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -784,56 +792,52 @@
                     </div>
                </div>
 
-                <table class="table table-hover table-sm" id="table">
+                <table class="table table-hover table-sm font-size-14" id="tableView" >
                     <thead>
                         <tr>
-                        <th scope="col" class="text-center">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                            <th>Vendor</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">City</th>
+                            <th scope="col">State</th>
+                            <th scope="col">Mobile No</th>
+                            <th scope="col">GST Number</th>
+                            <th scope="col">Contact Name</th>
+                            <th scope="col">Contact No</th>
+                            <th scope="col">Email Id</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr id="1" >
-                        <td class="index">1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <tr>
+                            <td class="index">V00001</td>
+                            <td>Schwing Setter(India) Pvt. Ltd</td>
+                            <td>Kolkata</td>
+                            <td>West Bengal</td>
+                            <td>033 3355 5588</td>
+                            <td>19AADCS5069DIZ9</td>
+                            <td>Mr.Mohile</td>
+                            <td>801728864</td>
+                            <td>trade_balaji@yahoo.com</td>
                         </tr>
-                        <tr id="2">
-                        <td class="index">2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <tr>
+                            <td class="index">V00002</td>
+                            <td>Balaji Pvt. Ltd</td>
+                            <td>Kolkata</td>
+                            <td>West Bengal</td>
+                            <td>033 3355 5588</td>
+                            <td>19AADCS50</td>
+                            <td>Mr.Mohile</td>
+                            <td>801728864</td>
+                            <td>trade_balaji@yahoo.com</td>
                         </tr>
-                        <tr id="3">
-                        <td class="index">3</td>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
-                <!-- <table class="table table-sm table-hover"
-                id="table"
-                data-pagination="true"
-                data-search="true"
-                data-show-toggle="true"
-                data-use-row-attr-func="true"
-                data-reorderable-rows="true"
-                data-url="json/tableData.json">
-                <thead>
-                    <tr>
-                    <th data-field="id" data-sortable="true">ID</th>
-                    <th data-field="name" data-sortable="true">Item Name</th>
-                    <th data-field="price" data-sortable="true">Item Price</th>
-                    </tr>
-                </thead>
-                </table> -->
-                <div class="text-center">
+                
+                <div class="text-center mt-5" id="createView">
                     <img src="img/client.png">
                     <p><b>Create New Customers<b></p>
                 </div>
+            </div>
             </div>
 
         </div>
@@ -921,19 +925,29 @@
 		============================================ -->
     <script src="js/tawk-chat.js"></script>
     <script>
-        function allowDrop(ev) {
-            ev.preventDefault();
-            }
+        var x = document.getElementById("gridView");
+        var y = document.getElementById("tableView");
+        var z = document.getElementById("createView");
+        function grid() {
+            if (x.style.display = "flex") {
+                y.style.display = "none";
+                z.style.display = "none";
+            } 
+        }
+        function list() {
+            if (y.style.display = "table") {
+                x.style.display = "none";
+                z.style.display = "none";
+            } 
+        }
+        function noView() {
+            x.style.display = "none";
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+        window.onload=noView;
 
-            function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
-            }
-
-            function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-            }
+        
     </script>
 
     <script>
@@ -941,9 +955,6 @@
             $('#main_navbar').bootnavbar();
         });
 
-         $(function() {
-             $('#table').bootstrapTable()
-        })
     </script>
 
 </body>
