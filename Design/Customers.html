@@ -78,15 +78,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/TableDnD/1.0.3/jquery.tablednd.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js"></script>
-<script>
 
-</script>
 </head>
 
 <body style="overflow-x: hidden;" >
 
 <!-- Preloader -->
-<div id="loader"></div>
+
+
     <!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -690,17 +689,19 @@
         <div class="row mt-mb-70 ml-mr-10 content-bgcolor" style="height:100vh;">
             <div class="container-fluid">
 
-                <div class="row my-3 pb-2 border-bottom">
+                <div class="row my-3 border-bottom">
                 
                     <div class="col-md-6">
                         <p class="title-text">Customers</p>
-                        <label class="btn btn-custom-active  btn-sm w-auto">
-                            <a href="NewCustomers.html">Create</a>
-                        </label>
-                    
-                        <label class="btn btn-custom-secondary btn-sm w-auto">
-                            <a href="ImportFile.html">Import</a>
-                        </label>
+                        <div id="createBtn">
+                            <label class="btn btn-custom-active  btn-sm w-auto">
+                                <a href="NewCustomers.html">Create</a>
+                            </label>
+                        
+                            <label class="btn btn-custom-secondary btn-sm w-auto">
+                                <a href="ImportFile.html">Import</a>
+                            </label>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="px-1 bg-light rounded rounded-pill shadow-sm d-flex mb-2">
@@ -738,29 +739,29 @@
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <label onclick="grid()" style="cursor:pointer">
+                            <div class="right-icons">
+                                <label onclick="grid()" style="cursor:pointer" data-toggle="tooltip" data-placement="left" title="View Grid">
                                     <i class="fas fa-th p-2" ></i>
                                 </label>
-                                <label  onclick="list()" style="cursor:pointer">
+                                <label  onclick="list()" style="cursor:pointer" data-toggle="tooltip" data-placement="left" title="View List">
                                     <i class="fas fa-list p-2"></i>
                                 </label>
-                                <label style="cursor:pointer">
+                                <!-- <label style="cursor:pointer">
                                     <i class="far fa-calendar-alt p-2"></i>
                                 </label>
                                 <label style="cursor:pointer">
                                     <i class="far fa-chart-bar p-2"></i>
-                                </label>
-                                <label style="cursor:pointer">
+                                </label> -->
+                                <label onclick="activity()" style="cursor:pointer" data-toggle="tooltip" data-placement="left" title="View Activity">
                                     <i class="fas fa-clock p-2"></i>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
-            <div >
+            <div id="load">
                <div class="row my-3" id="gridView">
-                    <div class="col-md-4 pr-0">
+                    <div class="col-md-4 pr-0 mb-2">
                         <div class="box-xxs box-link">
                             <a href="ViewCustomer.html">
                                 <div class="row ">
@@ -780,7 +781,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 pr-0">
+                    <div class="col-md-4 pr-0 mb-2">
                         <div class="box-xxs box-link">
                             <a href="ViewCustomer.html">
                                 <div class="row ">
@@ -847,6 +848,32 @@
                     <img src="img/client.png">
                     <p><b>Create New Customers<b></p>
                 </div>
+
+                <table class="table table-bordered table-sm font-size-14" id="tableActivity">
+                    <thead>
+                        <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Call</th>
+                        <th scope="col">Meeting</th>
+                        <th scope="col">To Do</th>
+                        <th scope="col">Upload Document</th>
+                        <th scope="col">Exception</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
             </div>
             </div>
 
@@ -938,21 +965,38 @@
         var x = document.getElementById("gridView");
         var y = document.getElementById("tableView");
         var z = document.getElementById("createView");
+        var act = document.getElementById("tableActivity");
+        var createBtn = document.getElementById("createBtn");
+
         function grid() {
             if (x.style.display = "flex") {
                 y.style.display = "none";
                 z.style.display = "none";
+                act.style.display = "none";
+                createBtn.style.display = "flex";
             } 
         }
         function list() {
             if (y.style.display = "table") {
                 x.style.display = "none";
                 z.style.display = "none";
+                act.style.display = "none";
+                createBtn.style.display = "flex";
+            } 
+        }
+        function activity() {
+            if (act.style.display = "table") {
+                x.style.display = "none";
+                y.style.display = "none";
+                z.style.display = "none";
+                createBtn.style.display = "none";
             } 
         }
         function noView() {
             x.style.display = "none";
             y.style.display = "none";
+            y.style.display = "none";
+            act.style.display = "none";
             z.style.display = "block";
         }
         window.onload=noView;
@@ -965,6 +1009,7 @@
             $('#main_navbar').bootnavbar();
         });
 
+        
     </script>
 
 </body>

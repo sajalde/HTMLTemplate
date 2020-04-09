@@ -1343,4 +1343,8 @@ input:checked + .slider:before {
   color: #006DF0;
 }
 
+.right-icons label:hover {
+  background: #f2f2f2;
+}
+
 /*# sourceMappingURL=style.css.map */
