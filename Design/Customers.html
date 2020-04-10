@@ -84,7 +84,9 @@
 <body style="overflow-x: hidden;" >
 
 <!-- Preloader -->
-
+<!-- <div id="preloader">
+  <div id="loader"></div>
+</div> -->
 
     <!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -183,7 +185,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <nav class="navbar navbar-expand-lg navbar-dark headerfooter-bgcolor" id="main_navbar">
                             
-                                <button type="button" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn btn-demo" data-toggle="modal" data-target="#myModal">
+                                <button type="button" class="btn bar-button-pro header-drl-controller-btn navbar-btn btn-demo" data-toggle="modal" data-target="#myModal">
                                     <i class="fas fa-braille" style="font-size: 20px;"></i>
                                 </button>
                                 <!-- Modal -->
@@ -686,7 +688,7 @@
             </div>
         </div>
         
-        <div class="row mt-mb-70 ml-mr-10 content-bgcolor" style="height:100vh;">
+        <div class="row mt-mb-70 ml-mr-10 content-bgcolor" style="height:100vh;" id="myDiv" style="display:none;">
             <div class="container-fluid">
 
                 <div class="row my-3 border-bottom">
@@ -804,7 +806,7 @@
                </div>
 
                 <table class="table table-hover table-sm font-size-14" id="tableView" >
-                    <thead>
+                    <thead class="table-head-bgcolor">
                         <tr>
                             <th>Vendor</th>
                             <th scope="col">Name</th>
@@ -893,7 +895,7 @@
     </div>
     <!-- jquery
 		============================================ -->
-    <!-- <script src="js/vendor/jquery-1.12.4.min.js"></script> -->
+     <script src="js/vendor/jquery-1.12.4.min.js"></script> 
     <!-- bootstrap JS
 		============================================ -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
@@ -932,35 +934,11 @@
 		============================================ -->
     <script src="js/metisMenu/metisMenu.min.js"></script>
     <script src="js/metisMenu/metisMenu-active.js"></script>
-    <!-- c3 JS
-		============================================ -->
-        <script src="js/c3-charts/d3.min.js"></script>
-        <script src="js/c3-charts/c3.min.js"></script>
-        <script src="js/c3-charts/c3-active.js"></script>
-    <!-- morrisjs JS
-		============================================ -->
-    <script src="js/morrisjs/raphael-min.js"></script>
-    <script src="js/morrisjs/morris.js"></script>
-    <script src="js/morrisjs/home3-active.js"></script>
-    <!-- morrisjs JS
-		============================================ -->
-    <script src="js/sparkline/jquery.sparkline.min.js"></script>
-    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
-    <script src="js/sparkline/sparkline-active.js"></script>
-    <!-- calendar JS
-		============================================ -->
-    <script src="js/calendar/moment.min.js"></script>
-    <script src="js/calendar/fullcalendar.min.js"></script>
-    <script src="js/calendar/fullcalendar-active.js"></script>
-    <!-- plugins JS
-		============================================ -->
-    <script src="js/plugins.js"></script>
+   
     <!-- main JS
 		============================================ -->
     <script src="js/main.js"></script>
-    <!-- tawk chat JS
-		============================================ -->
-    <script src="js/tawk-chat.js"></script>
+    
     <script>
         var x = document.getElementById("gridView");
         var y = document.getElementById("tableView");
@@ -1005,10 +983,16 @@
     </script>
 
     <script>
-        $(function () {
-            $('#main_navbar').bootnavbar();
-        });
-
+    // $(function () {
+    //     $('#main_navbar').bootnavbar();
+    // });
+    $(document).ready(function () {
+    setTimeout(function(){
+        console.log('hejsan');
+        $('#loader').fadeout(100);
+        }, 1000);
+    });
+        
         
     </script>
 

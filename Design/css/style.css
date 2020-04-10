@@ -270,7 +270,7 @@ h2 {
 }
 
 .headerfooter-bgcolor {
-  background: #006DF0 !important;
+  background: #10d004 !important;
 }
 
 .header-top-menu .navbar-nav > .nav-text-color > a, .header-right-info ul.header-right-menu > .nav-text-color > a {
@@ -278,8 +278,8 @@ h2 {
 }
 
 .btn-bgcolor {
-  background-color: #5bc0de;
-  border-color: #5bc0de;
+  background-color: #10d004;
+  border-color: #10d004;
   color: #fff;
 }
 
@@ -319,11 +319,11 @@ h2 {
 }
 
 .sidebar-bgcolor {
-  background: #000 !important;
+  background: #1f3e02 !important;
 }
 
 .sidebar-icon-color {
-  color: #006DF0;
+  color: #10d004;
 }
 
 .sidebar-text-color {
@@ -331,11 +331,11 @@ h2 {
 }
 
 .sidebar-nav .metismenu a:hover, .sidebar-nav .metismenu a:focus, .sidebar-nav .metismenu a:active {
-  background: #042f63 !important;
+  background: #07820a !important;
 }
 
 .sidebar-nav ul {
-  background: #3e9ae6 !important;
+  background: #10d004 !important;
 }
 
 .sidebar-nav .metismenu a {
@@ -1035,7 +1035,7 @@ h2 {
 }
 
 .sidebar-nav .metismenu, #sidebar .sidebar-header {
-  background: #000 !important;
+  background: #1f3e02 !important;
 }
 
 .modal-content {
@@ -1249,7 +1249,7 @@ input:checked + .slider:before {
 
 .title-text {
   font-weight: bold;
-  color: #0b429f;
+  color: #07820a;
   font-size: 20px;
   /* margin: 4px 0; */
   margin-bottom: 4px;
@@ -1266,9 +1266,9 @@ input:checked + .slider:before {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #1136a0 !important;
-  border-bottom: 4px solid #101492 !important;
-  background-color: #e8d9fd !important;
+  color: #07820a !important;
+  border-bottom: 4px solid #07820a !important;
+  background-color: #ecffe4 !important;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -1276,12 +1276,12 @@ input:checked + .slider:before {
 }
 
 .nav-tabs .nav-link {
-  color: #1136a0;
+  color: #07820a;
 }
 
 .nav-tabs .nav-link:hover {
-  background: #f2f2f2;
-  color: #1136a0;
+  background: #07820a;
+  color: #ecffe4;
 }
 
 .log-bottom-content {
@@ -1319,7 +1319,7 @@ input:checked + .slider:before {
 }
 
 .btn-custom-active {
-  background: #006DF0;
+  background: #10d004;
 }
 .btn-custom-active a {
   color: #fff;
@@ -1329,7 +1329,7 @@ input:checked + .slider:before {
   background: #fff;
 }
 .btn-custom-secondary a {
-  color: #006DF0;
+  color: #10d004;
 }
 
 .btn-custom-secondary:hover {
@@ -1340,11 +1340,93 @@ input:checked + .slider:before {
   color: #000;
 }
 .box-link a :hover {
-  color: #006DF0;
+  color: #10d004;
 }
 
 .right-icons label:hover {
   background: #f2f2f2;
+}
+
+.table-head-bgcolor {
+  background: #ecffe4;
+  color: #07820a;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9370DB;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #BA55D3;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FF00FF;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
