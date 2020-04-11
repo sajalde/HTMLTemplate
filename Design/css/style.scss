@@ -496,10 +496,12 @@
  .modal-content{
   background: $modalBgColor;
     .modal-header{
-      background-color: $modalHeaderBgColor
+      background-color: $modalHeaderBgColor;
+      padding: 10px;
    }
    .modal-title{
     color: #fff;
+    font-size: 14px;
   }
   .close{
     color: #fff;
@@ -756,7 +758,7 @@ input:checked + .slider:before {
 }
 .log-content span{
   padding:10px;
-  color:#5f5f88;
+  color:$logBottomTextColor;
 }
 .avt-img img{
     max-width: 90px;
@@ -812,6 +814,18 @@ input:checked + .slider:before {
   color: $tableHeaderTextColor;
 }
 
+.search-text-color{
+    color: $searchIconColor !important;
+}
+
+.btn-save-modalbtn{
+  background: $modalBtnsuccessBgColor;
+  color:$modalBtnsuccessTextColor;
+}
+.btn-cancel-modalbtn{
+  background: $modalBtncancelBgColor;
+  color:$modalBtncancelTextColor;
+}
 #preloader {
     position: fixed;
     top: 0;
