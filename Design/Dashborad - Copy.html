@@ -1,0 +1,952 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap CSS
+		============================================ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+   
+    
+    
+    
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="css/style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/responsive.css">
+   
+     <!--BootNavbar CSS-->
+     <link rel="stylesheet" href="css/bootnavbar.css">
+
+   
+
+ 
+</head>
+
+<body style="overflow-x: hidden;">
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+    <!-- Start Left menu area -->
+   
+    <!-- End Left menu area -->
+    <!-- Start Welcome area -->
+    
+    <div class="header-advance-area">
+        <div class="header-top-area headerfooter-bgcolor" style="height: 48px;">
+            <div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <nav class="navbar navbar-expand-lg navbar-dark headerfooter-bgcolor" id="main_navbar">
+                        
+                            <button type="button" class="btn bar-button-pro header-drl-controller-btn navbar-btn btn-demo" data-toggle="modal" data-target="#myModal">
+                                <i class="fas fa-braille" style="font-size: 20px;"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            
+                                            <span class="modal-title" id="myModalLabel">App </span>
+                                            <i data-dismiss="modal" aria-label="Close" class="close fas fa-window-close"></i>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <ul class="side_modal">
+                                                <li><img src="img/outlook.png" style="width: 10%;"> Purchase Management</li>
+                                                <li><img src="img/word.png" style="width: 10%;"> HR Module</li>
+                                                <li><img src="img/powerpoint.png" style="width: 10%;"> Accounting</li>
+                                                <li><img src="img/excel.png" style="width: 10%;"> Quality Control</li>
+                                                <li><img src="img/onedrive.png" style="width: 10%;"> Sales & Distribution</li>
+                                            </ul>
+                                            
+                                        </div>
+
+                                    </div><!-- modal-content -->
+                                </div><!-- modal-dialog -->
+                            </div>
+                            <!-- modal -->
+                            <a href="index.html"><img class="main-logo" src="img/logo_praxis.gif" alt=""/>
+                            </a>
+                            <button class="navbar-toggler collapse-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Overview
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Miscllaneous
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                        
+                                                    <li class="nav-item dropdown">
+                                                        <a class="dropdown-item" href="#">Jornal Entries</a>
+                                                    </li>     
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Jornals
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                    <li><a class="dropdown-item" href="#">Sales</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Purchase</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Bank and Cash</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Miscllaneous</a></li>     
+                                                      
+                                                </ul>
+                                            </li>
+                                             <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Ledger
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                     <li><a class="dropdown-item">General Ledger</a></li>                                    
+                                                     <li><a class="dropdown-item">Partner Ledger</a></li>    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Customers
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Miscllaneous
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                        
+                                                    <li class="nav-item dropdown">
+                                                        <a class="dropdown-item" href="#">Jornal Entries</a>
+                                                    </li>     
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Jornals
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                    <li><a class="dropdown-item" href="#">Sales</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Purchase</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Bank and Cash</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Miscllaneous</a></li>     
+                                                      
+                                                </ul>
+                                            </li>
+                                             <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Ledger
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                     <li><a class="dropdown-item">General Ledger</a></li>                                    
+                                                     <li><a class="dropdown-item">Partner Ledger</a></li>    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Vendors
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Miscllaneous
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                        
+                                                    <li class="nav-item dropdown">
+                                                        <a class="dropdown-item" href="#">Jornal Entries</a>
+                                                    </li>     
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Jornals
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                    <li><a class="dropdown-item" href="#">Sales</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Purchase</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Bank and Cash</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Miscllaneous</a></li>     
+                                                      
+                                                </ul>
+                                            </li>
+                                             <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Ledger
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                     <li><a class="dropdown-item">General Ledger</a></li>                                    
+                                                     <li><a class="dropdown-item">Partner Ledger</a></li>    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Accounting
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Miscllaneous
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                        
+                                                    <li class="nav-item dropdown">
+                                                        <a class="dropdown-item" href="#">Jornal Entries</a>
+                                                    </li>     
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Jornals
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                    <li><a class="dropdown-item" href="#">Sales</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Purchase</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Bank and Cash</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Miscllaneous</a></li>     
+                                                      
+                                                </ul>
+                                            </li>
+                                             <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Ledger
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                     <li><a class="dropdown-item">General Ledger</a></li>                                    
+                                                     <li><a class="dropdown-item">Partner Ledger</a></li>    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Reporting
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Miscllaneous
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                        
+                                                    <li class="nav-item dropdown">
+                                                        <a class="dropdown-item" href="#">Jornal Entries</a>
+                                                    </li>     
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Jornals
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                    <li><a class="dropdown-item" href="#">Sales</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Purchase</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Bank and Cash</a></li>                                    
+                                                    <li><a class="dropdown-item" href="#">Miscllaneous</a></li>     
+                                                      
+                                                </ul>
+                                            </li>
+                                             <li class="nav-item dropdown">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Ledger
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                     <li><a class="dropdown-item">General Ledger</a></li>                                    
+                                                     <li><a class="dropdown-item">Partner Ledger</a></li>    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" >
+                                            <i class="fas fa-phone"></i>
+                                            
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle drop-caret" id="navbarDropdown"  role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                         <div class="dropdown-menu message-dropdown" aria-labelledby="navbarDropdown">
+                                            <div class="message-single-top px-3 border-bottom">
+                                                <h1 class="py-2">Message</h1>
+                                            </div>
+                                            <ul class="message-menu p-3">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="message-img">
+                                                            <img src="img/contact/1.jpg" alt="">
+                                                        </div>
+                                                        <div class="message-content">
+                                                            <span class="message-date">16 Sept</span>
+                                                            <h2>Advanda Cro</h2>
+                                                            <p>Please done this project as soon possible.</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="message-img">
+                                                            <img src="img/contact/4.jpg" alt="">
+                                                        </div>
+                                                        <div class="message-content">
+                                                            <span class="message-date">16 Sept</span>
+                                                            <h2>Sulaiman din</h2>
+                                                            <p>Please done this project as soon possible.</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="message-img">
+                                                            <img src="img/contact/3.jpg" alt="">
+                                                        </div>
+                                                        <div class="message-content">
+                                                            <span class="message-date">16 Sept</span>
+                                                            <h2>Victor Jara</h2>
+                                                            <p>Please done this project as soon possible.</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="message-img">
+                                                            <img src="img/contact/2.jpg" alt="">
+                                                        </div>
+                                                        <div class="message-content">
+                                                            <span class="message-date">16 Sept</span>
+                                                            <h2>Victor Jara</h2>
+                                                            <p>Please done this project as soon possible.</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="message-view px-3 pt-2 border-top">
+                                                <a href="#">View All Messages</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle drop-caret" href="#" data-toggle="modal" data-target="#myModal1">
+                                             <i class="fas fa-cog"></i>
+                                        </a> 
+                                         <!-- Modal -->
+                                        <div class="modal right fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-header">
+                                                        
+                                                        <span class="modal-title" id="myModalLabel1">Settings </span>
+                                                        <i data-dismiss="modal" aria-label="Close" class="close fas fa-window-close"></i>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <form class="navbar-form navbar-left" role="search">
+                                                            <div class="form-group" style="display: flex;">
+                                                                <input type="text" class="form-control" placeholder="Search"><i class="searchIcon fas fa-search"></i>
+                                                            </div>
+                                                            </form>
+                                                        <h5>Theme</h5>
+                                                        <ul style="display: flex;justify-content: space-evenly;">
+                                                            <li><div style="padding: 20px;background: #006DF0;"></div></li>
+                                                            <li><div style="padding: 20px;background: rgb(2, 134, 35);"></div></li>
+                                                            <li><div style="padding: 20px;background: rgb(187, 9, 113);"></div></li>
+                                                            <li><div style="padding: 20px;background: rgb(153, 4, 41);"></div></li>
+                                                            <li><div style="padding: 20px;background: rgb(153, 93, 4);"></div></li>
+                                                        </ul>
+
+                                                        <div style="display: flex;justify-content: space-between;margin: 10px 0;">
+                                                            <p><b>Dark Mode</b></p>
+                                                            <label class="switch">
+                                                                <input type="checkbox">
+                                                                <span class="slider round"></span>
+                                                                </label>
+                                                        </div>
+                                                        <div style="display: flex;justify-content: space-between;margin: 10px 0;">
+                                                            <p><b>Focused Inbox</b></p>
+                                                            <label class="switch">
+                                                                <input type="checkbox">
+                                                                <span class="slider round"></span>
+                                                                </label>
+                                                        </div>
+
+                                                        <div style="display: flex;justify-content: space-between;margin: 10px 0;">
+                                                            <p><b>Desktop Notification</b></p>
+                                                            <label class="switch">
+                                                                <input type="checkbox">
+                                                                <span class="slider round"></span>
+                                                                </label>
+                                                        </div>
+
+                                                        <p style="font-size: 16px;color: #006DF0;">Conversion view</p>
+                                                        <div class="radio">
+                                                            <label><input type="radio" name="optradio" checked>Newest messages on top</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                            <label><input type="radio" name="optradio">Newest messages on bottom</label>
+                                                            </div>
+                                                            <div class="radio disabled">
+                                                            <label><input type="radio" name="optradio" disabled>Off</label>
+                                                            </div>
+
+                                                            <p style="font-size: 16px;color: #006DF0;">Reading Pane</p>
+                                                            
+                                                        <div class="radio">
+                                                            <label><input type="radio" name="optradio" checked>Show on the right</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                            <label><input type="radio" name="optradio">Show on the bottom</label>
+                                                            </div>
+                                                            <div class="radio disabled">
+                                                            <label><input type="radio" name="optradio" disabled>Hide</label>
+                                                            </div>
+                                                    </div>
+
+                                                </div><!-- modal-content -->
+                                            </div><!-- modal-dialog -->
+                                        </div><!-- modal -->  
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle drop-caret" id="navbarDropdown"  role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">           
+                                            <i class="fas fa-bell"></i>
+                                        </a>
+                                        <div class="dropdown-menu notify-dropdown " aria-labelledby="navbarDropdown">
+                                            <div class="notification-single-top px-3 border-bottom">
+                                                <h1 class="py-2">Notifications</h1>
+                                            </div>
+                                            <ul class="notification-menu p-3 pb-0">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="notification-icon">
+                                                            
+                                                            <i class="fas fa-bell"></i>
+                                                        </div>
+                                                        <div class="notification-content">
+                                                            <span class="notification-date">16 Sept</span>
+                                                            <h2>Advanda Cro</h2>
+                                                            <p>Please done this project as soon possible.</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="notification-icon">
+                                                            
+                                                            <i class="fas fa-bell"></i>
+                                                        </div>
+                                                        <div class="notification-content">
+                                                            <span class="notification-date">16 Sept</span>
+                                                            <h2>Sulaiman din</h2>
+                                                            <p>Please done this project as soon possible.</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="notification-icon">
+                                                            <i class="fa fa-eraser edu-shield" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="notification-content">
+                                                            <span class="notification-date">16 Sept</span>
+                                                            <h2>Victor Jara</h2>
+                                                            <p>Please done this project as soon possible.</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="notification-icon">
+                                                            <i class="fa fa-line-chart edu-analytics-arrow" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="notification-content">
+                                                            <span class="notification-date">16 Sept</span>
+                                                            <h2>Victor Jara</h2>
+                                                            <p>Please done this project as soon possible.</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="notification-view px-3 pt-2 border-top">
+                                                <a href="#">View All Notification</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle drop-caret" id="navbarDropdown"  role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">           
+                                            
+                                            <span class="admin-name login-name-color">Prof.Anderson</span>
+                                        </a>
+                                        <ul class="dropdown-menu profile-dropdown" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Documentation</a></li>
+                                            <li><a class="dropdown-item" href="#">Support</a></li>
+                                            <li><a class="dropdown-item" href="#">Shortcuts</a></li>
+                                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                            <li><a class="dropdown-item" href="#">My Odoo.com account</a></li>
+                                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu start -->
+        <!-- <div class="mobile-menu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="mobile-menu">
+                            <nav id="dropdown">
+                                <ul class="mobile-menu-nav">
+                                    <li><a data-toggle="collapse" data-target="#Charts" href="#">Overview <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul class="collapse dropdown-header-top">
+                                            <li><a  href="index.html">Dashboard v.1</a></li>
+                                            <li><a href="index-1.html">Dashboard v.2</a></li>
+                                        </ul>
+                                    </li>
+                            
+                                    <li><a data-toggle="collapse" data-target="#demoevent" href="#">Customers <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="demoevent" class="collapse dropdown-header-top">
+                                            <li><a href="all-professors.html">All Professors</a>
+                                            </li>
+                                            <li><a href="add-professor.html">Add Professor</a>
+                                            </li>
+                                            <li><a href="edit-professor.html">Edit Professor</a>
+                                            </li>
+                                            <li><a href="professor-profile.html">Professor Profile</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a data-toggle="collapse" data-target="#demopro" href="#">Vendors <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="demopro" class="collapse dropdown-header-top">
+                                            <li><a href="all-students.html">All Students</a>
+                                            </li>
+                                            <li><a href="add-student.html">Add Student</a>
+                                            </li>
+                                            <li><a href="edit-student.html">Edit Student</a>
+                                            </li>
+                                            <li><a href="student-profile.html">Student Profile</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a data-toggle="collapse" data-target="#democrou" href="#">Accounting <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="democrou" class="collapse dropdown-header-top">
+                                            <li>
+                                                <a data-toggle="collapse" data-target="#subdemocrou1" href="#">Miscllaneous <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                                <ul id="subdemocrou1" class="collapse dropdown-header-top">
+                                                    <li><a>Jornal Entries</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a data-toggle="collapse" data-target="#subdemocrou2" href="#">Jornals <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                                <ul id="subdemocrou2" class="collapse dropdown-header-top">
+                                                    <li><a>Sales</a></li>
+                                                    <li><a>Purchase</a></li>
+                                                    <li><a>Bank and Cash</a></li>
+                                                    <li><a>Miscllaneous</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a data-toggle="collapse" data-target="#subdemocrou3" href="#">Ledger <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                                <ul id="subdemocrou3" class="collapse dropdown-header-top">
+                                                    <li><a>General Ledger</a></li>
+                                                    <li><a>Partner Ledger</a></li>
+                                                </ul>
+                                            </li>
+            
+                                        </ul>
+                                    </li>
+
+                                    <li><a data-toggle="collapse" data-target="#demolibra" href="#">Reporting <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="demolibra" class="collapse dropdown-header-top">
+                                            <li><a href="library-assets.html">Library Assets</a>
+                                            </li>
+                                            <li><a href="add-library-assets.html">Add Library Asset</a>
+                                            </li>
+                                            <li><a href="edit-library-assets.html">Edit Library Asset</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a data-toggle="collapse" data-target="#demodepart" href="#">Configuration <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <ul id="demodepart" class="collapse dropdown-header-top">
+                                            <li><a href="departments.html">Departments List</a>
+                                            </li>
+                                            <li><a href="add-department.html">Add Departments</a>
+                                            </li>
+                                            <li><a href="edit-department.html">Edit Departments</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Mobile Menu end -->
+        
+    </div>
+    <div class="all-content-wrapper">
+        
+        
+        
+        <div class="row mt-mb-70 ml-mr-10 content-bgcolor">
+            <div class="container-fluid">
+                <div class="row mb-10">
+                    <div class="col-md-2 col-sm-3 pr-0">
+                        <div class="box-xs">
+                            <img src="img/c3-graph1.png">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3 pr-0">
+                        <div class="box-xs">
+                            <img src="img/c3-graph1.png">
+                        </div>
+                    </div>
+					
+					 <div class="col-md-2 col-sm-3 pr-0">
+                        <div class="box-xs">
+                            <img src="img/c3-graph3.png" style="width: 100%;height: 100%;">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-10">
+                    <div class="col-md-6 col-sm-6 pr-0">
+                        <div class="box-md p-0">
+                            <div>
+                                <div class="box-head-bar">
+                                    <p><b>Key Performance Indicators</b></p>
+                                </div>
+                                <p class="box-subhead-bar">Payables</p>
+                                <table class="table table-hover table-sm" style="margin-bottom: 0;">
+                                    <tr>
+                                        <td>Today</td>
+                                        <td>$2563</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Same day last month</td>
+                                        <td>$2563</td>
+                                    </tr>
+                                </table>
+                                <p class="box-subhead-bar">Profit</p>
+                                <table class="table table-hover table-sm">
+                                    <tr>
+                                        <td>Last Period</td>
+                                        <td>$15263</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Same day last month</td>
+                                        <td>$2563</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pr-0">
+                        <div class="box-md p-0">
+                            <div>
+                                <div class="box-head-bar">
+                                    <p><b>My Activities</b></p>
+                                </div>
+                                <div style="padding: 10px;height: auto;">
+                                    <p>cvndbvmdvbnv c dnbk</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+
+                 <div class="row mb-10">
+                    <div class="col-md-12 col-sm-12 pr-0">
+                        <div class="box-lg">
+                            <div>
+                                <div class="box-head-bar">
+                                    <p><b>Quarterly Score Card</b></p>
+                                </div>
+                                <table class="table table-bordered table-sm">
+                                    <thead>
+                                    <tr>
+                                        <th>Metric</th>
+                                        <th>Target</th>
+                                        <th>Actual</th>
+                                        <th>% achieved</th>
+                                        <th>Weightage</th>
+                                        <th>Score</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Client Submissions</td>
+                                        <td>474.0</td>
+                                        <td></td>
+                                        <td>0.00%</td>
+                                        <td>2.00%</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Client Submissions</td>
+                                        <td>474.0</td>
+                                        <td></td>
+                                        <td>0.00%</td>
+                                        <td>2.00%</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Candidates attending L1 Interview</td>
+                                        <td>94.82</td>
+                                        <td></td>
+                                        <td>0.00%</td>
+                                        <td>8.00%</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Candidates attending L2 Interview</td>
+                                        <td>94.82</td>
+                                        <td></td>
+                                        <td>0.00%</td>
+                                        <td>8.00%</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Client Confirmation</td>
+                                        <td>94.82</td>
+                                        <td></td>
+                                        <td>0.00%</td>
+                                        <td>8.00%</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Candidates starts</td>
+                                        <td>2.96</td>
+                                        <td></td>
+                                        <td>0.00%</td>
+                                        <td>20.00%</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wins</td>
+                                        <td>22.2</td>
+                                        <td></td>
+                                        <td>0.00%</td>
+                                        <td>35.00%</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5"><b>Score for Quater</b></td>
+                                        
+                                        <td>0.00</td> 
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5"><b>on target score for the quater</b></td>
+                                        
+                                        <td>100.00</td> 
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-10">
+                    <div class="col-md-3 col-sm-3 pr-0">
+                        <div class="box-xs">
+                            <img src="img/c3-graph1.png" style="width: 100%;height: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 pr-0">
+                        <div class="box-xs">
+                            <img src="img/c3-graph1.png" style="width: 100%;height: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 pr-0">
+                        <div class="box-xs">
+                            <img src="img/c3-graph1.png" style="width: 100%;height: 100%;">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-10">
+                    <div class="col-md-3 col-sm-3 pr-0">
+                        <div class="box-xs">
+                            <img src="img/piechart.png">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 pr-0">
+                        <div class="box-xs">
+                            <img src="img/piechart.png">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-3 pr-0">
+                        <div class="box-xs">
+                            
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row mb-10">
+                    <div class="col-md-6 col-sm-6 pr-0">
+                        <div class="box-md">
+                            <div>   
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <span class="font-size-16"><b>University Earnings</b></span>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="text-right">
+                                            <p>All Earnings are in million $</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="img/bar-graph.png" style="width:100%;">
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pr-0">
+                        <div class="box-md">
+                            <div>   
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <span class="font-size-16"><b>University Earnings</b></span>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="text-right">
+                                            <p>All Earnings are in million $</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+            
+           
+            
+        </div>
+        
+        
+        
+    </div>
+    <div class="footer-copyright-area headerfooter-bgcolor">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2018. All rights reserved. Template by <a href="https://colorlib.com/wp/templates/">Colorlib</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery
+		============================================ -->
+    <!-- <script src="js/vendor/jquery-1.12.4.min.js"></script> -->
+    <!-- bootstrap JS
+		============================================ -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8323056655.js" crossorigin="anonymous"></script>
+   
+      <!--BootNavbar Js-->
+      <script src="js/bootnavbar.js"></script>
+  
+    
+   
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
+    
+   
+    
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar();
+        })
+    </script>
+</body>
+
+</html>
