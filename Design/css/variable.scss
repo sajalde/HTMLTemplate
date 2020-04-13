@@ -11,10 +11,13 @@ $submitBtnTextClor: #fff;
 $formBgColor: #fff;
 $formTextColor: #8a2be2;
 $menuBoxColor: #fff;
-$headerBgColor: #10d004;
+
+/*Header Section*/
+$headerBgColor: #10d004; //page header background color
 $headerTextBoxBgColor: #000;
 $headerTextBoxTextColor: #fff;
 $headerTextBoxSpanColor: #3ad9de;
+/*Header Section*/
 $navTextColor:#fff;
 $collapseBgColor: #10d004;
 $collapseTextColor: #fff;
@@ -54,3 +57,12 @@ $logBottomTextColor: #60885f;
 $sizes: 129px, 357px, 250px, 236px, 360px, 68px, 215px, 300px, 441px, 750px,282px,542px,200px,570px,555px,50;
   
 // url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg');
+
+//default,primery,danger
+
+
+/*
+$defaultBtnColor:#49c5f5;
+$defaultBtnTextClor: #fff;
+
+*/
