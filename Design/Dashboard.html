@@ -19,63 +19,36 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Bootstrap CSS
 		============================================ -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <!-- owl.carousel CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/owl.transitions.css">
-    <!-- animate CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- normalize CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- meanmenu icon CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/meanmenu.min.css">
-    <!-- main CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- educate icon CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/educate-custon-icon.css">
-    <!-- morrisjs CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/morrisjs/morris.css">
-    <!-- mCustomScrollbar CSS
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <!-- mCustomScrollbar CSS (Content Scroller)
 		============================================ -->
     <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
-    <!-- metisMenu CSS
+    
+    <!-- metisMenu CSS (Sidebar dropdown)
 		============================================ -->
     <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
     <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
-    <!-- calendar CSS
+
+    <!--Main style CSS (Page Sturcture Style)
 		============================================ -->
-    <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
-    <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
-    <!-- style CSS
+    <link rel="stylesheet" href="css/main_style.css">
+    <!--Main style CSS (Page Color Style)
 		============================================ -->
-    <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="css/style.css">
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- modernizr JS
-		============================================ -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <!--BootNavbar CSS-->
-    <link rel="stylesheet" href="css/bootnavbar.css">
 
-    <!--BootNavbar Js-->
-    <script src="js/bootnavbar.js"></script>
+    <!--BootNavbar CSS (Multiple Menu header)-->
+    <link rel="stylesheet" href="css/bootnavbar.css">
+    <!--BootNavbar Js (Multiple Menu header)-->
+    <script src="js/bootnavbar.js"></script> 
+
 </head>
 
 <body style="overflow-x: hidden;">
-    <!--[if lt IE 8]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+    
     <!-- Start Left menu area -->
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="sidebar-bgcolor" style="height: -webkit-fill-available;">
@@ -160,10 +133,9 @@
         </nav>
     </div>
     <!-- End Left menu area -->
-    <!-- Start Welcome area -->
-    <div class="all-content-wrapper">
-        
-        <div class="header-advance-area">
+
+    <!-- Start Header area -->
+    <div class="header-advance-area">
             <div class="header-top-area headerfooter-bgcolor" style="height: 48px;">
                 <div>
                     <div class="row">
@@ -258,7 +230,11 @@
                                                 Customers
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                
+                                                <li class="nav-item dropdown">
+                                                    <a class="dropdown-item " href="Customers.html" role="button">
+                                                            Customers
+                                                    </a>
+                                                </li>
                                                 <li class="nav-item dropdown">
                                                     <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
                                                         aria-haspopup="true" aria-expanded="false">
@@ -671,108 +647,13 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Mobile Menu start -->
-            <!-- <div class="mobile-menu-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="mobile-menu">
-                                <nav id="dropdown">
-                                    <ul class="mobile-menu-nav">
-                                        <li><a data-toggle="collapse" data-target="#Charts" href="#">Overview <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul class="collapse dropdown-header-top">
-                                                <li><a  href="index.html">Dashboard v.1</a></li>
-                                                <li><a href="index-1.html">Dashboard v.2</a></li>
-                                            </ul>
-                                        </li>
-                                
-                                        <li><a data-toggle="collapse" data-target="#demoevent" href="#">Customers <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demoevent" class="collapse dropdown-header-top">
-                                                <li><a href="all-professors.html">All Professors</a>
-                                                </li>
-                                                <li><a href="add-professor.html">Add Professor</a>
-                                                </li>
-                                                <li><a href="edit-professor.html">Edit Professor</a>
-                                                </li>
-                                                <li><a href="professor-profile.html">Professor Profile</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+    </div>
+    <!-- End Header area -->
+    
+    
+    <div class="all-content-wrapper">
 
-                                        <li><a data-toggle="collapse" data-target="#demopro" href="#">Vendors <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demopro" class="collapse dropdown-header-top">
-                                                <li><a href="all-students.html">All Students</a>
-                                                </li>
-                                                <li><a href="add-student.html">Add Student</a>
-                                                </li>
-                                                <li><a href="edit-student.html">Edit Student</a>
-                                                </li>
-                                                <li><a href="student-profile.html">Student Profile</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li><a data-toggle="collapse" data-target="#democrou" href="#">Accounting <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="democrou" class="collapse dropdown-header-top">
-                                                <li>
-                                                    <a data-toggle="collapse" data-target="#subdemocrou1" href="#">Miscllaneous <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                                    <ul id="subdemocrou1" class="collapse dropdown-header-top">
-                                                        <li><a>Jornal Entries</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a data-toggle="collapse" data-target="#subdemocrou2" href="#">Jornals <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                                    <ul id="subdemocrou2" class="collapse dropdown-header-top">
-                                                        <li><a>Sales</a></li>
-                                                        <li><a>Purchase</a></li>
-                                                        <li><a>Bank and Cash</a></li>
-                                                        <li><a>Miscllaneous</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a data-toggle="collapse" data-target="#subdemocrou3" href="#">Ledger <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                                    <ul id="subdemocrou3" class="collapse dropdown-header-top">
-                                                        <li><a>General Ledger</a></li>
-                                                        <li><a>Partner Ledger</a></li>
-                                                    </ul>
-                                                </li>
-                
-                                            </ul>
-                                        </li>
-
-                                        <li><a data-toggle="collapse" data-target="#demolibra" href="#">Reporting <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demolibra" class="collapse dropdown-header-top">
-                                                <li><a href="library-assets.html">Library Assets</a>
-                                                </li>
-                                                <li><a href="add-library-assets.html">Add Library Asset</a>
-                                                </li>
-                                                <li><a href="edit-library-assets.html">Edit Library Asset</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li><a data-toggle="collapse" data-target="#demodepart" href="#">Configuration <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demodepart" class="collapse dropdown-header-top">
-                                                <li><a href="departments.html">Departments List</a>
-                                                </li>
-                                                <li><a href="add-department.html">Add Departments</a>
-                                                </li>
-                                                <li><a href="edit-department.html">Edit Departments</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- Mobile Menu end -->
-            
-        </div>
-        
+        <!--Start Content -->
         <div class="row mt-mb-70 ml-mr-10 content-bgcolor">
             <div class="container-fluid">
                 <div class="row mb-10">
@@ -1011,106 +892,64 @@
            
             
         </div>
-        
-        
-        
+        <!--End Content -->
+
     </div>
+    
+
+    <!--Start Footer -->
     <div class="footer-copyright-area headerfooter-bgcolor">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-4">
+                    <div class="footer-copy-right"><p>April 11</p></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-copy-right"><p>Copyright © 2020.</p></div>
+                </div>
+                <div class="col-lg-4">
                     <div class="footer-copy-right">
-                        <p>Copyright © 2018. All rights reserved. Template by <a href="https://colorlib.com/wp/templates/">Colorlib</a></p>
+                        <p>Powered by <a href="https://colorlib.com/wp/templates/">ATA</a></p>
                     </div>
                 </div>
+            
             </div>
         </div>
-    </div>
-    <!-- jquery
+    </div> 
+
+    <!--End Footer -->
+    
+    <!-- bootstrap 4 JS
 		============================================ -->
-    <!-- <script src="js/vendor/jquery-1.12.4.min.js"></script> -->
-    <!-- bootstrap JS
-		============================================ -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8323056655.js" crossorigin="anonymous"></script>
-    <!-- wow JS
-		============================================ -->
-    <script src="js/wow.min.js"></script>
-    <!-- price-slider JS
-		============================================ -->
-    <script src="js/jquery-price-slider.js"></script>
-    <!-- meanmenu JS
+    
+    
+    <!-- meanmenu JS (Sidebar Menu Collapsible)
 		============================================ -->
     <script src="js/jquery.meanmenu.js"></script>
-    <!-- owl.carousel JS
-		============================================ -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- sticky JS
+
+    <!-- sticky JS (Sidebar Menu Collapsible)
 		============================================ -->
     <script src="js/jquery.sticky.js"></script>
-    <!-- scrollUp JS
-		============================================ -->
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <!-- counterup JS
-		============================================ -->
-    <script src="js/counterup/jquery.counterup.min.js"></script>
-    <script src="js/counterup/waypoints.min.js"></script>
-    <script src="js/counterup/counterup-active.js"></script>
-    <!-- mCustomScrollbar JS
+    
+    <!-- mCustomScrollbar JS (Content Scroller)
 		============================================ -->
     <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
-    <!-- metisMenu JS
+
+    <!-- metisMenu JS (Sidebar Menu Dropdown)
 		============================================ -->
     <script src="js/metisMenu/metisMenu.min.js"></script>
     <script src="js/metisMenu/metisMenu-active.js"></script>
-    <!-- c3 JS
-		============================================ -->
-        <script src="js/c3-charts/d3.min.js"></script>
-        <script src="js/c3-charts/c3.min.js"></script>
-        <script src="js/c3-charts/c3-active.js"></script>
-    <!-- morrisjs JS
-		============================================ -->
-    <script src="js/morrisjs/raphael-min.js"></script>
-    <script src="js/morrisjs/morris.js"></script>
-    <script src="js/morrisjs/home3-active.js"></script>
-    <!-- morrisjs JS
-		============================================ -->
-    <script src="js/sparkline/jquery.sparkline.min.js"></script>
-    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
-    <script src="js/sparkline/sparkline-active.js"></script>
-    <!-- calendar JS
-		============================================ -->
-    <script src="js/calendar/moment.min.js"></script>
-    <script src="js/calendar/fullcalendar.min.js"></script>
-    <script src="js/calendar/fullcalendar-active.js"></script>
-    <!-- plugins JS
-		============================================ -->
-    <script src="js/plugins.js"></script>
-    <!-- main JS
+    
+    
+    <!-- main JS (Sidebar Menu Collapsible)
 		============================================ -->
     <script src="js/main.js"></script>
-    <!-- tawk chat JS
-		============================================ -->
-    <script src="js/tawk-chat.js"></script>
-    <script>
-        function allowDrop(ev) {
-            ev.preventDefault();
-            }
-
-            function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
-            }
-
-            function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-            }
-    </script>
 
     <script>
         $(function () {

@@ -300,13 +300,15 @@
     border-radius: 6px;
   }
   .icon-box{
-    // text-align: center;
-    // padding: 20px 0;
-    // background: $iconBoxColor;
-    // color: $iconBoxTextColor;
-    height: 76px;
+    max-height: 76px;
   }
   
+  .footer-copy-right p {
+    margin: 0px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 100;
+  }
   // Landing and Dashboard
   .headerfooter-bgcolor{
     background: $headerBgColor !important;
@@ -825,6 +827,10 @@ input:checked + .slider:before {
 .btn-cancel-modalbtn{
   background: $modalBtncancelBgColor;
   color:$modalBtncancelTextColor;
+}
+
+.dropdown-menu > li a:hover{
+  background: $multipleDropdownHover !important;
 }
 #preloader {
     position: fixed;

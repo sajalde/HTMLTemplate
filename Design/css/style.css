@@ -266,7 +266,14 @@ h2 {
 }
 
 .icon-box {
-  height: 76px;
+  max-height: 76px;
+}
+
+.footer-copy-right p {
+  margin: 0px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 100;
 }
 
 .headerfooter-bgcolor {
@@ -343,7 +350,7 @@ h2 {
 }
 
 .box-head-bar {
-  background: #363636;
+  background: #095f04;
   padding: 5px 10px;
   color: #fff;
 }
@@ -352,7 +359,7 @@ h2 {
 }
 
 .box-subhead-bar {
-  background: #cfcdcd;
+  background: #dbecc7;
   padding: 5px 8px;
   color: #000;
   font-size: 14px;
@@ -1366,6 +1373,10 @@ input:checked + .slider:before {
 .btn-cancel-modalbtn {
   background: #fff;
   color: #07820a;
+}
+
+.dropdown-menu > li a:hover {
+  background: #07820a !important;
 }
 
 #preloader {
