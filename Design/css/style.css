@@ -1039,13 +1039,15 @@ h2 {
 }
 
 .modal-content {
-  background: #e1dff7;
+  background: #e3f7df;
 }
 .modal-content .modal-header {
-  background-color: #170bcc;
+  background-color: #1f3e02;
+  padding: 10px;
 }
 .modal-content .modal-title {
   color: #fff;
+  font-size: 14px;
 }
 .modal-content .close {
   color: #fff;
@@ -1291,7 +1293,7 @@ input:checked + .slider:before {
 
 .log-content span {
   padding: 10px;
-  color: #5f5f88;
+  color: #60885f;
 }
 
 .avt-img img {
@@ -1349,6 +1351,20 @@ input:checked + .slider:before {
 
 .table-head-bgcolor {
   background: #ecffe4;
+  color: #07820a;
+}
+
+.search-text-color {
+  color: #07820a !important;
+}
+
+.btn-save-modalbtn {
+  background: #07820a;
+  color: #fff;
+}
+
+.btn-cancel-modalbtn {
+  background: #fff;
   color: #07820a;
 }
 
