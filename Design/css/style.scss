@@ -239,9 +239,9 @@
   .submit {
     margin-top: 40px;
     margin-bottom: 20px;
-    background: $submitBtnColor;
+    background: $loginBtnColor;
     text-transform: uppercase;
-    color: $submitBtnTextClor;
+    color: $loginBtnTextClor;
   }
   
   .fb-btn {
@@ -294,10 +294,10 @@
   }
   .menubox{
     // padding: 10px;
-    margin: 10px;
-    background: $menuBoxColor;
-    box-shadow: 0px 0px 5px #bfbdbd;
-    border-radius: 6px;
+    // margin: 10px;
+    // background: $menuBoxColor;
+    // box-shadow: 0px 0px 5px #bfbdbd;
+    // border-radius: 6px;
   }
   .icon-box{
     max-height: 76px;
@@ -313,9 +313,7 @@
   .headerfooter-bgcolor{
     background: $headerBgColor !important;
   }
-  .header-top-menu .navbar-nav > .nav-text-color > a , .header-right-info ul.header-right-menu > .nav-text-color > a {
-    color: $navTextColor;
-  }
+  
   .btn-bgcolor {
     background-color: $collapseBgColor;
     border-color: $collapseBgColor;
@@ -348,9 +346,7 @@
     font-weight: 600;
     color: #3ad9de;
   }
-  .header-right-info .login-name-color{
-    color: $navTextColor;
-  }
+  
   
   .sidebar-bgcolor{
     background: $sidebarBgColor !important;
@@ -435,7 +431,7 @@
     display: none;
   }
   .land-bgboxc-color{
-    background: $landBgBoxColor;
+    background: $contentBgColor;
   }
   .work-box-head{
     display: flex;
@@ -443,11 +439,11 @@
     padding-bottom: 20px;
 
     h5{
-      color:$workHeadTextColor;
+      color:$pageTitleTextColor;
     }
 
     span{
-      color: $workHeadTextColor;
+      color: $pageTitleTextColor;
       font-size: 15px;
       font-weight: 600;
     }
@@ -679,8 +675,14 @@ input:checked + .slider:before {
   padding:10px 14px !important;
 }
 .navbar-dark .navbar-nav .nav-link{
-  color:#fff;
+  color:$headerTextColor;
   font-size: 14px;
+}
+.navbar-nav .dropdown-menu{
+  background: $dropdownBgColor;
+}
+.dropdown-menu > li a{
+  color: $dropdownTextColor;
 }
 .drop-caret::after{
   display:none;
@@ -722,7 +724,7 @@ input:checked + .slider:before {
 
 .title-text{
   font-weight: bold;
-    color: $tableHeaderTextColor;
+    color: $pageTitleTextColor;
     font-size: 20px;
     /* margin: 4px 0; */
     margin-bottom: 4px;
@@ -740,15 +742,15 @@ input:checked + .slider:before {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    color: $customTabTextColor !important;
-    border-bottom: 4px solid $customTabBorderColor  !important;
-    background-color:$customTabBgColor  !important;
+    color: $activeTabTextColor !important;
+    border-bottom: 4px solid $activeTabBorderColor  !important;
+    background-color:$activeTabBgColor  !important;
 }    
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
   border-color: #fff #fff #fff;
 }
 .nav-tabs .nav-link{
-  color: $customTabTextColor;
+  color: $inActiveTabTextColor;
 }
 .nav-tabs .nav-link:hover{
   background: $hoverTabBgColor;
@@ -760,7 +762,7 @@ input:checked + .slider:before {
 }
 .log-content span{
   padding:10px;
-  color:$logBottomTextColor;
+  color: $pageTitleTextColor;
 }
 .avt-img img{
     max-width: 90px;
@@ -784,7 +786,7 @@ input:checked + .slider:before {
     display:none;
 }
 .btn-custom-active{
-  background: $headerBgColor;
+  background: $activeBtnBgColor;
   a{
     color: #fff;
   }
@@ -793,7 +795,7 @@ input:checked + .slider:before {
 .btn-custom-secondary{
   background: #fff;
   a{
-    color: $headerBgColor;
+    color: $inActiveBtnTextColor;
   }
 }
 .btn-custom-secondary:hover{
@@ -819,18 +821,20 @@ input:checked + .slider:before {
 .search-text-color{
     color: $searchIconColor !important;
 }
-
+.dropdown:hover>.dropdown-menu{
+  background: $dropdownBgColor;
+}
 .btn-save-modalbtn{
-  background: $modalBtnsuccessBgColor;
-  color:$modalBtnsuccessTextColor;
+  background: $activeBtnBgColor;
+  color:$activeBtnTextColor;
 }
 .btn-cancel-modalbtn{
-  background: $modalBtncancelBgColor;
-  color:$modalBtncancelTextColor;
+  background: $deleteBtnBgColor;
+  color:$deleteBtnTextColor;
 }
 
 .dropdown-menu > li a:hover{
-  background: $multipleDropdownHover !important;
+  background: $dropdownHover !important;
 }
 #preloader {
     position: fixed;
