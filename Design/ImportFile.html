@@ -76,9 +76,7 @@
 </head>
 
 <body style="overflow-x: hidden;">
-    <!--[if lt IE 8]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+    
     <!-- Start Left menu area -->
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="sidebar-bgcolor" style="height: -webkit-fill-available;">
@@ -163,15 +161,14 @@
         </nav>
     </div>
     <!-- End Left menu area -->
-    <!-- Start Welcome area -->
-    <div class="all-content-wrapper">
-        
-        <div class="header-advance-area">
-            <div class="header-top-area headerfooter-bgcolor" style="height: 48px;">
+
+    <!-- Start Header area -->
+    <div class="header-advance-area">
+            <div class="header-top-area header-bgcolor" style="height: 48px;">
                 <div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <nav class="navbar navbar-expand-lg navbar-dark headerfooter-bgcolor" id="main_navbar">
+                            <nav class="navbar navbar-expand-lg navbar-dark header-bgcolor" id="main_navbar">
                             
                                 <button type="button" class="btn bar-button-pro header-drl-controller-btn navbar-btn btn-demo" data-toggle="modal" data-target="#myModal">
                                     <i class="fas fa-braille" style="font-size: 20px;"></i>
@@ -261,7 +258,11 @@
                                                 Customers
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                
+                                                <li class="nav-item dropdown">
+                                                    <a class="dropdown-item dropdown-toggle" href="Customers.html" role="button">
+                                                            Customers
+                                                    </a>
+                                                </li>
                                                 <li class="nav-item dropdown">
                                                     <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
                                                         aria-haspopup="true" aria-expanded="false">
@@ -673,10 +674,14 @@
                         </div>
                     </div>
                 </div>
-            </div> 
-        </div>
-        
-        <div class="row mt-mb-70 ml-mr-10 content-bgcolor">
+            </div>
+    </div>
+    <!-- End Header area -->
+
+  
+    <div class="all-content-wrapper">
+        <!--Content Start-->
+        <div class="row mt-mb-70 ml-mr-10 content-bgcolor" style="height:100vh;">
             <div class="container-fluid">
 
                 <div class="row my-3 pb-2  border-bottom">
@@ -703,18 +708,30 @@
                </div>
             </div> 
         </div>
+        <!--Content End-->
     </div>
-    <div class="footer-copyright-area headerfooter-bgcolor position-fixed">
+
+    <!--Start Footer -->
+    <div class="footer-copyright-area footer-bgcolor">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-copy-right">
-                        <p>Copyright © 2018. All rights reserved. Template by <a href="https://colorlib.com/wp/templates/">Colorlib</a></p>
+                <div class="col-lg-4">
+                    <div class="footer-copy-right text-left"><p>April 11</p></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-copy-right text-center"><p>Copyright © 2020.</p></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-copy-right text-right">
+                        <p>Powered by <a href="https://colorlib.com/wp/templates/">ATA</a></p>
                     </div>
                 </div>
+            
             </div>
         </div>
     </div>
+
+    <!--End Footer -->
     <!-- jquery
 		============================================ -->
     <!-- <script src="js/vendor/jquery-1.12.4.min.js"></script> -->

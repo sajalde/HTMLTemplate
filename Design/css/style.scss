@@ -8,7 +8,7 @@
   
   body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background: #fff;
+    background: $bodyBgColor;
     overflow: hidden !important;
     overflow-y: auto !important;
   }
@@ -305,15 +305,17 @@
   
   .footer-copy-right p {
     margin: 0px;
-    font-size: 15px;
-    color: #fff;
+    font-size: 14px;
+    color: $footerTextColor;
     font-weight: 100;
   }
   // Landing and Dashboard
-  .headerfooter-bgcolor{
+  .header-bgcolor{
     background: $headerBgColor !important;
   }
-  
+  .bar-button-pro{
+    color: $headerTextColor !important;
+  }
   .btn-bgcolor {
     background-color: $collapseBgColor;
     border-color: $collapseBgColor;
@@ -481,15 +483,20 @@
   }
 
   .main-logo{
-    margin-top: 2px;
+    // margin-top: 2px;
     margin-left: 12px;
+    position: relative;
+    top: -1px;
   }
   .content-bgcolor{
     background: $contentBgColor;
  
   }
-  .sidebar-nav .metismenu,#sidebar .sidebar-header{
+  .sidebar-nav .metismenu,#sidebar{
     background: $sidebarBgColor !important;
+  }
+  .sidebar-header{
+    background: transparent !important;
   }
  .modal-content{
   background: $modalBgColor;
@@ -581,9 +588,12 @@ input:checked + .slider:before {
 
 .text-right p{
   font-size: 14px;
-  color: #999;
 }
-
+.custom-control-input:checked~.custom-control-label::before{
+    color: #fff;
+    border-color: $checkOrRadioActiveBgColor;
+    background-color: $checkOrRadioActiveBgColor;
+}
 
 @mixin box-style {
   // padding:20px;
@@ -835,6 +845,16 @@ input:checked + .slider:before {
 
 .dropdown-menu > li a:hover{
   background: $dropdownHover !important;
+}
+.dropdown-item{
+  color:$dropdownTextColor;
+}
+.dropdown-item:active,.dropdown-item:hover{
+  background: $dropdownHover !important;
+  color: $dropdownTextHover !important;
+}
+.footer-bgcolor{
+  background: $footerBgColor;
 }
 #preloader {
     position: fixed;

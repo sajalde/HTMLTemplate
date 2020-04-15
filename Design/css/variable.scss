@@ -1,18 +1,20 @@
 /*Common colors in whole site*/
+$bodyBgColor: #f2f2f2; // all pages body color
 $contentBgColor: #fff; // all content body color
-$activeBtnBgColor: #10d004; // all active button color
+$activeBtnBgColor: #069198; // all active button color
 $activeBtnTextColor: #fff; // all active button text color
 $inActiveBtnBgColor : #fff; // all inactive button color
-$inActiveBtnTextColor : #10d004; // all inactive button text color
+$inActiveBtnTextColor : #069198; // all inactive button text color
 $inActiveBtnHover: #ecffe4; // all inactive hover button color
 $deleteBtnBgColor : #dc3545; // all delete/close button color
 $deleteBtnTextColor : #fff; // all delete/close button text color
-$dropdownBgColor: #dcfbd4; // all dropdown background color
-$dropdownTextColor: #066904; // all dropdown text color
-$dropdownHover: #07820a; // all dropdown on mouse (hover)
-$pageTitleTextColor: #07820a; // all page title color
-$searchIconColor: #07820a; // all page search icon color
-
+$dropdownBgColor: #f7e8fc; // all dropdown background color
+$dropdownTextColor: #f3114f; // all dropdown text color
+$dropdownHover: #069198; // all dropdown on mouse (hover) background color
+$dropdownTextHover: #fff; // all dropdown on mouse (hover) text color
+$pageTitleTextColor: #069198; // all page title color
+$searchIconColor: #f3114f; // all page search icon color
+$checkOrRadioActiveBgColor: #f3114f; // all page checkbox background color
 /*Common colors in whole site*/
 
 
@@ -24,10 +26,10 @@ $switchAT: 1.2s;  // Switching from sign in to sign up content
 $inputW: 260px;  //  login button width
 $btnH: 36px; // login button height
 $loginBgImg: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg'); // body background image
-$loginBtnColor:#49c5f5; // login sign in / sign up button color
+$loginBtnColor:linear-gradient(140deg, #f3114f, #069198); // login sign in / sign up button color
 $loginBtnTextClor: #fff;// login sign in/sign up button text color
-$formBgColor: #fff; // form content background color
-$formTextColor: #8a2be2; // form content text color
+$formBgColor: #f2f2f2; // form content background color
+$formTextColor: #f3114f; // form content text color
 // Login page
 
 //Landing Page
@@ -39,47 +41,51 @@ $workEventColor: rgb(232, 82, 15); // landing page last box event text color
 //Landing Page
 
 //Header Section
-$headerBgColor: #10d004; //page header background color
-$headerTextColor: #fff; // page header text color
+$headerBgColor: linear-gradient(140deg, #f3114f, #069198); //page header background color
+$headerTextColor:  #f7e8fc; // page header text color
 $headerLogo: url('../img/logo_praxis.gif');
 //Header Section
 
 //Left Menu
-$sidebarBgColor: #1f3e02; //left menu background color
+$sidebarBgColor: linear-gradient(190deg, #f3114f, #069198); //left menu background color
 $sidebarTextColor: #fff; // left menu text color
-$sidebarIconColor: #10d004; // left menu icon color
-$sidebarSubMenuBgColor: #10d004; // left menu submenu background color
-$sidebarListHover: #07820a; // left menu list color on mouse (Hover)
-$collapseBgColor: #10d004; // left menu collapse background color
+$sidebarIconColor: #e4bf06; // left menu icon color
+$sidebarSubMenuBgColor: #069198; // left menu submenu background color
+$sidebarListHover: #069198; // left menu list color on mouse (Hover)
+$collapseBgColor: #e4bf06; // left menu collapse background color
 $collapseTextColor: #fff; // left menu collapse text color
 //Left Menu
 
 // All pages boxes
-$boxHeadBgColor: #0c8c04; // box heading background color
+$boxHeadBgColor: #069198; // box heading background color
 $boxheadTextColor: #fff; // box heading text color
-$boxSubheadBgColor: #dbecc7; // box sub-heading background color
-$boxSubheadTextColor: #0c8c04; // box sub-heading text color
+$boxSubheadBgColor:  #f7e8fc; // box sub-heading background color
+$boxSubheadTextColor: #069198; // box sub-heading text color
 // All pages boxes
 
 //All popup (Modal) 
-$modalBgColor:#e3f7df; // Modal body background color
-$modalHeaderBgColor:#1f3e02; // Modal Header background colror
+$modalBgColor:#f7e8fc; // Modal body background color
+$modalHeaderBgColor:#069198; // Modal Header background colror
 //All popup (Modal) 
 
 // All Tabs
-$activeTabBgColor: #ecffe4; // active tab background color
-$activeTabTextColor: #07820a; // active tab text color
-$activeTabBorderColor: #07820a; // active tab border color
-$inActiveTabTextColor: #07820a; // in active tab text color
-$hoverTabBgColor: #07820a; // on mouse(hover) tab background color
-$hoverTabTextColor: #ecffe4; // on mouse(hover) tab text color
+$activeTabBgColor: #f7e8fc; // active tab background color
+$activeTabTextColor:#f3114f; // active tab text color
+$activeTabBorderColor: #f3114f; // active tab border color
+$inActiveTabTextColor: #069198; // in active tab text color
+$hoverTabBgColor: #f3114f; // on mouse(hover) tab background color
+$hoverTabTextColor: #fff; // on mouse(hover) tab text color
 // All Tabs
 
 // All Tables
-$tableHeaderBgColor: #ecffe4; // table header background color
-$tableHeaderTextColor: #07820a; // table header text color
+$tableHeaderBgColor: #fadbff; // table header background color
+$tableHeaderTextColor: #069198; // table header text color
 // All Tables
 
+//Footer Section
+$footerBgColor: linear-gradient(190deg, #f3114f, #069198);
+$footerTextColor: #fff;
+//Footer Section
 
 //Default box-sizes (Please don't change this below numbers)
 $sizes: 129px, 357px, 250px, 236px, 360px, 68px, 215px, 300px, 441px, 750px,282px,542px,200px,570px,555px,50;
