@@ -9,7 +9,8 @@ $deleteBtnBgColor : #dc3545; // all delete/close button color
 $deleteBtnTextColor : #fff; // all delete/close button text color
 $dropdownBgColor: #dcfbd4; // all dropdown background color
 $dropdownTextColor: #066904; // all dropdown text color
-$dropdownHover: #07820a; // all dropdown on mouse (hover)
+$dropdownHover: #07820a; // all dropdown on mouse (hover) background color
+$dropdownTextHover: #fff; // all dropdown on mouse (hover) text color
 $pageTitleTextColor: #07820a; // all page title color
 $searchIconColor: #07820a; // all page search icon color
 
@@ -39,18 +40,18 @@ $workEventColor: rgb(232, 82, 15); // landing page last box event text color
 //Landing Page
 
 //Header Section
-$headerBgColor: #10d004; //page header background color
+$headerBgColor: linear-gradient(140deg, #f3114f, #069198); //page header background color
 $headerTextColor: #fff; // page header text color
 $headerLogo: url('../img/logo_praxis.gif');
 //Header Section
 
 //Left Menu
-$sidebarBgColor: #1f3e02; //left menu background color
+$sidebarBgColor: linear-gradient(190deg, #f3114f, #069198); //left menu background color
 $sidebarTextColor: #fff; // left menu text color
-$sidebarIconColor: #10d004; // left menu icon color
-$sidebarSubMenuBgColor: #10d004; // left menu submenu background color
-$sidebarListHover: #07820a; // left menu list color on mouse (Hover)
-$collapseBgColor: #10d004; // left menu collapse background color
+$sidebarIconColor: #e4bf06; // left menu icon color
+$sidebarSubMenuBgColor: #d0043c; // left menu submenu background color
+$sidebarListHover: #e4bf06; // left menu list color on mouse (Hover)
+$collapseBgColor: #e4bf06; // left menu collapse background color
 $collapseTextColor: #fff; // left menu collapse text color
 //Left Menu
 
@@ -80,6 +81,9 @@ $tableHeaderBgColor: #ecffe4; // table header background color
 $tableHeaderTextColor: #07820a; // table header text color
 // All Tables
 
+//Footer Section
+$footerBgColor: linear-gradient(190deg, #f3114f, #069198);
+//Footer Section
 
 //Default box-sizes (Please don't change this below numbers)
 $sizes: 129px, 357px, 250px, 236px, 360px, 68px, 215px, 300px, 441px, 750px,282px,542px,200px,570px,555px,50;

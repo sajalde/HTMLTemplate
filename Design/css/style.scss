@@ -310,7 +310,7 @@
     font-weight: 100;
   }
   // Landing and Dashboard
-  .headerfooter-bgcolor{
+  .header-bgcolor{
     background: $headerBgColor !important;
   }
   
@@ -835,6 +835,16 @@ input:checked + .slider:before {
 
 .dropdown-menu > li a:hover{
   background: $dropdownHover !important;
+}
+.dropdown-item{
+  color:$dropdownTextColor;
+}
+.dropdown-item:active,.dropdown-item:hover{
+  background: $dropdownHover !important;
+  color: $dropdownTextHover !important;
+}
+.footer-bgcolor{
+  background: $footerBgColor;
 }
 #preloader {
     position: fixed;
