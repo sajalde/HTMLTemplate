@@ -41,13 +41,13 @@ $workEventColor: rgb(232, 82, 15); // landing page last box event text color
 //Landing Page
 
 //Header Section
-$headerBgColor: linear-gradient(140deg, #f3114f, #069198); //page header background color
-$headerTextColor:  #f7e8fc; // page header text color
+$headerBgColor: linear-gradient(140deg, #0c0486, #053897); //page header background color
+$headerTextColor:  #f0ff1e; // page header text color
 $headerLogo: url('../img/logo_praxis.gif');
 //Header Section
 
 //Left Menu
-$sidebarBgColor: linear-gradient(190deg, #f3114f, #069198); //left menu background color
+$sidebarBgColor: linear-gradient(190deg, #344fec, #c5ccec); //left menu background color
 $sidebarTextColor: #fff; // left menu text color
 $sidebarIconColor: #e4bf06; // left menu icon color
 $sidebarSubMenuBgColor: #069198; // left menu submenu background color
@@ -57,7 +57,7 @@ $collapseTextColor: #fff; // left menu collapse text color
 //Left Menu
 
 // All pages boxes
-$boxHeadBgColor: #069198; // box heading background color
+$boxHeadBgColor: #500136; // box heading background color
 $boxheadTextColor: #fff; // box heading text color
 $boxSubheadBgColor:  #f7e8fc; // box sub-heading background color
 $boxSubheadTextColor: #069198; // box sub-heading text color
@@ -83,8 +83,8 @@ $tableHeaderTextColor: #069198; // table header text color
 // All Tables
 
 //Footer Section
-$footerBgColor: linear-gradient(190deg, #f3114f, #069198);
-$footerTextColor: #fff;
+$footerBgColor: linear-gradient(190deg, #03363a, #046d8d);
+$footerTextColor: rgb(247, 241, 157);
 //Footer Section
 
 //Default box-sizes (Please don't change this below numbers)

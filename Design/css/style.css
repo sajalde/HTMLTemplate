@@ -267,16 +267,16 @@ h2 {
 .footer-copy-right p {
   margin: 0px;
   font-size: 14px;
-  color: #fff;
+  color: #f7f19d;
   font-weight: 100;
 }
 
 .header-bgcolor {
-  background: linear-gradient(140deg, #f3114f, #069198) !important;
+  background: linear-gradient(140deg, #0c0486, #053897) !important;
 }
 
 .bar-button-pro {
-  color: #f7e8fc !important;
+  color: #f0ff1e !important;
 }
 
 .btn-bgcolor {
@@ -317,7 +317,7 @@ h2 {
 }
 
 .sidebar-bgcolor {
-  background: linear-gradient(190deg, #f3114f, #069198) !important;
+  background: linear-gradient(190deg, #344fec, #c5ccec) !important;
 }
 
 .sidebar-icon-color {
@@ -341,7 +341,7 @@ h2 {
 }
 
 .box-head-bar {
-  background: #069198;
+  background: #500136;
   padding: 5px 10px;
   color: #fff;
 }
@@ -1034,7 +1034,7 @@ h2 {
 }
 
 .sidebar-nav .metismenu, #sidebar {
-  background: linear-gradient(190deg, #f3114f, #069198) !important;
+  background: linear-gradient(190deg, #344fec, #c5ccec) !important;
 }
 
 .sidebar-header {
@@ -1206,7 +1206,7 @@ input:checked + .slider:before {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #f7e8fc;
+  color: #f0ff1e;
   font-size: 14px;
 }
 
@@ -1358,7 +1358,7 @@ input:checked + .slider:before {
   color: #000;
 }
 .box-link a :hover {
-  color: linear-gradient(140deg, #f3114f, #069198);
+  color: linear-gradient(140deg, #0c0486, #053897);
 }
 
 .right-icons label:hover {
@@ -1402,7 +1402,7 @@ input:checked + .slider:before {
 }
 
 .footer-bgcolor {
-  background: linear-gradient(190deg, #f3114f, #069198);
+  background: linear-gradient(190deg, #03363a, #046d8d);
 }
 
 #preloader {
