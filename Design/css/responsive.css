@@ -418,8 +418,11 @@
 		height: 296px !important;
 		margin-bottom: 14px;
 	}
-	.header-advance-area{
-		overflow-x: hidden;
+	.pr-0{
+		padding-right:10px !important;
+	}
+	.cont .form{
+		height:100% !important;
 	}
 	.display-img{
 		display: block;
@@ -868,9 +871,7 @@
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	.header-advance-area{
-		overflow-x: hidden;
-	}
+	
 	.content-bgcolor{
 		overflow-x: hidden;
 	}
