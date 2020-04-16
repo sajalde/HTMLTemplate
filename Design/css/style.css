@@ -1405,6 +1405,10 @@ input:checked + .slider:before {
   background: linear-gradient(190deg, #03363a, #046d8d);
 }
 
+.icon-img {
+  height: 42px;
+}
+
 #preloader {
   position: fixed;
   top: 0;

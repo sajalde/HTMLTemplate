@@ -371,9 +371,9 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
-	.nav-link {
-    padding: 10px 6px !important;
-}
+		.nav-link {
+		padding: 10px 6px !important;
+	}
 	.res-sign-text{
 		display:block !important;
 		font-size:20px;
@@ -396,7 +396,7 @@
 		height:auto;
 	}
 	.icon-img{
-		width:110%;
+		width:12%;
 	}
 	.icon-box{
 		text-align:center;
@@ -415,8 +415,11 @@
 		margin-bottom: 10px;
 	}
 	.box-xs{
-		height: 243px !important;
+		height: 296px !important;
 		margin-bottom: 14px;
+	}
+	.header-advance-area{
+		overflow-x: hidden;
 	}
 	.display-img{
 		display: block;
@@ -424,9 +427,7 @@
 	.top-61{
 		top: 61px;
 	}
-	.pr-0{
-		padding-right: 15px !important
-	}
+	
 	.height-80{
 		height: 174px;
 	}
@@ -448,6 +449,7 @@
 	.ml-mr-10{
 		margin-right: 0px;
 		margin-left: 0px;
+		margin-top: 29px;
 	}
 	.mt0-ml5{
 		margin: 0px;
@@ -866,6 +868,9 @@
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+	.header-advance-area{
+		overflow-x: hidden;
+	}
 	.content-bgcolor{
 		overflow-x: hidden;
 	}

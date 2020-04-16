@@ -856,6 +856,10 @@ input:checked + .slider:before {
 .footer-bgcolor{
   background: $footerBgColor;
 }
+
+.icon-img{
+  height:42px;
+}
 #preloader {
     position: fixed;
     top: 0;
