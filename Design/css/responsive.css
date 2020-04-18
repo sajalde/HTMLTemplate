@@ -371,6 +371,13 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+	#saveModal{
+	top: 157px;
+	left: 56px;
+	}
+	.modal-header .close{
+		margin: -1rem 0rem -1rem auto;
+	}
 		.nav-link {
 		padding: 10px 6px !important;
 	}
@@ -388,6 +395,10 @@
 	}
 	.cont{
 		width:100% !important;
+		height: 635px !important;
+	}
+	.wrapper{
+		overflow-y: scroll !important;
 	}
 	.sub-cont{
 		display:none;
@@ -871,6 +882,9 @@
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+	.res-logo-size{
+		width: 33% !important;
+	}
 	
 	.content-bgcolor{
 		overflow-x: hidden;
