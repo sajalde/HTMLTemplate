@@ -1,20 +1,20 @@
 /*Common colors in whole site*/
-$bodyBgColor: #f2f2f2; // all pages body color
+$bodyBgColor: #fff; // all pages body color
 $contentBgColor: #fff; // all content body color
-$activeBtnBgColor: #069198; // all active button color
+$activeBtnBgColor: #752876; // all active button color
 $activeBtnTextColor: #fff; // all active button text color
 $inActiveBtnBgColor : #fff; // all inactive button color
-$inActiveBtnTextColor : #069198; // all inactive button text color
+$inActiveBtnTextColor : #752876; // all inactive button text color
 $inActiveBtnHover: #ecffe4; // all inactive hover button color
 $deleteBtnBgColor : #dc3545; // all delete/close button color
 $deleteBtnTextColor : #fff; // all delete/close button text color
-$dropdownBgColor: #f7e8fc; // all dropdown background color
-$dropdownTextColor: #f3114f; // all dropdown text color
-$dropdownHover: #069198; // all dropdown on mouse (hover) background color
+$dropdownBgColor: #fff; // all dropdown background color
+$dropdownTextColor: #752876; // all dropdown text color
+$dropdownHover: #752876; // all dropdown on mouse (hover) background color
 $dropdownTextHover: #fff; // all dropdown on mouse (hover) text color
-$pageTitleTextColor: #069198; // all page title color
-$searchIconColor: #f3114f; // all page search icon color
-$checkOrRadioActiveBgColor: #f3114f; // all page checkbox background color
+$pageTitleTextColor: #752876; // all page title color
+$searchIconColor: #752876; // all page search icon color
+$checkOrRadioActiveBgColor: #752876; // all page checkbox background color
 /*Common colors in whole site*/
 
 
@@ -33,7 +33,7 @@ $formTextColor: #f3114f; // form content text color
 // Login page
 
 //Landing Page
-$headerTextBoxBgColor: #000; // landing page header message box color
+$headerTextBoxBgColor: #752876; // landing page header message box color
 $headerTextBoxTextColor: #fff; // landing page header message text color
 $headerTextBoxSpanColor: #3ad9de; // landing page header link text color
 $workTaskColor: #00008b; // landing page last box task text color
@@ -41,50 +41,50 @@ $workEventColor: rgb(232, 82, 15); // landing page last box event text color
 //Landing Page
 
 //Header Section
-$headerBgColor: linear-gradient(140deg, #0c0486, #053897); //page header background color
-$headerTextColor:  #f0ff1e; // page header text color
+$headerBgColor: #fbfbfb; //page header background color
+$headerTextColor:  #752876; // page header text color
 $headerLogo: url('../img/logo_praxis.gif');
 //Header Section
 
 //Left Menu
-$sidebarBgColor: linear-gradient(190deg, #344fec, #c5ccec); //left menu background color
-$sidebarTextColor: #fff; // left menu text color
-$sidebarIconColor: #e4bf06; // left menu icon color
-$sidebarSubMenuBgColor: #069198; // left menu submenu background color
-$sidebarListHover: #069198; // left menu list color on mouse (Hover)
-$collapseBgColor: #e4bf06; // left menu collapse background color
+$sidebarBgColor: #fbfbfb; //left menu background color
+$sidebarTextColor: #752876; // left menu text color
+$sidebarIconColor: #752876; // left menu icon color
+$sidebarSubMenuBgColor: #f2f2f2; // left menu submenu background color
+$sidebarListHover: #F6F6F6; // left menu list color on mouse (Hover)
+$collapseBgColor: #752876; // left menu collapse background color
 $collapseTextColor: #fff; // left menu collapse text color
 //Left Menu
 
 // All pages boxes
-$boxHeadBgColor: #500136; // box heading background color
-$boxheadTextColor: #fff; // box heading text color
-$boxSubheadBgColor:  #f7e8fc; // box sub-heading background color
-$boxSubheadTextColor: #069198; // box sub-heading text color
+$boxHeadBgColor: #e2e2e2; // box heading background color
+$boxheadTextColor: #752876; // box heading text color
+$boxSubheadBgColor:  #f2f2f2; // box sub-heading background color
+$boxSubheadTextColor: #752876; // box sub-heading text color
 // All pages boxes
 
 //All popup (Modal) 
-$modalBgColor:#f7e8fc; // Modal body background color
-$modalHeaderBgColor:#069198; // Modal Header background colror
+$modalBgColor:#fbfbfb; // Modal body background color
+$modalHeaderBgColor:#752876; // Modal Header background colror
 //All popup (Modal) 
 
 // All Tabs
-$activeTabBgColor: #f7e8fc; // active tab background color
-$activeTabTextColor:#f3114f; // active tab text color
-$activeTabBorderColor: #f3114f; // active tab border color
-$inActiveTabTextColor: #069198; // in active tab text color
-$hoverTabBgColor: #f3114f; // on mouse(hover) tab background color
+$activeTabBgColor: #f2f2f2; // active tab background color
+$activeTabTextColor:#752876; // active tab text color
+$activeTabBorderColor: #752876; // active tab border color
+$inActiveTabTextColor: #752876; // in active tab text color
+$hoverTabBgColor: #666; // on mouse(hover) tab background color
 $hoverTabTextColor: #fff; // on mouse(hover) tab text color
 // All Tabs
 
 // All Tables
-$tableHeaderBgColor: #fadbff; // table header background color
-$tableHeaderTextColor: #069198; // table header text color
+$tableHeaderBgColor: #f2f2f2; // table header background color
+$tableHeaderTextColor: #752876; // table header text color
 // All Tables
 
 //Footer Section
-$footerBgColor: linear-gradient(190deg, #03363a, #046d8d);
-$footerTextColor: rgb(247, 241, 157);
+$footerBgColor:#eae8e8;
+$footerTextColor:#752876;
 //Footer Section
 
 //Default box-sizes (Please don't change this below numbers)

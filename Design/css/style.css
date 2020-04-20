@@ -8,7 +8,7 @@
 
 html, body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background: #f2f2f2;
+  background: #fff;
   overflow: hidden !important;
   overflow-y: auto !important;
 }
@@ -267,22 +267,25 @@ h2 {
 .footer-copy-right p {
   margin: 0px;
   font-size: 14px;
-  color: #f7f19d;
+  color: #752876;
   font-weight: 100;
+}
+.footer-copy-right p a {
+  color: #752876;
 }
 
 .header-bgcolor {
-  background: linear-gradient(140deg, #0c0486, #053897) !important;
+  background: #fbfbfb !important;
 }
 
 .bar-button-pro {
-  color: #f0ff1e !important;
+  color: #752876 !important;
 }
 
 .btn-bgcolor {
-  background-color: #e4bf06;
-  border-color: #e4bf06;
-  color: #fff;
+  background-color: #752876;
+  border-color: #752876;
+  color: #fff !important;
 }
 
 .header-text {
@@ -291,7 +294,7 @@ h2 {
   position: absolute;
 }
 .header-text p {
-  background: #000;
+  background: #752876;
   padding: 7px 25px;
 }
 .header-text span {
@@ -306,7 +309,7 @@ h2 {
 }
 
 .header-text p {
-  background: #000;
+  background: #752876;
   padding: 5px 25px;
   font-size: 13px;
 }
@@ -317,42 +320,42 @@ h2 {
 }
 
 .sidebar-bgcolor {
-  background: linear-gradient(190deg, #344fec, #c5ccec) !important;
+  background: #fbfbfb !important;
 }
 
 .sidebar-icon-color {
-  color: #e4bf06;
+  color: #752876;
 }
 
 .sidebar-text-color {
-  color: #fff;
+  color: #752876;
 }
 
 .sidebar-nav .metismenu a:hover, .sidebar-nav .metismenu a:focus, .sidebar-nav .metismenu a:active {
-  background: #069198 !important;
+  background: #F6F6F6 !important;
 }
 
 .sidebar-nav ul {
-  background: #069198 !important;
+  background: #f2f2f2 !important;
 }
 
 .sidebar-nav .metismenu a {
-  color: #fff !important;
+  color: #752876 !important;
 }
 
 .box-head-bar {
-  background: #500136;
+  background: #e2e2e2;
   padding: 5px 10px;
-  color: #fff;
+  color: #752876;
 }
 .box-head-bar p {
   margin-bottom: 0;
 }
 
 .box-subhead-bar {
-  background: #f7e8fc;
+  background: #f2f2f2;
   padding: 5px 8px;
-  color: #069198;
+  color: #752876;
   font-size: 14px;
 }
 
@@ -984,10 +987,10 @@ h2 {
   padding-bottom: 20px;
 }
 .work-box-head h5 {
-  color: #069198;
+  color: #752876;
 }
 .work-box-head span {
-  color: #069198;
+  color: #752876;
   font-size: 15px;
   font-weight: 600;
 }
@@ -1027,6 +1030,7 @@ h2 {
   margin-left: 12px;
   position: relative;
   top: -1px;
+  height: 42px;
 }
 
 .content-bgcolor {
@@ -1034,7 +1038,7 @@ h2 {
 }
 
 .sidebar-nav .metismenu, #sidebar {
-  background: linear-gradient(190deg, #344fec, #c5ccec) !important;
+  background: #fbfbfb !important;
 }
 
 .sidebar-header {
@@ -1042,10 +1046,10 @@ h2 {
 }
 
 .modal-content {
-  background: #f7e8fc;
+  background: #fbfbfb;
 }
 .modal-content .modal-header {
-  background-color: #069198;
+  background-color: #752876;
   padding: 10px;
 }
 .modal-content .modal-title {
@@ -1136,8 +1140,8 @@ input:checked + .slider:before {
 
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #f3114f;
-  background-color: #f3114f;
+  border-color: #752876;
+  background-color: #752876;
 }
 
 .box-sm {
@@ -1206,16 +1210,19 @@ input:checked + .slider:before {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #f0ff1e;
+  color: #752876;
   font-size: 14px;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #752876;
 }
 
 .navbar-nav .dropdown-menu {
-  background: #f7e8fc;
+  background: #fff;
 }
 
 .dropdown-menu > li a {
-  color: #f3114f;
+  color: #752876;
 }
 
 .drop-caret::after {
@@ -1254,6 +1261,16 @@ input:checked + .slider:before {
   font-size: 14px;
 }
 
+.box-head-bar div::-webkit-scrollbar {
+  display: none;
+  width: 5px;
+  height: 300px;
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+}
+
 .collapse-btn {
   margin: 0;
 }
@@ -1267,7 +1284,7 @@ input:checked + .slider:before {
 
 .title-text {
   font-weight: bold;
-  color: #069198;
+  color: #752876;
   font-size: 20px;
   /* margin: 4px 0; */
   margin-bottom: 4px;
@@ -1284,9 +1301,9 @@ input:checked + .slider:before {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #f3114f !important;
-  border-bottom: 4px solid #f3114f !important;
-  background-color: #f7e8fc !important;
+  color: #752876 !important;
+  border-bottom: 4px solid #752876 !important;
+  background-color: #f2f2f2 !important;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -1294,11 +1311,11 @@ input:checked + .slider:before {
 }
 
 .nav-tabs .nav-link {
-  color: #069198;
+  color: #752876;
 }
 
 .nav-tabs .nav-link:hover {
-  background: #f3114f;
+  background: #666;
   color: #fff;
 }
 
@@ -1309,7 +1326,7 @@ input:checked + .slider:before {
 
 .log-content span {
   padding: 10px;
-  color: #069198;
+  color: #752876;
 }
 
 .avt-img img {
@@ -1337,7 +1354,7 @@ input:checked + .slider:before {
 }
 
 .btn-custom-active {
-  background: #069198;
+  background: #752876;
 }
 .btn-custom-active a {
   color: #fff;
@@ -1347,7 +1364,7 @@ input:checked + .slider:before {
   background: #fff;
 }
 .btn-custom-secondary a {
-  color: #069198;
+  color: #752876;
 }
 
 .btn-custom-secondary:hover {
@@ -1358,7 +1375,7 @@ input:checked + .slider:before {
   color: #000;
 }
 .box-link a :hover {
-  color: linear-gradient(140deg, #0c0486, #053897);
+  color: #000;
 }
 
 .right-icons label:hover {
@@ -1366,20 +1383,20 @@ input:checked + .slider:before {
 }
 
 .table-head-bgcolor {
-  background: #fadbff;
-  color: #069198;
+  background: #f2f2f2;
+  color: #752876;
 }
 
 .search-text-color {
-  color: #f3114f !important;
+  color: #752876 !important;
 }
 
 .dropdown:hover > .dropdown-menu {
-  background: #f7e8fc;
+  background: #fff;
 }
 
 .btn-save-modalbtn {
-  background: #069198;
+  background: #752876;
   color: #fff;
 }
 
@@ -1389,20 +1406,20 @@ input:checked + .slider:before {
 }
 
 .dropdown-menu > li a:hover {
-  background: #069198 !important;
+  background: #752876 !important;
 }
 
 .dropdown-item {
-  color: #f3114f;
+  color: #752876;
 }
 
 .dropdown-item:active, .dropdown-item:hover {
-  background: #069198 !important;
+  background: #752876 !important;
   color: #fff !important;
 }
 
 .footer-bgcolor {
-  background: linear-gradient(190deg, #03363a, #046d8d);
+  background: #eae8e8;
 }
 
 .icon-img {

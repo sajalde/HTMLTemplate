@@ -308,7 +308,12 @@
     font-size: 14px;
     color: $footerTextColor;
     font-weight: 100;
+    a {
+      color: $footerTextColor;
+    }
   }
+
+  
   // Landing and Dashboard
   .header-bgcolor{
     background: $headerBgColor !important;
@@ -319,7 +324,7 @@
   .btn-bgcolor {
     background-color: $collapseBgColor;
     border-color: $collapseBgColor;
-    color: $collapseTextColor;
+    color: $collapseTextColor !important;
   }
   .header-text{
     color: $headerTextBoxTextColor;
@@ -335,18 +340,18 @@
     }
   }
   .header-text {
-    color: #fff;
+    color: $headerTextBoxTextColor;
     top: 10px;
     position: absolute;
   }
   .header-text p {
-    background: #000;
+    background: $headerTextBoxBgColor;
     padding: 5px 25px;
     font-size: 13px;
   }
   .header-text span {
     font-weight: 600;
-    color: #3ad9de;
+    color: $headerTextBoxSpanColor;
   }
   
   
@@ -487,6 +492,7 @@
     margin-left: 12px;
     position: relative;
     top: -1px;
+    height: 42px;
   }
   .content-bgcolor{
     background: $contentBgColor;
@@ -687,6 +693,9 @@ input:checked + .slider:before {
 .navbar-dark .navbar-nav .nav-link{
   color:$headerTextColor;
   font-size: 14px;
+  &:hover{
+    color: $headerTextColor;
+  }
 }
 .navbar-nav .dropdown-menu{
   background: $dropdownBgColor;
@@ -721,6 +730,14 @@ input:checked + .slider:before {
 .box-head-bar p {
     margin-bottom: 0;
     font-size: 14px;
+}
+.box-head-bar div::-webkit-scrollbar {
+    display: none;
+    width: 5px;
+    height: 300px;
+  }
+.mCSB_inside>.mCSB_container{
+  margin-right:0;
 }
 .collapse-btn{
   margin:0;
@@ -814,7 +831,7 @@ input:checked + .slider:before {
 .box-link a{
   color:#000;
   :hover{
-    color: $headerBgColor;
+    color: #000;
   }
 }
 
