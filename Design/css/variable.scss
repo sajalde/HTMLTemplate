@@ -26,14 +26,15 @@ $switchAT: 1.2s;  // Switching from sign in to sign up content
 $inputW: 260px;  //  login button width
 $btnH: 36px; // login button height
 $loginBgImg: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg'); // body background image
-$loginBtnColor:linear-gradient(140deg, #f3114f, #069198); // login sign in / sign up button color
+$formSideImag: url('https://www.business.com/images/content/5ca/3db965a215e8a458b9d66/0-800-'); // form side image
+$loginBtnColor:#752876; // login sign in / sign up button color
 $loginBtnTextClor: #fff;// login sign in/sign up button text color
-$formBgColor: #f2f2f2; // form content background color
-$formTextColor: #f3114f; // form content text color
+$formBgColor: #fbfbfb; // form content background color
+$formTextColor: #752876; // form content text color
 // Login page
 
 //Landing Page
-$headerTextBoxBgColor: #752876; // landing page header message box color
+$headerTextBoxBgColor: #000; // landing page header message box color
 $headerTextBoxTextColor: #fff; // landing page header message text color
 $headerTextBoxSpanColor: #3ad9de; // landing page header link text color
 $workTaskColor: #00008b; // landing page last box task text color
@@ -41,19 +42,19 @@ $workEventColor: rgb(232, 82, 15); // landing page last box event text color
 //Landing Page
 
 //Header Section
-$headerBgColor: #fbfbfb; //page header background color
-$headerTextColor:  #752876; // page header text color
+$headerBgColor: #752876; //page header background color
+$headerTextColor:  #fff; // page header text color
 $headerLogo: url('../img/logo_praxis.gif');
 //Header Section
 
 //Left Menu
-$sidebarBgColor: #fbfbfb; //left menu background color
-$sidebarTextColor: #752876; // left menu text color
-$sidebarIconColor: #752876; // left menu icon color
-$sidebarSubMenuBgColor: #f2f2f2; // left menu submenu background color
-$sidebarListHover: #F6F6F6; // left menu list color on mouse (Hover)
-$collapseBgColor: #752876; // left menu collapse background color
-$collapseTextColor: #fff; // left menu collapse text color
+$sidebarBgColor: #752876; //left menu background color
+$sidebarTextColor: #fff; // left menu text color
+$sidebarIconColor: #fff; // left menu icon color
+$sidebarSubMenuBgColor: #d05ed1; // left menu submenu background color
+$sidebarListHover: #d05ed1; // left menu list color on mouse (Hover)
+$collapseBgColor: #fff; // left menu collapse background color
+$collapseTextColor: #752876; // left menu collapse text color
 //Left Menu
 
 // All pages boxes
@@ -78,7 +79,7 @@ $hoverTabTextColor: #fff; // on mouse(hover) tab text color
 // All Tabs
 
 // All Tables
-$tableHeaderBgColor: #f2f2f2; // table header background color
+$tableHeaderBgColor: #fed0ff; // table header background color
 $tableHeaderTextColor: #752876; // table header text color
 // All Tables
 

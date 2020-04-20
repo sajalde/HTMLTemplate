@@ -55,7 +55,7 @@ input, button {
   height: 100%;
   transition: transform 1.2s ease-in-out;
   padding: 50px 111px 0;
-  background: #f2f2f2;
+  background: #fbfbfb;
 }
 
 .sub-cont {
@@ -197,11 +197,11 @@ h2 {
 }
 
 .form h2 {
-  color: #f3114f;
+  color: #752876;
 }
 
 .labelColor {
-  color: #f3114f;
+  color: #752876;
 }
 
 .forgot-pass {
@@ -214,7 +214,7 @@ h2 {
 .submit {
   margin-top: 40px;
   margin-bottom: 20px;
-  background: linear-gradient(140deg, #f3114f, #069198);
+  background: #752876;
   text-transform: uppercase;
   color: #fff;
 }
@@ -275,17 +275,17 @@ h2 {
 }
 
 .header-bgcolor {
-  background: #fbfbfb !important;
+  background: #752876 !important;
 }
 
 .bar-button-pro {
-  color: #752876 !important;
+  color: #fff !important;
 }
 
 .btn-bgcolor {
-  background-color: #752876;
-  border-color: #752876;
-  color: #fff !important;
+  background-color: #fff;
+  border-color: #fff;
+  color: #752876 !important;
 }
 
 .header-text {
@@ -294,7 +294,7 @@ h2 {
   position: absolute;
 }
 .header-text p {
-  background: #752876;
+  background: #000;
   padding: 7px 25px;
 }
 .header-text span {
@@ -309,7 +309,7 @@ h2 {
 }
 
 .header-text p {
-  background: #752876;
+  background: #000;
   padding: 5px 25px;
   font-size: 13px;
 }
@@ -320,27 +320,27 @@ h2 {
 }
 
 .sidebar-bgcolor {
-  background: #fbfbfb !important;
+  background: #752876 !important;
 }
 
 .sidebar-icon-color {
-  color: #752876;
+  color: #fff;
 }
 
 .sidebar-text-color {
-  color: #752876;
+  color: #fff;
 }
 
 .sidebar-nav .metismenu a:hover, .sidebar-nav .metismenu a:focus, .sidebar-nav .metismenu a:active {
-  background: #F6F6F6 !important;
+  background: #d05ed1 !important;
 }
 
 .sidebar-nav ul {
-  background: #f2f2f2 !important;
+  background: #d05ed1 !important;
 }
 
 .sidebar-nav .metismenu a {
-  color: #752876 !important;
+  color: #fff !important;
 }
 
 .box-head-bar {
@@ -1038,7 +1038,7 @@ h2 {
 }
 
 .sidebar-nav .metismenu, #sidebar {
-  background: #fbfbfb !important;
+  background: #752876 !important;
 }
 
 .sidebar-header {
@@ -1210,11 +1210,11 @@ input:checked + .slider:before {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #752876;
+  color: #fff;
   font-size: 14px;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #752876;
+  color: #fff;
 }
 
 .navbar-nav .dropdown-menu {
@@ -1272,8 +1272,8 @@ input:checked + .slider:before {
 }
 
 .navbar-dark .navbar-toggler {
-  color: #752876;
-  border-color: #752876;
+  color: #fff;
+  border-color: #fff;
 }
 
 .collapse-btn {
@@ -1388,7 +1388,7 @@ input:checked + .slider:before {
 }
 
 .table-head-bgcolor {
-  background: #f2f2f2;
+  background: #fed0ff;
   color: #752876;
 }
 
