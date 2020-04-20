@@ -1271,6 +1271,11 @@ input:checked + .slider:before {
   margin-right: 0;
 }
 
+.navbar-dark .navbar-toggler {
+  color: #752876;
+  border-color: #752876;
+}
+
 .collapse-btn {
   margin: 0;
 }
