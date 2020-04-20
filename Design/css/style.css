@@ -260,6 +260,10 @@ h2 {
   right: 5px;
 }
 
+.landing-page-left-none {
+  margin-left: -185px;
+}
+
 .icon-box {
   max-height: 76px;
 }

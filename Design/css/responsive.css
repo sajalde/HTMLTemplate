@@ -1,6 +1,9 @@
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
-	
+	.header-text{
+		width: 38%;
+		top: 0px;
+	}
 	.left-sidebar-pro{
 		display:block;
 	}
@@ -136,6 +139,9 @@
 	 
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+	.landing-page-left-none{
+		margin-left:0;
+	}
 	.res-sign-text{
 		display:block !important;
 		font-size:20px;
@@ -371,6 +377,9 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+	.landing-page-left-none{
+		margin-left:0;
+	}
 	#saveModal{
 	top: 157px;
 	left: 56px;
