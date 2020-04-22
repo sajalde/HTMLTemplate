@@ -377,12 +377,18 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+	.font-size-14 {
+    font-size: 11px;
+}
+	.log-content{
+		font-size:12px;
+	}
 	.landing-page-left-none{
 		margin-left:0;
 	}
 	#saveModal{
 	top: 157px;
-	left: 56px;
+	left: 24px;
 	}
 	.modal-header .close{
 		margin: -1rem 0rem -1rem auto;
