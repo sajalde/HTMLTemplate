@@ -1,5 +1,11 @@
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
+	.main-logo{
+		height:25px !important;
+	}
+	.footer-bgcolor{
+		position:fixed;
+	}
 	.header-text{
 		width: 38%;
 		top: 0px;
@@ -136,9 +142,11 @@
 	}
 }
 
+
 	 
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+	
 	.landing-page-left-none{
 		margin-left:0;
 	}
@@ -374,12 +382,21 @@
 	}
 }
 
- 
+ @media (max-width: 480px){
+	 .box-xs{
+		height: 296px !important;
+		margin-bottom: 14px;
+	}
+	
+ }
 /* small mobile :320px. */
 @media (max-width: 767px) {
 	.font-size-14 {
     font-size: 11px;
-}
+  }
+  .box-xs{
+		margin-bottom: 14px;
+	}
 	.log-content{
 		font-size:12px;
 	}
@@ -388,7 +405,12 @@
 	}
 	#saveModal{
 	top: 157px;
-	left: 24px;
+	}
+	#saveModal .modal-dialog{
+		width: 96%;
+	}
+	#vendor .modal-dialog{
+		width: 96%;
 	}
 	.modal-header .close{
 		margin: -1rem 0rem -1rem auto;
@@ -440,10 +462,7 @@
 	.box-md{
 		margin-bottom: 10px;
 	}
-	.box-xs{
-		height: 296px !important;
-		margin-bottom: 14px;
-	}
+	
 	.pr-0{
 		padding-right:10px !important;
 	}
