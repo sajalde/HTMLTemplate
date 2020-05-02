@@ -1490,3 +1490,55 @@ h1, h2, h3, h4, h5, h6 {
 #footer .credits a:hover {
   color: #f1f7ff;
 }
+.price{
+    display: inline-block;
+    background-color: #07a2b3;
+    padding: 10px;
+    font-size: 24px;
+    color:#fff;
+}
+.price sup{
+  font-size: 10px;
+  line-height: 10px;
+  top: -2px;
+}
+.price span:nth-child(2){
+    font-size:11px;
+}
+.price_body{
+  background: #032a65;
+}
+.price_list,.App_Dev{
+  list-style:none;
+  padding-left:0;
+}
+.price_list li{
+  padding: 5px 0;
+  color: #fff;
+  font-size: 14px;
+}
+.price_body .readmore{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.price_body .readmore:hover{
+    background: #000;
+}
+#services_type .card{
+    border-radius:5px;
+}
+.App_Dev li i{
+  color: #190fa9;
+  padding-right: 13px;
+}
+.App_Dev li h6{
+  font-weight:bold;
+}
