@@ -1541,3 +1541,15 @@ h1, h2, h3, h4, h5, h6 {
 .App_Dev li h6{
   font-weight:bold;
 }
+.team_box{
+    box-shadow: 0 0 5px #ccc;
+    padding: 37px 5px;
+    background: #00458f;
+    border-color: #00458f;
+}
+.team_box .member-info,.team_box .member-info .social a{
+  color:#fff;
+}
+.team_box:hover{
+   
+}
