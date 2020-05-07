@@ -1123,7 +1123,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #clients .client-logo {
-  padding: 64px;
+  padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1131,7 +1131,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #d6eaff;
   overflow: hidden;
   background: #fff;
-  height: 160px;
+  height: 133px;
 }
 
 #clients .client-logo:hover img {
@@ -1550,6 +1550,41 @@ h1, h2, h3, h4, h5, h6 {
 .team_box .member-info,.team_box .member-info .social a{
   color:#fff;
 }
-.team_box:hover{
-   
+.blog_box{
+    background: #fff;
+    margin: 0 0 60px 0;
+    border: 1px solid #d1d1d1;
+    -webkit-box-shadow: 8px 8px 0 rgba(0,0,0,.07);
+    -moz-box-shadow: 8px 8px 0 rgba(0,0,0,.07);
+    box-shadow: 8px 8px 0 rgba(0,0,0,.07);
+    height: 579px;
+}
+.blog_box img{
+    height: 278px;
+    width: 100%;
+}
+.blog_content{
+    padding: 25px 40px;
+    text-align: center;
+}
+.blog_content span{
+    text-transform:uppercase;
+    color: blue;
+}
+.blog_content h3{
+    font-family: Ubuntu,sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #313131;
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+.blog_content h3:hover{
+    border-bottom: 3px solid blue;
+}
+.blog_content h3 a{
+  color: #313131;
+}
+.blog_content h3 a:hover{
+  color:#007bff;
 }
