@@ -165,42 +165,52 @@
           </div>  
         </div>
 
-        <section id="products" class="wow fadeIn" style="background:none;">
-            <div class="row row-eq-height justify-content-center">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="cursor:pointer">
+                <button class="btn btn-link">
+                  Production Planning
+                </button>
+              </h5>
+            </div>
 
-              <div class="col-lg-4 mb-4">
-                <div class="card wow bounceInUp">
-                  <div class="card-body">
-                    <h5 class="card-title">Production Planning</h5>
-                    <p class="card-text">Production planning utilizes materials and production capacity, in order to serve different customers ..</p>
-                    <a href="#" class="readmore">Read more </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 mb-4">
-                <div class="card wow bounceInUp">
-                  <div class="card-body">
-                    <h5 class="card-title">Purchase Planning</h5>
-                    <p class="card-text">The Purchase Planning for Business Central provides real-time visibility over warehouse operations and helps to calculate the demand and ... </p>
-                    <a href="#" class="readmore">Read more </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 mb-4">
-                <div class="card wow bounceInUp">
-                  <div class="card-body">
-                    <h5 class="card-title">Procurement Planning</h5>
-                    <p class="card-text">In Procurement Planning calculated product wise along-with Final Landing Cost with ordered quantity for that product.. </p>
-                    <a href="#" class="readmore">Read more </a>
-                  </div>
-                </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Production planning utilizes materials and production capacity, in order to serve different customers ..
               </div>
             </div>
-        </section>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="cursor:pointer">
+                <button class="btn btn-link" >
+                  Purchase Planning
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                The Purchase Planning for Business Central provides real-time visibility over warehouse operations and helps to calculate the demand and ...
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="cursor:pointer">
+                <button class="btn btn-link">
+                  Procurement Planning
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                In Procurement Planning calculated product wise along-with Final Landing Cost with ordered quantity for that product.. 
+              </div>
+            </div>
+          </div>
+        </div>
 
-        
       </div>
     </section><!-- End About Section -->
     
