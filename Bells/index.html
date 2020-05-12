@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Home | Bells</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- Background Video  -->
+    <video autoplay muted loop id="myVideo">
+      <source src="https://video.wixstatic.com/video/a0ccac_1d0344890d67452084a19d1e988201d4/1080p/mp4/file.mp4" type="video/mp4">
+    </video>
+    <!-- Background Video  -->
+    <div class="container cover-container w-100 h-100 p-3 ">
+       <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Bells</h3>
+          <nav class="nav nav-masthead d-flex justify-content-around">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Our Media</a>
+            <a class="nav-link" href="#">Our Clients</a>
+            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#">Contact Us</a>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </nav>
+        </div>
+      </header> 
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="active">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div> 
+     <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+      <main role="main" class="inner cover">
+        <h1>Get Spotted</h1>
+        <p class="lead">1500+ Billboards, traffic signal ads, kiosks and bus shelters across Kolkata
+         and the rest of Bengal to maximise your brand visibility. </p>
+        
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <!-- <div class="inner">
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div> -->
+      </footer>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
