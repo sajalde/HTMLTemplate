@@ -1,0 +1,96 @@
+body {
+  padding-top: 3.5rem;
+}
+
+.nav_bgcolor {
+  background: #2E5252;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  width: 77%;
+}
+
+.nav_contact, .nav_login {
+  color: #fff;
+}
+
+.navbar-nav li {
+  margin-right: 25px;
+}
+
+.navbar-nav li .nav-link {
+  color: #fff !important;
+}
+
+.navbar-nav .active {
+  background: #e2c8b4;
+}
+.navbar-nav .active a {
+  color: #000 !important;
+}
+
+.banner {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bannerText {
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  text-align: center;
+}
+.bannerText h1 {
+  font: normal normal normal 60px/1.4em "playfair display", serif;
+  color: #000000;
+}
+.bannerText p {
+  font-size: 28px;
+  font-style: italic;
+}
+
+.banner_btn {
+  background: #72491e;
+  color: #fff;
+}
+
+.meet_doctors {
+  background: #5f6a4c;
+  padding: 97px;
+  padding-bottom: 237px;
+  padding-top: 237px;
+}
+
+.doc_content {
+  padding: 100px;
+  text-align: center;
+  font-family: proxima-n-w01-reg, sans-serif;
+}
+.doc_content p {
+  font: normal normal normal 18px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+  color: #2E5252;
+  text-align: justify;
+  margin: auto 80px;
+  margin-bottom: 80px;
+}
+
+.footer_bgcolor {
+  background: #2E5252;
+}
+
+.footer_left_text {
+  color: #fff;
+}
+
+.footer_form h3 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
