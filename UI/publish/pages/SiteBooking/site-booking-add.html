@@ -1,0 +1,130 @@
+<div class="modal fade" role="dialog" id="modAddSitebooking" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered modal-lg" style="overflow-y: initial !important;">
+    <div class="modal-content">
+      <div class="modal-header bg-info">
+        <h4 class="modal-title">Add Site Booking</h4>
+        <button type="button" class="close" onclick="sitebooking.CloseSitebookingModal()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- /.content-header -->
+      <div class="modal-body">
+        <form id="formSiteBook">
+
+          <div class="card card-primary">
+            <div class="card-header d-flex p-0">
+            </div>
+            <div class="card-body">
+
+              <input type="hidden" id="hdnPK_BookingID" value="0" data-ParameterName="PK_BookingID" />
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label>Site Name</label>
+                  <input type="text" class="form-control form-control-sm" id="txtSiteName" placeholder="Site Name"
+                    data-ParameterName="FK_SiteID" required />
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label>Booking Date</label>
+                  <div class='input-group date' id=''>
+                    <input id="txtBookingDate" type='text' class="form-control form-control-sm" onkeydown="return false"
+                      required data-ParameterName="BookingDate" />
+                    <span class="input-group-addon">
+                      <span class="fas fa-calendar-alt"></span>
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label>Client Name</label>
+                  <select id="ddlFK_ClientID" class="form-control form-control-sm select2" style="width: 100%;"
+                    data-ParameterName="FK_ClientID" required></select>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label>Manage By</label>
+                  <select id="ddlFK_UserID_ManageBy" class="form-control form-control-sm select2" style="width: 100%;"
+                    data-ParameterName="FK_UserID_ManageBy" required></select>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label>Rent(/SqFt)</label>
+                  <select id="ddlFK_StatusID_RentPerSQFT" class="form-control form-control-sm select2"
+                    style="width: 100%;" data-ParameterName="FK_StatusID_RentPerSQFT"></select>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label>Montly Rent</label>
+                  <input id="txtTotalMontlyRent" type='text' class="form-control form-control-sm" required
+                    data-ParameterName="TotalMontlyRent" />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label>LightStatus</label>
+                  <select id="ddlLightStatus" class="form-control form-control-sm select2" style="width: 100%;"
+                    data-ParameterName="LightStatus" required></select>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label>Contract Start Date</label>
+                  <div class='input-group date' id=''>
+                    <input id="txtContractStartDate" type='text' class="form-control form-control-sm"
+                      onkeydown="return false" required data-ParameterName="ContractStartDate" onchange="sitebooking.ContractDateChange()" />
+                    <span class="input-group-addon">
+                      <span class="fas fa-calendar-alt"></span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label>Contract End Date</label>
+                  <div class='input-group date' id=''>
+                    <input id="txtContractEndDate" type='text' class="form-control form-control-sm"
+                      onkeydown="return false" required data-ParameterName="ContractEndDate" onchange="sitebooking.ContractDateChange()" />
+                    <span class="input-group-addon">
+                      <span class="fas fa-calendar-alt"></span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label>Contract Status</label>
+                  <input id="txtFK_StatusID_ContractStatus" type='text' class="form-control form-control-sm" required
+                    data-ParameterName="FK_StatusID_ContractStatus" />
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <table id="dtListofBooking" class="table table-bordered table-hover"></table>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between bg-info">
+        <button type="button" class="btn btn-default" onclick="sitebooking.CloseSitebookingModal()">Close</button>
+        <button type="button" class="btn btn-primary pull-right" onclick="sitebooking.AddUpdateSiteBooking()">Submit
+          Booking</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- /.content -->
+<script>
+
+</script>

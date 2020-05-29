@@ -1,0 +1,121 @@
+<div class="modal fade" role="dialog" id="modAddUser" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" style="overflow-y: initial !important;">
+    <div class="modal-content">
+      <div class="modal-header bg-info">
+        <h4 class="modal-title">Add User</h4>
+        <button type="button" class="close" onclick="manageuser.CloseAddModal()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- style="overflow-y: auto;height: 600px;" -->
+      <div class="modal-body">
+        <form role="form" id="formAddUser">
+
+          <input type="hidden" id="hdnUserID" value="0" data-ParameterName="UserID" />
+          <div class="card-body">
+
+            <div class="row">
+              <div class="form-group col-md-4">
+                <label for="txtEmail">Email address</label>
+                <input type="email" class="form-control" id="txtEmail" placeholder="Enter email"
+                  data-ParameterName="Email" required />
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="txtPhoneNumber">Phone Number</label>
+                <input type="tel" class="form-control" id="txtPhoneNumber" placeholder="Enter Phone Number"
+                  data-ParameterName="PhoneNumber" />
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="form-group col-sm-2">
+                <label for="ddlTitle">Title</label>
+                <select id="ddlTitle" class="form-control select2" style="width: 100%;" data-ParameterName="Title"
+                  required>
+                  <option value="0" selected>Select Title</option>
+                  <option value="Mr">Mr</option>
+                  <option value="Mrs">Mrs</option>
+                </select>
+              </div>
+
+
+              <div class="form-group col-md-4">
+                <label for="txtFirstName">First Name</label>
+                <input type="text" class="form-control" id="txtFirstName" placeholder="Enter First Name"
+                  data-ParameterName="FirstName" />
+              </div>
+
+              <div class="form-group col-md-3">
+                <label for="txtMiddleName">Middle Name</label>
+                <input type="text" class="form-control" id="txtMiddleName" placeholder="Enter Middle Name"
+                  data-ParameterName="MiddleName" />
+              </div>
+
+
+              <div class="form-group col-md-3">
+                <label for="txtLastName">Last Name</label>
+                <input type="text" class="form-control" id="txtLastName" placeholder="Enter Last Name"
+                  data-ParameterName="LastName" />
+              </div>
+            </div>
+
+            <div class="row">
+              
+              <div class="form-group col-sm-4">
+                <label for="ddlGender">Gender</label>
+                <select id="ddlGender" class="form-control select2" style="width: 100%;" data-ParameterName="Gender"
+                  required>
+                  <option value="0" selected>Select Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="txtDisplayUserName">Display User Name</label>
+                <input type="text" class="form-control" id="txtDisplayUserName" placeholder="Enter Display User Name"
+                  data-ParameterName="DisplayUserName" />
+              </div>
+              <div class="form-group col-md-2">
+                <label>Role</label>
+                <select id="ddlUserRole" class="form-control select2" style="width: 100%;" data-ParameterName="UserRole"
+                  required></select>
+              </div>
+
+              <div class="form-group col-md-2">
+                <label>Monthly Salary</label>
+                <input type="text" id="txtSalaryMonthly" class="form-control" data-ParameterName="SalaryMonthly" numeric />
+                  
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col-md-4">
+                <label for="txtUserName">User Name</label>
+                <input type="text" class="form-control" id="txtUserName" placeholder="Enter User Name"
+                  data-ParameterName="UserName" onkeyup="manageuser.removeWhiteSpace()" required />
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="txtPassword">Password</label>
+                <input type="password" class="form-control" id="txtPassword" placeholder="*******"
+                  data-ParameterName="Password" required />
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-between bg-info">
+
+        <button type="button" class="btn btn-default" onclick="manageuser.CloseAddModal()">Close</button>
+        <button type="button" id="btnSave" onclick="manageuser.AddUpdateUser()" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

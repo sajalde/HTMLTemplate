@@ -1,0 +1,55 @@
+<!-- Content Header (Page header) -->
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0 text-dark">Manage Users</h1>
+      </div><!-- /.col -->
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active">Dashboard v1</li>
+        </ol>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="col-md-12">
+        <div class="card card-primary">
+          <div class="card-header d-flex p-0">
+              <ul class="nav nav-pills ml-auto p-2">
+                  <li class="nav-item">
+                    <button type="button" class="btn btn-info float-left" data-toggle="modal"
+                      onclick="manageuser.OpenAddModal()"><i class="fas fa-user-plus"></i> Add User</button>
+                  </li>
+                  <li class="nav-item">
+                    <div id="export-area" style="padding-left: 10px;"></div>
+                  </li>
+                </ul>
+           
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+            <table id="dtUselist" class="table table-bordered table-hover">
+            </table>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+
+<script>
+  $(document).ready(function(){
+    manageuser.ListUsers();
+  })
+</script>

@@ -1,0 +1,200 @@
+<div class="tab-pane fade active show" id="addsiteInfo" role="tabpanel" aria-labelledby="addsiteInfo-tab">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card card-primary">
+            <div class="card-header d-flex p-0">
+            </div>
+            <div class="card-body">
+              <form id="formSiteInfo">
+                <input type="hidden" id="hdnPK_SiteID" value="0" data-ParameterName="PK_SiteID" />
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label>Site Name</label>
+                    <input type="text" id="txtSiteName" class="form-control form-control-sm" style="width: 100%;"
+                      data-ParameterName="SiteName" required></select>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label>Photo Link</label>
+                    <input type="text" id="txtPhotoLink" class="form-control form-control-sm" style="width: 100%;"
+                      data-ParameterName="PhotoLink"></select>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>Total Area In SQFT</label>
+                    <input type="text" id="txtTotalAreaInSQFT" class="form-control form-control-sm" style="width: 100%;"
+                      data-ParameterName="TotalAreaInSQFT"></select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-3">
+                    <label>Media Type</label>
+                    <select id="ddlFK_MediaID" class="form-control form-control-sm" style="width: 100%;"
+                      data-ParameterName="FK_MediaID" required></select>
+                  </div>
+
+                  <div class="form-group col-md-3">
+                    <label>Lighting Type</label>
+                    <select id="ddlFK_StatusID_LightingType" class="form-control form-control-sm" style="width: 100%;"
+                      data-ParameterName="FK_StatusID_LightingType"></select>
+                  </div>
+
+                  <div class="form-group col-md-3">
+                    <label>District</label>
+                    <select id="ddlFK_DistrictID" class="form-control form-control-sm" style="width: 100%;"
+                      data-ParameterName="FK_DistrictID"></select>
+                  </div>
+
+                  <div class="form-group col-md-3">
+                    <label>No of Structures</label>
+                    <select id="ddlNoofStructures" class="form-control form-control-sm" style="width: 100%;"
+                      data-ParameterName="NoofStructures"></select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-2">
+                    <label>Dimensions Width</label>
+                    <input type="text" id="txtDimensions1_Width" class="form-control form-control-sm"
+                      style="width: 100%;" data-ParameterName="Dimensions1_Width"></select>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>Dimensions Height</label>
+                    <input type="text" id="txtDimensions1_Height" class="form-control form-control-sm"
+                      style="width: 100%;" data-ParameterName="Dimensions1_Height"></select>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>Dimensions1 Sides</label>
+                    <select id="ddlDimensions1_Sides" class="form-control form-control-sm" style="width: 100%;"
+                      data-ParameterName="FK_StatusID_Dimensions1_Sides"></select>
+                  </div>
+
+
+                  <div class="form-group col-md-2">
+                    <label>Dimensions Width</label>
+                    <input type="text" id="txtDimensions2_Width" class="form-control form-control-sm"
+                      style="width: 100%;" data-ParameterName="Dimensions2_Width"></select>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>Dimensions Height</label>
+                    <input type="text" id="txtDimensions2_Height" class="form-control form-control-sm"
+                      style="width: 100%;" data-ParameterName="Dimensions2_Height"></select>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>Dimensions2 Sides</label>
+                    <select id="ddlDimensions2_Sides" class="form-control form-control-sm" style="width: 100%;"
+                      data-ParameterName="FK_StatusID_Dimensions2_Sides"></select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-2">
+                    <label>Dimensions Width</label>
+                    <input type="text" id="txtDimensions3_Width" class="form-control form-control-sm"
+                      style="width: 100%;" data-ParameterName="Dimensions3_Width"></select>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>Dimensions Height</label>
+                    <input type="text" id="txtDimensions3_Height" class="form-control form-control-sm"
+                      style="width: 100%;" data-ParameterName="Dimensions3_Height"></select>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>Dimensions3 Sides</label>
+                    <select id="ddlDimensions3_Sides" class="form-control form-control-sm" style="width: 100%;"
+                      data-ParameterName="FK_StatusID_Dimensions3_Sides"></select>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>Dimensions Width</label>
+                    <input type="text" id="txtDimensions4_Width" class="form-control form-control-sm"
+                      style="width: 100%;" data-ParameterName="Dimensions4_Width"></select>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>Dimensions Height</label>
+                    <input type="text" id="txtDimensions4_Height" class="form-control form-control-sm"
+                      style="width: 100%;" data-ParameterName="Dimensions4_Height"></select>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>Dimensions4 Sides</label>
+                    <select id="ddlDimensions4_Sides" class="form-control form-control-sm" style="width: 100%;"
+                      data-ParameterName="FK_StatusID_Dimensions4_Sides"></select>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-md-6">
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn btn-primary pull-right"
+                      onclick="siteinformationadd.AddUpdateSiteInfo()">Submit Site Information</button>
+
+                    <button type="button" class="btn btn-primary" onclick="sitebooking.OpenSitebookingModal()">Add New
+                      Booking</button>
+
+                    <button type="button" class="btn btn-default" onclick="SiteInfo.CloseAddModal()">Close</button>
+
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table id="dtListofBooking" class="table table-bordered table-hover"></table>
+        </div>
+      </div>
+
+    </div><!-- /.container-fluid -->
+  </section>
+</div>
+
+<!-- /.content -->
+<script>
+  $(document).ready(function () {
+    let SiteID = siteinformationadd.globEditedSiteID;
+
+
+    siteinformationcommon.InitializeAddPageControls().then((val) => {
+      siteinformationadd.ListofBooking()
+      if (typeof SiteID != typeof undefined) {
+
+        apiCall.ajaxCallWithReturnData({ SiteID: SiteID }, 'GET', 'BussinessEntry/GetSiteInformation')
+          .then((res) => {
+            //       console.log(res.data)
+            apiCall.bindModel('formSiteInfo', res.data)
+          })
+      }
+
+    })
+  })
+</script>

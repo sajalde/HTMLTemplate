@@ -1,0 +1,170 @@
+<!-- Content Header (Page header) -->
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0 text-dark">Site Information</h1>
+      </div><!-- /.col -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card card-primary">
+          <div class="card-header d-flex p-0">
+
+            <ul class="nav nav-pills ml-auto p-2">
+
+              <li class="nav-item">
+                <button type="button" class="btn btn-info float-left" data-toggle="modal"
+                  onclick="siteinformationlist.OpenEntryTab()"><i class="fas fa-plus"></i> Add item</button>
+              </li>
+              <li class="nav-item">
+                <div id="export-area" style="padding-left: 10px;"></div>
+              </li>
+            </ul>
+          </div><!-- /.card-header -->
+
+          <div class="card-body">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                  aria-selected="true">
+                  Search and View Sites Information </a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <p class="float-right">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" 
+                  data-target="#searchPanel" aria-expanded="false" aria-controls="searchPanel">Open Search Panel</button>
+                </p>
+                <div class="collapse" id="searchPanel">
+
+                  <div class="row" style="margin-top:30px">
+                    <div class="col-sm-2">                    
+                      <label>Site Name</label>
+                      <input type="text" id="txtSitename" class="form-control form-control-sm" />
+                    </div>
+
+                    <div class="col-sm-2">
+                      <label>Site Availability</label>
+                      <select id="ddlSiteAvailability" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <label>Media</label>
+                      <select id="ddlMediaType" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <label>District</label>
+                      <select id="ddlDistrictName" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <label>Lighting Type</label>
+                      <select id="ddlLightingType" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <label>Client Name</label>
+                      <select id="ddlClientName" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+                  </div>
+
+                  <div class="row" style="margin-top:30px">
+                    <div class="col-sm-2">
+                      <label>Contract Status</label>
+                      <select id="ddlContractStatus" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <label>Payment Status</label>
+                      <select id="ddlPaymentStatus" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <label>Invoice Status</label>
+                      <select id="ddlInvoiceStatus" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+
+                    <div class="col-sm-2">
+                      <label>Photo Status</label>
+                      <select id="ddlPhotoStatus" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+
+                    <div class="col-sm-1">
+                      <label>Rent</label>
+                      <select id="ddlRentperSqrft" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+
+                    <div class="col-sm-1">
+                      <label>Light Status</label>
+                      <select id="ddlLightStatus" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+
+                    <div class="col-sm-1">
+                      <label>Manage By</label>
+                      <select id="ddlManageBy" class="form-control form-control-sm select2"
+                        style="width: 100%;"></select>
+                    </div>
+
+                    <div class="col-sm-1" style="margin-top:30px">
+                      <button type="button" class="btn btn-default" onclick="siteinformationlist.ListofSites()">
+                        <i class="fas fa-search" style="color: #fd7e14;"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:30px">
+                  <div class="col-md-12">
+                    <table id="dtListofSites" class="table table-bordered table-responsive table-hover"></table>
+                  </div>
+                </div>
+
+                <div id="df" class="card-footer clearfix">
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+
+<script>
+  $(document).ready(function () {
+    siteinformationcommon.Initialize()
+    var hash = window.location.hash;
+    console.log(hash)
+    hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+  })
+</script>
