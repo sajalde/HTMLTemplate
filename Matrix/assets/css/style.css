@@ -1602,3 +1602,84 @@ h1, h2, h3, h4, h5, h6 {
 #enquiry-alert-success,#enquiry-alert-danger{
   display:none;
 }
+
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; 
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-box-front {
+  background-color: #000;
+  color: black;
+}
+.flip-box-back {
+    background-color: #6f59fb;
+    color: #fff;
+    transform: rotateY(180deg);
+    padding: 30px 25px;
+}
+.flip-box-back p{
+  margin-bottom:5px;
+}
+.portfolio img{
+  height:200px;
+  width: 100%;
+  /* opacity: 0.7; */
+}
+.portfolio h6{
+    color: #fff;
+    z-index: 1000;
+    position: absolute;
+    top: 77px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 29px;
+    text-align: center;
+    background: rgba(255, 156, 138, 0.7);
+    margin-left:30px;
+    width:50%;
+}
+.lightbox_modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 49px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #06065f;
+}
+#myModalLightBox .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.lightbox_modal_content1 h5,.lightbox_modal_content1 p{
+  color: white;
+}
