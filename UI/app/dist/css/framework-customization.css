@@ -62,7 +62,4 @@ label:not(.form-check-label):not(.custom-file-label){
 .card-primary:not(.card-outline)>.card-header, .card-primary:not(.card-outline)>.card-header a:hover{
   color:#fff;
 }
-.content-header h1,.content-header .breadcrumb {
-  background: rgba(93, 77, 2, 0.7);
-  padding: 5px;
-}
+
