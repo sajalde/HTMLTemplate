@@ -3,7 +3,7 @@ body {
 }
 
 .nav_bgcolor {
-  background: #2E5252;
+  background: #fdd133;
 }
 
 .navbar-brand img {
@@ -11,8 +11,15 @@ body {
   width: 77%;
 }
 
-.nav_contact, .nav_login {
+.nav_contact {
+  color: #000;
+}
+
+.nav_login {
+  background: #fd5555;
   color: #fff;
+  padding: 10px;
+  border-radius: 50px;
 }
 
 .navbar-nav li {
@@ -20,7 +27,7 @@ body {
 }
 
 .navbar-nav li .nav-link {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .navbar-nav .active {
@@ -56,15 +63,16 @@ body {
 }
 
 .banner_btn {
-  background: #72491e;
+  background: #0c1d01;
   color: #fff;
 }
 
 .meet_doctors {
-  background: #5f6a4c;
+  background: #9e7504;
   padding: 97px;
   padding-bottom: 237px;
   padding-top: 237px;
+  height: 100%;
 }
 
 .doc_content {
@@ -80,8 +88,90 @@ body {
   margin-bottom: 80px;
 }
 
+.specialization {
+  background: url(https://static.wixstatic.com/media/38a4ce_3dbeb972838941fe9d6add90e49c9522~mv2.jpg/v1/fill/w_450,h_337,fp_0.52_0.58,q_90/38a4ce_3dbeb972838941fe9d6add90e49c9522~mv2.webp);
+  background-size: cover;
+}
+
+.specialization_content {
+  top: 87px;
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  left: -195px;
+  box-shadow: 0px 1px 6px #5d5d5d;
+}
+
+.consultation {
+  background: #fd5555;
+  padding-top: 33px;
+  padding-bottom: 35px;
+}
+.consultation small {
+  color: #fff;
+  background: #da0e0e;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.consultation span {
+  font-weight: 700;
+}
+
+.consult {
+  font-size: 36px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.5;
+}
+
+.appointment_number {
+  padding: 10px;
+  background: #fb7761;
+  border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.services {
+  background: #feffcf;
+  padding: 50px 0;
+}
+
+.services_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #404040;
+  line-height: 1.2;
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+
+.service_icon {
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background: #f3c82d;
+}
+.service_icon .icon {
+  width: 32px;
+  height: 32px;
+  top: 14px;
+  position: relative;
+  margin: 0 auto;
+}
+.service_icon img {
+  max-width: 100%;
+}
+
+.service_box {
+  padding: 10px;
+  background: #fdd04e3b;
+}
+
 .footer_bgcolor {
-  background: #2E5252;
+  background: #26292d;
 }
 
 .footer_left_text {
