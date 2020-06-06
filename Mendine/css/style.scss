@@ -1,0 +1,328 @@
+@import "variable";
+body {
+  padding-top: 3.5rem;
+  font-family: playfair display,serif;
+  overflow-x: hidden;
+}
+.nav_bgcolor{
+    background:$HeaderBackgroundColor;
+}
+.navbar-brand img{
+    border-radius: 50%;
+    width: 77%;
+}
+.nav_contact{
+    color:$HeaderTextColor;
+}
+.nav_login{
+    background: #e2c8b4;
+    color: #000;
+    padding: 10px;
+    border-radius: 50px;
+}
+.navbar-nav li{
+    margin-right: 25px;
+}
+.navbar-nav li .nav-link{
+    color:$HeaderTextColor !important;
+}
+.navbar-nav .active{
+    background: rgba(226, 200, 180, 1);
+    a{
+        color: #000 !important;
+    }
+}
+.banner{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.bannerText{
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    text-align: center;
+
+    h1{
+        font: normal normal normal 60px/1.4em 'playfair display',serif;
+        color: #000000;
+    }
+    p{
+        font-size:28px;
+        font-style:italic;
+    }
+    
+}
+.banner_btn{
+        background:$ButtonBackgroundColor;
+        color:$ButtonTextColor;
+}
+.meet_doctors{
+    background:$MeetDocBackgroundColor;
+    padding: 97px;
+    padding-bottom: 237px;
+    padding-top: 237px;
+    height:100%;
+}
+.doc_content{
+    padding:100px;
+    text-align:center;
+    font-family: proxima-n-w01-reg,sans-serif;
+
+    p{
+        font: normal normal normal 18px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+        color: #2E5252;
+        text-align: justify;
+        margin: auto 80px;
+        margin-bottom: 80px;
+    }
+}
+
+.specialization{
+    background: rgb(242, 236, 228) ;
+    padding: 60px 0;
+}
+.consultation_content{
+    top: 81px;
+    background: #fff;
+    padding: 64px;
+    position: relative;
+    left: -122px;
+    box-shadow: 0px 1px 6px #5d5d5d;
+    h4{
+        color: #004150;
+        font: normal normal normal 28px/1.4em "playfair display";
+    }
+    p{
+        color: #004150;
+        font: normal normal normal 20px/1.4em avenir-lt-w01_35-light1475496;
+    }
+}
+
+.consult_button{
+    background:rgba(149, 95, 39, 0.55);
+    padding: 5px 30px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.myspecialization{
+    h3{
+        font: normal normal normal 36px/1.4em 'playfair display',serif;
+        color: #2E5252;
+    }
+    
+    p{
+        font: normal normal normal 16px/1.4em 'playfair display',serif;
+        color: #2e5252;
+        width: 656px;
+        margin: 0 auto;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 1.8em;
+        margin-bottom: 50px;
+    }
+}
+.specialization_list{
+    
+
+    a{
+       text-decoration: underline;
+        font-size: 28px;
+        color: #2e5252;
+    }
+}
+
+.consult_img_hover img:hover{
+    opacity:0.5;
+    cursor:pointer;
+}
+
+.testimonial_indicator li{
+    background-color: #000;
+    background-clip: padding-box;
+}
+.testimonial p{
+    margin-bottom:80px;
+    line-height:1.8;
+    color:#2E5252;
+    font-size:18px;
+}
+.testimonial p:nth-child(2){
+    font-size:22px;
+}
+.excellence_bg_img{
+    background:url("https://static.wixstatic.com/media/0446d4_a3a7934fae474c89a3c39f43492a2176~mv2.png/v1/fill/w_1349,h_567,al_c,q_90,usm_0.66_1.00_0.01/0446d4_a3a7934fae474c89a3c39f43492a2176~mv2.webp");
+    padding:20px;
+}
+.carousel-caption{
+    top:150px;
+    h5{
+        border: 3px solid;
+        font-size: 71px;
+        color: #2E5252;
+        background: #f0f8ff59;
+    }
+}
+.carousel-item img{
+    width:100%;
+    height:500px;
+    object-fit: cover;
+}
+
+
+.fade-in {
+  animation: fadeIn ease 8s;
+  -webkit-animation: fadeIn ease 8s;
+  -moz-animation: fadeIn ease 8s;
+  -o-animation: fadeIn ease 8s;
+  -ms-animation: fadeIn ease 8s;
+}
+.para-fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+.btn-fade-in {
+  animation: fadeIn ease 13s;
+  -webkit-animation: fadeIn ease 13s;
+  -moz-animation: fadeIn ease 13s;
+  -o-animation: fadeIn ease 13s;
+  -ms-animation: fadeIn ease 13s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+.chat{
+    font-size: 33px;
+    position: fixed;
+    right: 20px;
+    background: rgb(149, 95, 39);
+    padding: 9px 20px;
+    border-radius: 50%;
+    z-index: 1000;
+    bottom: 20px;
+    i{
+        color: #fff;
+    }
+}
+.chat_box_header{
+    background-color: rgb(149, 95, 39);
+    color: rgb(255, 255, 255);
+    padding: 50px 50px;
+}
+.carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .6s;
+ transition-property: opacity;
+}
+
+.carousel-fade  .carousel-item.active .testimonial,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+ opacity: 0;
+}
+
+// .banner_text_effect{
+//     animation: rotatetext 8s linear;
+// }
+// @keyframes rotatetext {
+//   0% {
+//     transform:rotateY(0deg);
+//   }
+ 
+//   100% {
+//     transform:rotateY(-180deg);
+//   }
+// }
+
+
+.footer_bgcolor{
+    background:$FooterBackgroundColor;
+}
+.footer_left_text{
+    color:#fff;
+}
+.footer_form h3{
+    color:#fff;
+    margin-bottom:30px;
+}
+.footer_btn{
+    border-radius: 50px;
+    background: repeat padding-box border-box 0% 0%/auto auto scroll linear-gradient(180deg, #243391 0%, rgba(87, 29, 127, 0) 100%), #571D7F;
+    padding: 5px 30px;
+    color: #fff;
+}
+
+
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 300px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
