@@ -204,24 +204,8 @@ body {
     opacity:1;
   }
 }
-.chat{
-    font-size: 33px;
-    position: fixed;
-    right: 20px;
-    background: rgb(149, 95, 39);
-    padding: 9px 20px;
-    border-radius: 50%;
-    z-index: 1000;
-    bottom: 20px;
-    i{
-        color: #fff;
-    }
-}
-.chat_box_header{
-    background-color: rgb(149, 95, 39);
-    color: rgb(255, 255, 255);
-    padding: 50px 50px;
-}
+
+
 .carousel-fade .carousel-item {
  opacity: 0;
  transition-duration: .6s;
@@ -252,7 +236,74 @@ body {
 //   }
 // }
 
-
+.about{
+    padding:100px;
+    padding-top:95px;
+    color: #2E5252;
+    h2{
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+    p{
+        line-height: 1.8em;
+        font-size: 17px;
+    }
+    ul li b{
+        font-size: 19px;
+    }
+}
+.about_philosophy{
+    background: rgb(235, 223, 207);
+    padding: 194px 97px;
+    height: 100%;
+}
+.philosophy_bgcolor{
+    background:rgb(242, 236, 228);
+    padding: 194px 97px;
+    height:100%;
+}
+.services{
+    padding:100px;
+    padding-top:95px;
+    color: #2E5252;
+    background:rgb(242, 236, 228);
+    h2{
+        font-size: 43px;
+        letter-spacing: -1px;
+        padding-bottom:20px;
+        border-bottom:1px solid #ccc;
+    }
+}
+.service_tab {
+    width: fit-content;
+    left: 41%;
+    position: relative;
+    margin-top:50px;
+}
+.nav-tabs .nav-link{
+    font-size: 19px;
+    color: #2E5252;
+}
+.nav-tabs .nav-link.active{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 19px;
+    border-bottom: 3px solid rgba(149, 95, 39, 1);
+    }
+.tab-pane{
+    padding: 20px 81px;
+    
+   h5 a{
+       color: #2E5252; 
+       font-size: 25px;
+       letter-spacing: -1px;
+    }
+}
+.service_row{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+}
 .footer_bgcolor{
     background:$FooterBackgroundColor;
 }
@@ -270,22 +321,86 @@ body {
     color: #fff;
 }
 
+.chat{
+    font-size: 33px;
+    position: fixed;
+    right: 20px;
+    background: rgb(149, 95, 39);
+    padding: 9px 20px;
+    border-radius: 50%;
+    z-index: 1000;
+    bottom: 20px;
+    i{
+        color: #fff;
+    }
+}
+.chat_box_header{
+    background-color: rgb(149, 95, 39);
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border:1px solid rgb(149, 95, 39);
+    a{
+        padding:25px;
+        padding-top:15px;
+        float:right;
+        cursor:pointer;
+    }
+}
+.chat_head_text{
+    padding: 50px 50px;
+    padding-bottom:20px;
 
-
+    i{
+        font-size:52px;
+        margin-bottom:10px;
+        margin-top:25px;
+    }
+    
+}
+.chat_body{
+    height:200px;
+}
+.chat_powered {
+    background: rgba(149, 95, 39, 0.18);
+    color: rgba(50, 48, 47, 0.5);
+    padding:5px 10px;
+    p{
+        margin:0;
+        font-size:15px;
+    }
+    span{
+        color:blue;
+        font-size: 18px;
+    }
+}
+.chat-textarea-smile{
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    font-size: 21px;
+}
+.chat-textarea-attachment{
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    font-size: 21px;
+}
 /* The popup chat - hidden by default */
 .chat-popup {
   display: none;
   position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
+  bottom: -16px;
+  right: 20px;
   z-index: 9;
+  box-shadow:0 0 5px #ccc;
 }
 
 /* Add styles to the form container */
 .form-container {
-  width: 300px;
-  background-color: white;
+  width: 330px;
+  background-color: #f2ece4;
+  border-radius:5px;
 }
 
 /* Full-width textarea */
