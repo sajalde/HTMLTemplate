@@ -21,54 +21,77 @@
 
     <script>
     new WOW().init();
+
+    $('.carousel').carousel({
+      interval: 1200;
+    })
 </script>
+<script>
+        $(function() {
+            $( 'ul.navbar-nav li' ).on( 'click', function() {
+                  $( '.navbar-nav li' ).removeClass( 'active' );
+                  $( this ).addClass( 'active' );
+            });
+      });
+    
+
+    </script>
   </head>
   <body>
       
+    <div id="topheader"> 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top nav_bgcolor">
       <a class="navbar-brand" href="index.html">
         <img src="https://static.wixstatic.com/media/38a4ce_0e8a822f2762473fbc17ac69c56c1858~mv2.png/v1/crop/x_108,y_84,w_110,h_110/fill/w_60,h_69,al_c,q_85,usm_0.66_1.00_0.01/The%20GYENO%20EXPERT%20(1).webp" class="img-fluid" alt="">
       </a>
-      <div class="nav_contact">
+      <div class="nav_contact d-flex">
+        <div class="mr-4">
         <a><i class="fas fa-mail-bulk"></i> dravijit@gmail.com</a><br>
         <a><i class="fas fa-phone"></i>  + 91 72  3456  7861</a>
+        </div>
+        <div class="d-flex my-3" style="font-size:20px;">
+          <a href="" class="text-white"><i class="fab fa-facebook-f mr-3"></i></a>
+          <a href="" class="text-white"><i class="fab fa-twitter mr-3"></i></a>
+          <a href="" class="text-white"><i class="fab fa-instagram mr-3"></i></a>
+        </div>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-between" id="navbarsExampleDefault">
+      <div class="collapse navbar-collapse justify-content-between" id="headerMenu">
         <ul class="navbar-nav justify-content-evenly animated wow slideInRight" style="margin-left: 20%;">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link menus" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="About.html">About</a>
+            <a class="nav-link menus" href="About.html">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Services.html">Services</a>
+          <li class="nav-item ">
+            <a class="nav-link menus" href="Services.html">Services</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="FAQ.html">FAQ</a>
+          <li class="nav-item ">
+            <a class="nav-link menus" href="FAQ.html">FAQ</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Contact.html">Contact</a>
+          <li class="nav-item ">
+            <a class="nav-link menus" href="#Contact">Contact</a>
           </li>
         </ul>
         <div class="nav_login">
-            <a><i class="fas fa-user"></i> Login</a>
+            <a><i class="fas fa-user-circle mr-2" style="font-size: 23px;"></i> Login</a>
         </div>
       </div>
     </nav>
-
+    
+    </div>
     <main role="main">
         <img src="https://static.wixstatic.com/media/e21cdbf571764f0abbc2231bc7b74740.jpg/v1/fill/w_1349,h_796,al_c,q_85,usm_0.66_1.00_0.01/e21cdbf571764f0abbc2231bc7b74740.webp" class="img-fluid banner" alt="">
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="bannerText">
-        <div class="container">
+        <div class="container bannerText_margin">
           <h1 class="display-3 banner_text_effect">Dr. Avijit Chakraborty</h1>
-          <p>Providing Excellence in Women Health Care</p>
-          <p><a class="btn banner_btn btn-lg" href="#" role="button">Book an Appointment</a></p>
+          <p class="banner_text_effect">Providing Excellence in Women Health Care</p>
+          <p><a class="btn banner_btn btn-lg" href="Services.html" role="button">Book an Appointment</a></p>
         </div>
       </div>
 
@@ -88,7 +111,7 @@
                             you’ve ever been to. A complete list of his gynaecological services is found here.
                          </p>
 
-                         <p class="text-center btn-fade-in"><a class="btn banner_btn btn-lg"  style="font-size:15px;" href="#" role="button">Read More</a></p>
+                         <p class="text-center btn-fade-in"><a class="btn banner_btn btn-lg"  style="font-size:15px;" href="About.html" role="button">Read More</a></p>
                    </div>
                 </div>
             </div>
@@ -106,15 +129,15 @@
                 major surgery, and menopausal health care.</p>
               </div>
 
-              <div style="margin-bottom:150px; ">
+              <div style="margin:150px 0; ">
                 <div class="row specialization_list ">
-                  <div class="col-md-3 mb-4 animated  wow slideInRight">
+                  <div class="col-md-3 mb-5 animated  wow slideInRight">
                     <a href=""><i class="fas fa-caret-right"></i> Obstetrics</a>
                   </div>
-                  <div class="col-md-5 mb-4 animated  wow slideInRight">
+                  <div class="col-md-5 mb-5 animated  wow slideInRight">
                     <a href=""><i class="fas fa-caret-right"></i> Minimally Invasive Surgery</a>
                   </div>
-                  <div class="col-md-4 mb-4 animated  wow slideInRight">
+                  <div class="col-md-4 mb-5 animated  wow slideInRight">
                     <a href=""><i class="fas fa-caret-right"></i> ‎Pediatric gynaecology</a>
                   </div>
                   <div class="col-md-3 mb-4 animated  wow slideInRight">
@@ -136,7 +159,7 @@
             <div class="row">
               <div class="col-md-6 py-5">
                 <div style="background:#000;">
-                  <a class="consult_img_hover" href="">
+                  <a class="consult_img_hover" href="InitialConsultation.html">
                     <img src="https://static.wixstatic.com/media/0446d4_3193edd9ac834ad5857cffdd31bccc20~mv2_d_4288_2848_s_4_2.jpg/v1/fill/w_530,h_318,fp_1.00_0.50,q_80,usm_0.66_1.00_0.01/0446d4_3193edd9ac834ad5857cffdd31bccc20~mv2_d_4288_2848_s_4_2.webp" class="img-fluid" alt="">
                   </a>
                 </div>
@@ -145,7 +168,25 @@
                   <div class="consultation_content text-center">
                     <h4>Initial Consultation</h4>
                     <p> &#x20b9; 400</p>
-                    <a class="btn consult_button" href="#" role="button">Book Now</a>
+                    <a class="btn consult_button" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Book Now</a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content p-5">
+                          <div >
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Sorry, this service is not yet available for online bookings. Please contact us for more information.
+                          </div>
+                          <button type="button" class="btn btn-dark w-25 my-3" style="margin:0 auto" data-dismiss="modal">Got it</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
               </div>
             </div>
@@ -173,11 +214,11 @@
               <h3 class=" mb-3">What Patients Says</h3>
           </div>
 
-          <div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-ride="carousel" style="margin: 0 auto;width: 80%;">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade " data-ride="carousel" style="margin: 0 auto;width: 80%;height: 300px;">
             <ol class="carousel-indicators testimonial_indicator" style="margin: auto;">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+              <li data-target="#carouselExampleFade" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active text-center">
@@ -247,15 +288,16 @@
       
     </main>
 
-    <footer class="footer_bgcolor py-5">
+    <footer id="Contact" class="footer_bgcolor py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="footer_left_text">
-                        <h2>Contact</h2>
+                      <img src="img/footersvg.svg" class="img-fluid" alt="">
+                        <h3 >Contact</h3>
                         <p>72, CHOWRINGEE, <br>KOLKATA</p>
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5630409112!2d88.04953608529773!3d22.675752093263746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1589970994745!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5630409112!2d88.04953608529773!3d22.675752093263746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1589970994745!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         <div class="d-flex my-3" style="font-size:20px;">
                           <a href="" class="text-white"><i class="fab fa-facebook-f mr-3"></i></a>
                           <a href="" class="text-white"><i class="fab fa-twitter mr-3"></i></a>
@@ -269,16 +311,16 @@
                         <form>
                             <div class="row mb-3">
                                 <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control text-light bg-transparent" placeholder="First name">
+                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Name">
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control bg-transparent" placeholder="Last name">
+                                <input type="email" class="form-control text-light bg-transparent customize_input" placeholder="Email">
                                 </div>
                                 <div class="col-md-12 mb-3">
-                                <input type="text" class="form-control bg-transparent" placeholder="Phone">
+                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Phone">
                                 </div>
                                 <div class="col-md-12 mb-3">
-                                <input type="text" class="form-control bg-transparent" placeholder="Message">
+                                <textarea class="form-control bg-transparent text-light  customize_input" placeholder="Message"></textarea>
                                 </div>
                             </div>
                             <p class="float-right"><a class="btn footer_btn" href="#" role="button">Submit</a></p>

@@ -6,30 +6,38 @@ body {
 }
 .nav_bgcolor{
     background:$HeaderBackgroundColor;
+    padding: 10px 40px;
+}
+.navbar-brand{
+    margin-right: 138px;
 }
 .navbar-brand img{
     border-radius: 50%;
     width: 77%;
 }
-.nav_contact{
+.nav_contact,.nav_login{
     color:$HeaderTextColor;
 }
-.nav_login{
-    background: #e2c8b4;
-    color: #000;
-    padding: 10px;
-    border-radius: 50px;
-}
+// .nav_login{
+//     background: #e2c8b4;
+//     color: #000;
+//     padding: 10px;
+//     border-radius: 50px;
+// }
 .navbar-nav li{
     margin-right: 25px;
 }
-.navbar-nav li .nav-link{
+.navbar-nav li .menus{
     color:$HeaderTextColor !important;
 }
+
 .navbar-nav .active{
+}
+.navbar-dark .navbar-nav .active{
     background: rgba(226, 200, 180, 1);
+    padding: 0px 23px !important;
     a{
-        color: #000 !important;
+        color:#000 !important;
     }
 }
 .banner{
@@ -45,7 +53,7 @@ body {
     position: absolute;
     top: 300px;
     width: 100%;
-    text-align: center;
+    text-align: left;
 
     h1{
         font: normal normal normal 60px/1.4em 'playfair display',serif;
@@ -56,6 +64,9 @@ body {
         font-style:italic;
     }
     
+}
+.bannerText_margin{
+    margin-left: 400px;
 }
 .banner_btn{
         background:$ButtonBackgroundColor;
@@ -151,6 +162,7 @@ body {
     line-height:1.8;
     color:#2E5252;
     font-size:18px;
+    height: 120px;
 }
 .testimonial p:nth-child(2){
     font-size:22px;
@@ -205,36 +217,33 @@ body {
   }
 }
 
-
-.carousel-fade .carousel-item {
- opacity: 0;
- transition-duration: .6s;
- transition-property: opacity;
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0 ;
+    transition: opacity ease-out .5s;
 }
 
-.carousel-fade  .carousel-item.active .testimonial,
-.carousel-fade  .carousel-item-next.carousel-item-left,
-.carousel-fade  .carousel-item-prev.carousel-item-right {
-  opacity: 1;
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+    transition: opacity ease-out .5s;
 }
 
-.carousel-fade .active.carousel-item-left,
-.carousel-fade  .active.carousel-item-right {
- opacity: 0;
-}
 
-// .banner_text_effect{
-//     animation: rotatetext 8s linear;
-// }
-// @keyframes rotatetext {
-//   0% {
-//     transform:rotateY(0deg);
-//   }
- 
-//   100% {
-//     transform:rotateY(-180deg);
-//   }
-// }
+
+
+.banner_text_effect{
+    animation: rotatetext 5s linear;
+    transform-origin: left;
+    
+}
+@keyframes rotatetext {
+    from{
+    transform: rotateY(89.097deg);
+   }
+   to{
+       transform: rotateY(0deg);
+   }
+ }
 
 .about{
     padding:100px;
@@ -310,9 +319,15 @@ body {
 .footer_left_text{
     color:#fff;
 }
+.customize_input{
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+}
 .footer_form h3{
     color:#fff;
-    margin-bottom:30px;
+    margin: 22px 0;
+    font-size: 23px;
 }
 .footer_btn{
     border-radius: 50px;

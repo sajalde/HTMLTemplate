@@ -25,41 +25,51 @@
   </head>
   <body>
       
+    <div id="topheader"> 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top nav_bgcolor">
       <a class="navbar-brand" href="index.html">
         <img src="https://static.wixstatic.com/media/38a4ce_0e8a822f2762473fbc17ac69c56c1858~mv2.png/v1/crop/x_108,y_84,w_110,h_110/fill/w_60,h_69,al_c,q_85,usm_0.66_1.00_0.01/The%20GYENO%20EXPERT%20(1).webp" class="img-fluid" alt="">
       </a>
-      <div class="nav_contact">
+      <div class="nav_contact d-flex">
+        <div class="mr-4">
         <a><i class="fas fa-mail-bulk"></i> dravijit@gmail.com</a><br>
         <a><i class="fas fa-phone"></i>  + 91 72  3456  7861</a>
+        </div>
+        <div class="d-flex my-3" style="font-size:20px;">
+          <a href="" class="text-white"><i class="fab fa-facebook-f mr-3"></i></a>
+          <a href="" class="text-white"><i class="fab fa-twitter mr-3"></i></a>
+          <a href="" class="text-white"><i class="fab fa-instagram mr-3"></i></a>
+        </div>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-between" id="navbarsExampleDefault">
+      <div class="collapse navbar-collapse justify-content-between" id="headerMenu">
         <ul class="navbar-nav justify-content-evenly animated wow slideInRight" style="margin-left: 20%;">
+          <li class="nav-item">
+            <a class="nav-link menus" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menus" href="About.html">About</a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link menus" href="Services.html">Services</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="About.html">About</a>
+          <li class="nav-item ">
+            <a class="nav-link menus" href="FAQ.html">FAQ</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="FAQ.html">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Contact.html">Contact</a>
+          <li class="nav-item ">
+            <a class="nav-link menus" href="Contact.html">Contact</a>
           </li>
         </ul>
         <div class="nav_login">
-            <a><i class="fas fa-user"></i> Login</a>
+            <a><i class="fas fa-user-circle mr-2" style="font-size: 23px;"></i> Login</a>
         </div>
       </div>
     </nav>
+    
+    </div>
 
     <main role="main">
         
@@ -157,15 +167,16 @@
       
     </main>
 
-    <footer class="footer_bgcolor py-5">
+    <footer id="Conatact" class="footer_bgcolor py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="footer_left_text">
-                        <h2>Contact</h2>
+                      <img src="img/footersvg.svg" class="img-fluid" alt="">
+                        <h3 >Contact</h3>
                         <p>72, CHOWRINGEE, <br>KOLKATA</p>
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5630409112!2d88.04953608529773!3d22.675752093263746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1589970994745!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5630409112!2d88.04953608529773!3d22.675752093263746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1589970994745!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         <div class="d-flex my-3" style="font-size:20px;">
                           <a href="" class="text-white"><i class="fab fa-facebook-f mr-3"></i></a>
                           <a href="" class="text-white"><i class="fab fa-twitter mr-3"></i></a>
@@ -179,16 +190,16 @@
                         <form>
                             <div class="row mb-3">
                                 <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control text-light bg-transparent" placeholder="First name">
+                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Name">
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control bg-transparent" placeholder="Last name">
+                                <input type="email" class="form-control text-light bg-transparent customize_input" placeholder="Email">
                                 </div>
                                 <div class="col-md-12 mb-3">
-                                <input type="text" class="form-control bg-transparent" placeholder="Phone">
+                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Phone">
                                 </div>
                                 <div class="col-md-12 mb-3">
-                                <input type="text" class="form-control bg-transparent" placeholder="Message">
+                                <textarea class="form-control bg-transparent text-light  customize_input" placeholder="Message"></textarea>
                                 </div>
                             </div>
                             <p class="float-right"><a class="btn footer_btn" href="#" role="button">Submit</a></p>
