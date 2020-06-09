@@ -4,7 +4,7 @@
     <title>Initial Consultation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
     <!-- Customize CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!--Responsive CSS-->
+    <link rel="stylesheet" href="css/responsive.css">
     <!--Animation Effects CSS-->
     <link rel="stylesheet" href="css/animate.css/animate.min.css">
     <!--Animation Effects Js-->
@@ -35,17 +37,17 @@
   </head>
   <body>
       
-    <div id="topheader"> 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top nav_bgcolor">
-      <a class="navbar-brand" href="index.html">
-        <img src="https://static.wixstatic.com/media/38a4ce_0e8a822f2762473fbc17ac69c56c1858~mv2.png/v1/crop/x_108,y_84,w_110,h_110/fill/w_60,h_69,al_c,q_85,usm_0.66_1.00_0.01/The%20GYENO%20EXPERT%20(1).webp" class="img-fluid" alt="">
-      </a>
+        <a class="navbar-brand" href="index.html">
+          <img src="https://static.wixstatic.com/media/38a4ce_0e8a822f2762473fbc17ac69c56c1858~mv2.png/v1/crop/x_108,y_84,w_110,h_110/fill/w_60,h_69,al_c,q_85,usm_0.66_1.00_0.01/The%20GYENO%20EXPERT%20(1).webp" class="img-fluid" alt="">
+        </a>
+      
       <div class="nav_contact d-flex">
         <div class="mr-4">
         <a><i class="fas fa-mail-bulk"></i> dravijit@gmail.com</a><br>
         <a><i class="fas fa-phone"></i>  + 91 72  3456  7861</a>
         </div>
-        <div class="d-flex my-3" style="font-size:20px;">
+        <div class="d-flex my-3">
           <a href="" class="text-white"><i class="fab fa-facebook-f mr-3"></i></a>
           <a href="" class="text-white"><i class="fab fa-twitter mr-3"></i></a>
           <a href="" class="text-white"><i class="fab fa-instagram mr-3"></i></a>
@@ -56,11 +58,11 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-between" id="headerMenu">
-        <ul class="navbar-nav justify-content-evenly animated wow slideInRight" style="margin-left: 20%;">
+        <ul class="navbar-nav justify-content-evenly animated wow slideInRight">
           <li class="nav-item">
             <a class="nav-link menus" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link menus" href="About.html">About</a>
           </li>
           <li class="nav-item ">
@@ -70,7 +72,7 @@
             <a class="nav-link menus" href="FAQ.html">FAQ</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link menus" href="Contact.html">Contact</a>
+            <a class="nav-link menus" href="#Contact">Contact</a>
           </li>
         </ul>
         <div class="nav_login">
@@ -78,13 +80,35 @@
         </div>
       </div>
     </nav>
-    
-    </div>
     <main role="main">
-        <section style="padding: 100px">
-        <h1 class="mb-5 fade-in text-center">Initaial Consultation</h1>
+        <section class="initial_consultation fade-in">
+        <a class="back_to_page" href="index.html"><i class="fas fa-chevron-left"></i> Back</a>
+        <div class="container text-center">
+          <h1 class="mb-3 mt-5">Initaial Consultation</h1>
+          <small>Mon-Fri 5-8pm 414/1, Nilayan Apartment, NSC Bose Road, Garia, Kolkata</small>
+          <p style="font-size: 25px;margin: 10px 0;">30 min. |  ₹400</p>
+
+          <a class="btn initial_consult_button my-5" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Book Now</a>
+          <img src="https://static.wixstatic.com/media/0446d4_3193edd9ac834ad5857cffdd31bccc20~mv2_d_4288_2848_s_4_2.jpg/v1/fill/w_980,h_606,al_c,q_85,usm_0.66_1.00_0.01/0446d4_3193edd9ac834ad5857cffdd31bccc20~mv2_d_4288_2848_s_4_2.webp" class="img-fluid" alt="">
+          
+          <p class="initial_consult_content">Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers in the mood, and makes them more likely to go ahead and book.</p>
+
+          <div class="book_online">
+            <h2>Book Online</h2>
+            <p>Initial Consultation</p>
+            <p class="mt-0">30 min. |  ₹400</p>
+
+            <a class="btn initial_consult_button my-5" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Book Now</a>
+          
+            <div class="mb-3"><small>Location & Contact Details</small> </div> 
+            <h5>Email: saw@mendine.in</h5>
+            <h5>414/1, Nilayan Apartment, N.S.C Bose Road, Garia More, Kolka</h5>
+
+          </div>
+        </div>
+        
         </section>
-      
+
     </main>
 
     <footer id="Contact" class="footer_bgcolor py-4">
@@ -96,7 +120,7 @@
                         <h3 >Contact</h3>
                         <p>72, CHOWRINGEE, <br>KOLKATA</p>
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5630409112!2d88.04953608529773!3d22.675752093263746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1589970994745!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5630409112!2d88.04953608529773!3d22.675752093263746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1589970994745!5m2!1sen!2sin" width="330" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         <div class="d-flex my-3" style="font-size:20px;">
                           <a href="" class="text-white"><i class="fab fa-facebook-f mr-3"></i></a>
                           <a href="" class="text-white"><i class="fab fa-twitter mr-3"></i></a>

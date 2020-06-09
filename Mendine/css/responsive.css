@@ -1,0 +1,117 @@
+@media screen and (max-width:760px){
+    .navbar-brand {
+        margin-right: 9px;
+    }
+    .bannerText_margin {
+        margin-left: 61px;
+    }
+    .meet_doctors{
+        padding: 120px 97px;
+    }
+    .doc_content{
+        padding: 42px;
+    }
+    .myspecialization p{
+        width: 100%;
+    }
+    .consultation_content{
+        top:0;
+        left:0;
+    }
+    .carousel-height{
+    height: auto;
+   }
+    .testimonial p{
+        height:auto;
+    }
+    .chat{
+      right: 525px;
+    }
+    .about{
+      padding: 46px;
+  }
+  .about_philosophy{
+    padding: 100px 79px;
+  }
+  .philosophy_bgcolor{
+      padding: 100px 43px;
+  }
+  .services{
+      padding: 51px;
+  }
+  .service_tab{
+        left: 24%;
+  }
+  .tab-pane{
+      padding:0;
+  }
+}
+
+@media screen and (max-width:480px){
+  .navbar-brand{
+      margin-left: 0;
+      margin-right: 0px;
+  }
+  .navbar-nav{
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+  .nav_login{
+      margin-left: 5%;
+  }
+  .nav_contact{
+      font-size: 13px;
+  }
+  .nav_bgcolor{
+      padding: 6px;
+  }
+  .bannerText_margin{
+      margin-left: 0;
+  }  
+  .bannerText h1{
+      font-size: 45px;
+  }
+  .meet_doctors{
+    padding:120px 34px;
+  }
+  .doc_content{
+      padding: 20px;
+  }
+  .doc_content p{
+      margin: auto 21px;
+  }
+  .myspecialization p{
+      width:100%;
+  }
+  .consultation_content{
+      top: 0;
+      left: 0;
+  }
+  .carousel-height{
+    height: auto;
+   }
+    .testimonial p{
+        height:auto;
+    }
+  .chat{
+      right: 259px;
+  }
+  .about{
+      padding: 46px;
+  }
+  .about_philosophy{
+    padding: 100px 79px;
+  }
+  .philosophy_bgcolor{
+      padding: 100px 43px;
+  }
+  .services{
+      padding:48px 15px;
+  }
+  .service_tab{
+        left: 11%;
+  }
+  .tab-pane{
+      padding:0;
+  }
+}   
