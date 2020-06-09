@@ -110,7 +110,7 @@ body {
   left: -122px;
   box-shadow: 0px 1px 6px #5d5d5d;
 }
-.consultation_content h4 {
+.consultation_content h4 a {
   color: #004150;
   font: normal normal normal 28px/1.4em "playfair display";
 }
