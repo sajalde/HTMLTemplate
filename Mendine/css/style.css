@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+.navbar-nav {
+  margin-left: 20%;
+}
+
 .nav_bgcolor {
   background: #2e5252;
   padding: 10px 40px;
@@ -229,6 +233,10 @@ body {
   transition: opacity ease-out 0.5s;
 }
 
+.carousel-height {
+  height: 300px;
+}
+
 .banner_text_effect {
   animation: rotatetext 5s linear;
   transform-origin: left;
@@ -316,6 +324,52 @@ body {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 30px 0;
+}
+
+.initial_consultation {
+  padding: 100px;
+  background: #f2ece4;
+  color: #2E5252;
+}
+.initial_consultation h1 {
+  font-size: 60px;
+}
+.initial_consultation small {
+  font-size: 14px;
+}
+
+.initial_consult_button {
+  background: #955f27;
+  padding: 12px 30px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 0;
+}
+
+.initial_consult_content {
+  font-size: 17px;
+  max-width: 606px;
+  margin: auto;
+  margin-bottom: 58px;
+  margin-top: 80px;
+  line-height: 1.75em;
+}
+
+.book_online h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.book_online p {
+  font-size: 19px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.back_to_page {
+  color: #955F27 !important;
+  font-size: 18px;
+  margin-left: 70px;
 }
 
 .footer_bgcolor {

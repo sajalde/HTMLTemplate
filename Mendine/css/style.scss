@@ -4,6 +4,9 @@ body {
   font-family: playfair display,serif;
   overflow-x: hidden;
 }
+.navbar-nav{
+    margin-left: 20%;
+}
 .nav_bgcolor{
     background:$HeaderBackgroundColor;
     padding: 10px 40px;
@@ -228,7 +231,9 @@ body {
     transition: opacity ease-out .5s;
 }
 
-
+.carousel-height{
+    height: 300px;
+}
 
 
 .banner_text_effect{
@@ -312,6 +317,47 @@ body {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     padding: 30px 0;
+}
+
+.initial_consultation{
+    padding: 100px;
+    background:rgb(242, 236, 228);
+    color: #2E5252; 
+    h1{
+        font-size:60px;
+    }
+    small{
+        font-size:14px;
+    }
+}
+.initial_consult_button{
+    background: rgb(149, 95, 39);
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 0;
+}
+.initial_consult_content{
+    font-size:17px;
+    max-width: 606px;
+    margin: auto;
+    margin-bottom: 58px;
+    margin-top: 80px;
+    line-height: 1.75em;
+}
+.book_online h2{
+    font-size: 22px;
+    font-weight:bold;
+}
+.book_online p{
+    font-size: 19px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.back_to_page{
+    color: #955F27 !important;
+    font-size: 18px;
+    margin-left: 70px;
 }
 .footer_bgcolor{
     background:$FooterBackgroundColor;
@@ -456,3 +502,6 @@ body {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
+
