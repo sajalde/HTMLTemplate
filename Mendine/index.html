@@ -133,7 +133,7 @@
 
               <div style="margin:150px 0; ">
                 <div class="row specialization_list ">
-                  <div class="col-md-3 mb-5 animated  wow slideInRight">
+                  <div class="col-md-3 mb-5 animated wow slideInRight">
                     <a href="https://en.wikipedia.org/wiki/Obstetrics" target="_blank"><i class="fas fa-caret-right"></i> Obstetrics</a>
                   </div>
                   <div class="col-md-5 mb-5 animated  wow slideInRight">
@@ -157,7 +157,7 @@
           </div>
 
           <div style="border:3px solid rgba(235, 223, 207, 1)"></div>
-          <div class="container">
+          <div id="initial_Consult" class="container">
             <div class="row">
               <div class="col-md-6 py-5">
                 <div style="background:#000;">
@@ -168,7 +168,7 @@
               </div>
               <div class="col-md-6">
                   <div class="consultation_content text-center">
-                    <h4><a href="SingleService.html">Initial Consultation</a></h4>
+                    <h4><a href="InitialConsultation.html">Initial Consultation</a></h4>
                     <p> &#x20b9; 400</p>
                     <a class="btn consult_button" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Book Now</a>
 
@@ -313,19 +313,19 @@
                         <form>
                             <div class="row mb-3">
                                 <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Name">
+                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Name" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                <input type="email" class="form-control text-light bg-transparent customize_input" placeholder="Email">
+                                <input type="email" class="form-control text-light bg-transparent customize_input" placeholder="Email" required>
                                 </div>
                                 <div class="col-md-12 mb-3">
-                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Phone">
+                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Phone" required>
                                 </div>
                                 <div class="col-md-12 mb-3">
                                 <textarea class="form-control bg-transparent text-light  customize_input" placeholder="Message"></textarea>
                                 </div>
                             </div>
-                            <p class="float-right"><a class="btn footer_btn" href="#" role="button">Submit</a></p>
+                            <button class="btn footer_btn float-right" type="submit">Submit form</button>
                         </form>
                     </div>
                 </div>

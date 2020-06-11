@@ -91,7 +91,7 @@ body {
 }
 .doc_content p {
   font: normal normal normal 18px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
-  color: #2E5252;
+  color: #2e5252;
   text-align: justify;
   margin: auto 80px;
   margin-bottom: 80px;
@@ -128,7 +128,7 @@ body {
 
 .myspecialization h3 {
   font: normal normal normal 36px/1.4em "playfair display", serif;
-  color: #2E5252;
+  color: #2e5252;
 }
 .myspecialization p {
   font: normal normal normal 16px/1.4em "playfair display", serif;
@@ -152,6 +152,11 @@ body {
   cursor: pointer;
 }
 
+.servicesImg img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 .testimonial_indicator li {
   background-color: #000;
   background-clip: padding-box;
@@ -160,7 +165,7 @@ body {
 .testimonial p {
   margin-bottom: 80px;
   line-height: 1.8;
-  color: #2E5252;
+  color: #2e5252;
   font-size: 18px;
   height: 120px;
 }
@@ -180,7 +185,7 @@ body {
 .carousel-caption h5 {
   border: 3px solid;
   font-size: 71px;
-  color: #2E5252;
+  color: #2e5252;
   background: #f0f8ff59;
 }
 
@@ -191,7 +196,7 @@ body {
 }
 
 .fade-in {
-  animation: fadeIn ease 8s;
+  animation: fadeIn ease 5s;
   -webkit-animation: fadeIn ease 8s;
   -moz-animation: fadeIn ease 8s;
   -o-animation: fadeIn ease 8s;
@@ -199,7 +204,7 @@ body {
 }
 
 .para-fade-in {
-  animation: fadeIn ease 10s;
+  animation: fadeIn ease 8s;
   -webkit-animation: fadeIn ease 10s;
   -moz-animation: fadeIn ease 10s;
   -o-animation: fadeIn ease 10s;
@@ -207,7 +212,7 @@ body {
 }
 
 .btn-fade-in {
-  animation: fadeIn ease 13s;
+  animation: fadeIn ease 10s;
   -webkit-animation: fadeIn ease 13s;
   -moz-animation: fadeIn ease 13s;
   -o-animation: fadeIn ease 13s;
@@ -238,7 +243,7 @@ body {
 }
 
 .banner_text_effect {
-  animation: rotatetext 5s linear;
+  animation: rotatetext 1s linear;
   transform-origin: left;
 }
 
@@ -253,7 +258,7 @@ body {
 .about {
   padding: 100px;
   padding-top: 95px;
-  color: #2E5252;
+  color: #2e5252;
 }
 .about h2 {
   font-size: 43px;
@@ -281,8 +286,8 @@ body {
 
 .services {
   padding: 100px;
-  padding-top: 95px;
-  color: #2E5252;
+  padding-top: 72px;
+  color: #2e5252;
   background: #f2ece4;
 }
 .services h2 {
@@ -301,7 +306,7 @@ body {
 
 .nav-tabs .nav-link {
   font-size: 19px;
-  color: #2E5252;
+  color: #2e5252;
 }
 
 .nav-tabs .nav-link.active {
@@ -315,7 +320,7 @@ body {
   padding: 20px 81px;
 }
 .tab-pane h5 a {
-  color: #2E5252;
+  color: #2e5252;
   font-size: 25px;
   letter-spacing: -1px;
 }
@@ -329,7 +334,7 @@ body {
 .initial_consultation {
   padding: 100px;
   background: #f2ece4;
-  color: #2E5252;
+  color: #2e5252;
 }
 .initial_consultation h1 {
   font-size: 60px;
@@ -370,6 +375,11 @@ body {
   color: #955F27 !important;
   font-size: 18px;
   margin-left: 70px;
+}
+
+.serviceTitle {
+  margin: 0 auto;
+  width: 533px;
 }
 
 .footer_bgcolor {

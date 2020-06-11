@@ -59,10 +59,10 @@
 
       <div class="collapse navbar-collapse justify-content-between" id="headerMenu">
         <ul class="navbar-nav justify-content-evenly animated wow slideInRight">
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link menus" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link menus" href="About.html">About</a>
           </li>
           <li class="nav-item ">
@@ -173,19 +173,19 @@
                         <form>
                             <div class="row mb-3">
                                 <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Name">
+                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Name" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                <input type="email" class="form-control text-light bg-transparent customize_input" placeholder="Email">
+                                <input type="email" class="form-control text-light bg-transparent customize_input" placeholder="Email" required>
                                 </div>
                                 <div class="col-md-12 mb-3">
-                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Phone">
+                                <input type="text" class="form-control text-light bg-transparent customize_input" placeholder="Phone" required>
                                 </div>
                                 <div class="col-md-12 mb-3">
                                 <textarea class="form-control bg-transparent text-light  customize_input" placeholder="Message"></textarea>
                                 </div>
                             </div>
-                            <p class="float-right"><a class="btn footer_btn" href="#" role="button">Submit</a></p>
+                            <button class="btn footer_btn float-right" type="submit">Submit form</button>
                         </form>
                     </div>
                 </div>

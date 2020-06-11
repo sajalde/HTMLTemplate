@@ -72,7 +72,7 @@ body {
     margin-left: 400px;
 }
 .banner_btn{
-        background:$ButtonBackgroundColor;
+        background:$ButtonBgColor;
         color:$ButtonTextColor;
 }
 .meet_doctors{
@@ -89,7 +89,7 @@ body {
 
     p{
         font: normal normal normal 18px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
-        color: #2E5252;
+        color: $PagesTextColor;
         text-align: justify;
         margin: auto 80px;
         margin-bottom: 80px;
@@ -118,7 +118,7 @@ body {
 }
 
 .consult_button{
-    background:rgba(149, 95, 39, 0.55);
+    background:$ConsultBtnBgColor;
     padding: 5px 30px;
     color: #fff;
     font-size: 15px;
@@ -127,12 +127,12 @@ body {
 .myspecialization{
     h3{
         font: normal normal normal 36px/1.4em 'playfair display',serif;
-        color: #2E5252;
+        color: $PagesTextColor;
     }
     
     p{
         font: normal normal normal 16px/1.4em 'playfair display',serif;
-        color: #2e5252;
+        color: $PagesTextColor;
         width: 656px;
         margin: 0 auto;
         font-size: 19px;
@@ -147,7 +147,7 @@ body {
     a{
        text-decoration: underline;
         font-size: 28px;
-        color: #2e5252;
+        color: $PagesTextColor;
     }
 }
 
@@ -155,7 +155,10 @@ body {
     opacity:0.5;
     cursor:pointer;
 }
-
+.servicesImg img:hover{
+    opacity:0.9;
+    cursor:pointer;
+}
 .testimonial_indicator li{
     background-color: #000;
     background-clip: padding-box;
@@ -163,7 +166,7 @@ body {
 .testimonial p{
     margin-bottom:80px;
     line-height:1.8;
-    color:#2E5252;
+    color:$PagesTextColor;
     font-size:18px;
     height: 120px;
 }
@@ -179,7 +182,7 @@ body {
     h5{
         border: 3px solid;
         font-size: 71px;
-        color: #2E5252;
+        color: $PagesTextColor;
         background: #f0f8ff59;
     }
 }
@@ -191,21 +194,21 @@ body {
 
 
 .fade-in {
-  animation: fadeIn ease 8s;
+  animation: fadeIn ease 5s;
   -webkit-animation: fadeIn ease 8s;
   -moz-animation: fadeIn ease 8s;
   -o-animation: fadeIn ease 8s;
   -ms-animation: fadeIn ease 8s;
 }
 .para-fade-in {
-  animation: fadeIn ease 10s;
+  animation: fadeIn ease 8s;
   -webkit-animation: fadeIn ease 10s;
   -moz-animation: fadeIn ease 10s;
   -o-animation: fadeIn ease 10s;
   -ms-animation: fadeIn ease 10s;
 }
 .btn-fade-in {
-  animation: fadeIn ease 13s;
+  animation: fadeIn ease 10s;
   -webkit-animation: fadeIn ease 13s;
   -moz-animation: fadeIn ease 13s;
   -o-animation: fadeIn ease 13s;
@@ -237,7 +240,7 @@ body {
 
 
 .banner_text_effect{
-    animation: rotatetext 5s linear;
+    animation: rotatetext 1s linear;
     transform-origin: left;
     
 }
@@ -253,7 +256,7 @@ body {
 .about{
     padding:100px;
     padding-top:95px;
-    color: #2E5252;
+    color: $PagesTextColor;
     h2{
         font-size: 43px;
         letter-spacing: -1px;
@@ -278,9 +281,9 @@ body {
 }
 .services{
     padding:100px;
-    padding-top:95px;
-    color: #2E5252;
-    background:rgb(242, 236, 228);
+    padding-top:72px;
+    color: $PagesTextColor;
+    background:$PagesBgColor;
     h2{
         font-size: 43px;
         letter-spacing: -1px;
@@ -296,19 +299,19 @@ body {
 }
 .nav-tabs .nav-link{
     font-size: 19px;
-    color: #2E5252;
+    color: $PagesTextColor;
 }
 .nav-tabs .nav-link.active{
     background-color: transparent;
     border-color: transparent;
     font-size: 19px;
-    border-bottom: 3px solid rgba(149, 95, 39, 1);
+    border-bottom: 3px solid $TabActiveColor;
     }
 .tab-pane{
     padding: 20px 81px;
     
    h5 a{
-       color: #2E5252; 
+       color: $PagesTextColor; 
        font-size: 25px;
        letter-spacing: -1px;
     }
@@ -322,7 +325,7 @@ body {
 .initial_consultation{
     padding: 100px;
     background:rgb(242, 236, 228);
-    color: #2E5252; 
+    color: $PagesTextColor; 
     h1{
         font-size:60px;
     }
@@ -358,6 +361,10 @@ body {
     color: #955F27 !important;
     font-size: 18px;
     margin-left: 70px;
+}
+.serviceTitle{
+    margin: 0 auto;
+    width: 533px;
 }
 .footer_bgcolor{
     background:$FooterBackgroundColor;
@@ -460,7 +467,7 @@ body {
 /* Add styles to the form container */
 .form-container {
   width: 330px;
-  background-color: #f2ece4;
+  background-color: $PagesBgColor;
   border-radius:5px;
 }
 
