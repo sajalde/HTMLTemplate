@@ -48,6 +48,15 @@
   .serviceTitle{
     width:100%;
 }
+.login-modal-content{
+    width:60%;
+}
+.navbar-nav {
+    margin-left: 0%;
+}
+.initial_consultation h1{
+    font-size: 52px;
+}
 }
 
 @media screen and (max-width:480px){
@@ -124,5 +133,10 @@
 .serviceTitle{
     width:100%;
 }
-
+.login-modal-content{
+    width:100%;
+}
+.initial_consultation h1{
+    font-size: 52px;
+}
 }   

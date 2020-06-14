@@ -27,17 +27,7 @@
     $('.carousel').carousel({
       interval: 1200;
     })
-</script>
-<script>
-        $(function() {
-            $( 'ul.navbar-nav li' ).on( 'click', function() {
-                  $( '.navbar-nav li' ).removeClass( 'active' );
-                  $( this ).addClass( 'active' );
-            });
-      });
-    
-
-    </script>
+  </script>
   </head>
   <body>
       
@@ -49,8 +39,8 @@
       
       <div class="nav_contact d-flex">
         <div class="mr-4">
-        <a><i class="fas fa-mail-bulk"></i> dravijit@gmail.com</a><br>
-        <a><i class="fas fa-phone"></i>  + 91 72  3456  7861</a>
+        <a><i class="fas fa-mail-bulk"></i> drkbhar@gmail.com</a><br>
+        <a><i class="fas fa-phone"></i> 9433434489</a>
         </div>
         <div class="d-flex my-3">
           <a href="https://www.facebook.com/wix" class="text-white" target="_blank"><i class="fab fa-facebook-f mr-3"></i></a>
@@ -81,7 +71,136 @@
           </li>
         </ul>
         <div class="nav_login">
-            <a><i class="fas fa-user-circle mr-2" style="font-size: 23px;"></i> Login</a>
+          <a onclick="openLoginModal()" style="cursor:pointer;"><i class="fas fa-user-circle mr-2" style="font-size: 23px;"></i> Login</a>
+
+          <div id="login" class="login-modal">
+              <div>
+                <span onclick="closeLoginModal()" class="login-close">&times;</span>
+              </div>
+            <form class="login-modal-content animate" action="/action_page.php" method="post">
+              
+              <div class="container">
+                  <div id="SignUp">
+                    <div class="login_page_head" style="margin:0 auto;">
+                      <h1>Sign Up</h1>
+                      <p><a onclick="switchToLogin()">Already a member? <span> Log In</span></a></p>
+                    </div>
+
+                    <button type="button" class="btn btn-facebook btn-lg btn-block mb-3">
+                    <img src="img/facebook.svg" class="img-fluid float-left" alt="">
+                    Sign Up with Facebook
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block mb-3" style="border-radius: 0;"> 
+                    <img src="img/google.svg" class="img-fluid float-left" alt="">
+                    Sign Up with Google
+                    </button>
+
+                    <div class="OrBorder">
+                    <div><span class="OrBorder_text">or</span></div>
+                    </div>
+                    
+                    <button onclick="switchToSignUpWithEmail()" type="button" class="btn btn-default btn-lg btn-block mb-3"> 
+                    Sign Up with Email
+                    </button>
+                  </div>
+                  <div id="LogIn">
+                    <div class="login_page_head" style="margin:0 auto;">
+                      <h1>Log In</h1>
+                      <p><a onclick="switchToSignUp()">New member? <span> SignUp</span></a></p>
+                    </div>
+
+                    <button type="button" class="btn btn-facebook btn-lg btn-block mb-3">
+                    <img src="img/facebook.svg" class="img-fluid float-left" alt="">
+                    Log in with Facebook
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block mb-3" style="border-radius: 0;"> 
+                    <img src="img/google.svg" class="img-fluid float-left" alt="">
+                    Log in with Google
+                    </button>
+
+                    <div class="OrBorder">
+                    <div><span class="OrBorder_text">or</span></div>
+                    </div>
+                    
+                    <button onclick="switchToLogInWithEmail()" type="button" class="btn btn-default btn-lg btn-block mb-3"> 
+                    Log in with Email
+                    </button>
+                  </div>
+
+                  <div id="SignUpWithEmail">
+                    <div class="login_page_head" style="margin:0 auto;">
+                      <h1>Sign Up</h1>
+                      <p><a onclick="switchToLogin()">Already a member? <span> Log In</span></a></p>
+                    </div>
+                    <form>
+                          <div class="label-form-group">
+                            <input type="email" id="email" class="form-control customize-form-control"  required autofocus>
+                            <label for="email" class="ph-area">Email</label>
+                          </div>
+
+                          <div class="label-form-group">
+                            <input type="password" id="password" class="form-control customize-form-control"  required autofocus>
+                            <label for="password" class="ph-area">Password</label>
+                          </div>
+                          <button class="btn banner_btn btn-lg btn-block" type="submit" style="border-radius:0;">Sign Up</button>
+
+                          <div class="OrBorder">
+                          <div><span class="OrBorder_text">or sign up with</span></div>
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <img src="img/fb.svg" class="img-fluid mr-2" alt="">
+                            <img src="img/google.svg" class="img-fluid" alt="">
+                          </div>
+                    </form>
+                  </div>
+                  <div id="LogInWithEmail">
+                    <div class="login_page_head" style="margin:0 auto;">
+                      <h1>Log In</h1>
+                      <p><a onclick="switchToSignUp()">New member? <span> Sign Up</span></a></p>
+                    </div>
+                    <form>
+                          <div class="label-form-group">
+                            <input type="email" id="email" class="form-control customize-form-control"  required autofocus>
+                            <label for="email" class="ph-area">Email</label>
+                          </div>
+
+                          <div class="label-form-group">
+                            <input type="password" id="password" class="form-control customize-form-control"  required autofocus>
+                            <label for="password" class="ph-area">Password</label>
+                          </div>
+
+                          <p class="forgot_pass" onclick="ResetPassword()">Forgot password?</p>
+                          <button class="btn banner_btn btn-lg btn-block" type="submit" style="border-radius:0;">Log In</button>
+
+                          <div class="OrBorder">
+                          <div><span class="OrBorder_text">or sign up with</span></div>
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <img src="img/fb.svg" class="img-fluid mr-2" alt="">
+                            <img src="img/google.svg" class="img-fluid" alt="">
+                          </div>
+                    </form>
+                  </div>
+
+                  <div id="resetPassword">
+                    <div class="login_page_head" style="margin:0 auto;">
+                      <h1>Reset Password</h1>
+                      <p>Please enter email address</p>
+                    </div>
+                    <form>
+                          <div class="label-form-group">
+                            <input type="email" id="email" class="form-control customize-form-control"  required autofocus>
+                            <label for="email" class="ph-area">Email</label>
+                          </div>
+
+                          <button class="btn banner_btn btn-lg btn-block" type="submit" style="border-radius:0;">Reset Password</button>
+                    </form>
+                  </div>
+              </div>
+
+            </form>
+          </div>
+           
         </div>
       </div>
     </nav>
@@ -91,7 +210,7 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="bannerText">
         <div class="container bannerText_margin">
-          <h1 class="display-3 banner_text_effect">Dr. Avijit Chakraborty</h1>
+          <h1 class="display-3 banner_text_effect">Dr.Kausik Bhar</h1>
           <p class="banner_text_effect">Providing Excellence in Women Health Care</p>
           <p><a class="btn banner_btn btn-lg" href="Services.html" role="button">Book an Appointment</a></p>
         </div>
@@ -109,8 +228,12 @@
                         <img src="img/meetdoctors.svg" class="img-fluid mb-3" alt="">
                          <h2 class="mb-5 fade-in">Meet Your Doctor</h2>
                          <p class="para-fade-in">
-                            Dr. Avijit Chakraborty, MD, has been a leading gynaecologist for almost 20 years. He provides diagnostic, therapeutic and preventive gynaecological health care services to patients who range from teenagers to women going through perimenopause and menopause. He provides a full spectrum of women’s health services; including routine and problem gynaecological care, prenatal care, high risk pregnancy management, minimally invasive surgery, major surgery, and menopausal health care. He’s kind, patient, knowledgeable, compassionate and supportive. He offers world-class treatment options tailored tosuit your budget. You’ll probably find that he’s one of the best gynaecologists 
-                            you’ve ever been to. A complete list of his gynaecological services is found here.
+                           Dr. Kausik Bhar, MD, is a leading consultant physician in Kolkata for almost 6 years. He provides diagnostic, therapeutic and preventive medical health
+                            care services to his patients who range from young children to elderly people.
+                            He provides a full spectrum of medical care services; including routine and difficult medical problem. He has profound knowledge in different aspects of internal medicine ranging from cardiology, neurology, 
+                          nephrology, endocrinology, gastroenterology, hematology to pulmonology & rheumatology.
+                          He’s very generous, jovial, energetic, soft spoken, patient, highly knowledgeable, extremely compassionate and supportive. He offers world-class treatment options tailored to suit your budget. You’ll probably find that he’s one of the best
+                         internist you’ve ever been to. A complete list of his medical services is found here.
                          </p>
 
                          <p class="text-center btn-fade-in"><a class="btn banner_btn btn-lg"  style="font-size:15px;" href="About.html" role="button">Read More</a></p>
@@ -126,9 +249,8 @@
               <div class="text-center myspecialization">
                 <img src="img/specialization.svg" class="img-fluid mb-3" alt="">
                 <h3 class=" mb-3">My Specialization</h3>
-                <p>Dr. Avijit Chakraborty has specialisation in gynaecological health care particularly diagnostic in the full spectrum of women’s health services therapeutic and preventive services to patients who range from teenagers to 
-                women going through perimenopause and menopause. including routine and problem gynaecological care, prenatal care, high-risk pregnancy management, minimally invasive surgery,
-                major surgery, and menopausal health care.</p>
+                <p>Dr. Kausik Bhar provides a full spectrum of medical care services; including routine and difficult medical problem. He has profound knowledge in different aspects of internal medicine ranging from cardiology, neurology, 
+                  nephrology, endocrinology, gastroenterology, hematology to pulmonology & rheumatology.</p>
               </div>
 
               <div style="margin:150px 0; ">
@@ -365,16 +487,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js" ></script>
-    <script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-      document.getElementById("chats").style.display = "none";
-    }
-
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-      document.getElementById("chats").style.display = "block";
-    }
-    </script>
+    <script src="js/index.js" ></script>
+    
   </body>
 </html>
