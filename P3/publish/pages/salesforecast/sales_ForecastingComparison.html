@@ -1,0 +1,91 @@
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">Sales Forecasting Comparison</h1>
+        </div><!-- /.col -->
+  
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+  
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+  
+        <div class="col-md-12">
+          <div class="card card-primary">
+            <div class="card-header d-flex p-0">
+              <ul class="nav nav-pills ml-auto p-2">
+                  <li class="nav-item">
+                    <div id="export-area" style="padding-left: 10px;"></div>
+                  </li>
+  
+              </ul>
+            </div><!-- /.card-header -->
+  
+            <div class="card-body">
+              
+              <div class="row" style="margin-bottom:30px">
+                <div class="col-sm-2">
+                  <label>Year</label>
+                  <select id="ddlYear" class="form-control form-control-sm select2" style="width: 100%;"
+                     required></select>
+                </div>
+
+                <div class="col-sm-2">
+                  <label>Month</label>
+                  <select id="ddlMonth" class="form-control form-control-sm select2" style="width: 100%;"
+                     required></select>
+                </div>
+              </div>
+
+              <div class="row" style="margin-bottom:30px">
+                <div class="col-sm-2">
+                  <label>Product name & Pack size</label>
+                  <select id="ddlProductName" class="form-control form-control-sm select2" style="width: 100%;"
+                     required></select>
+                </div>
+  
+                <div class="col-sm-2">
+                  <label>Division</label>
+                  <select id="ddlDivision" class="form-control form-control-sm select2" style="width: 100%;"
+                     required></select>
+                </div>
+
+                <div class="col-sm-2">
+                  <label>Stock location</label>
+                  <select id="ddlStockLocation" class="form-control form-control-sm select2" style="width: 100%;"
+                     required></select>
+                </div>
+
+                <div class="col-sm-4" style="padding-top: 28px;">
+                  <button type="button" class="btn btn-default" onclick="salesforecastingComparison.ListSalesForecastingComparison()">
+                    <i class="fas fa-search" style="color: #fd7e14;"></i>
+                  </button>
+                </div>               
+              </div>
+              <table id="dtListSalesForecastingComparison" class="table table-bordered table-hover">
+              </table>
+  
+            </div>
+  
+            <div id="df" class="card-footer clearfix">
+  
+            </div>
+          </div>
+        </div>
+  
+  
+      </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  
+  <script>
+    $(document).ready(function () {
+        salesforecastingComparison.Initialize();
+    })
+  </script>

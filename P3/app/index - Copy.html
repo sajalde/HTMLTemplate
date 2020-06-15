@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+
+    if (sessionStorage.getItem('token') == null) {
+      window.location.href = 'login.html'
+    }
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Petro Soft | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="library.style.min.css">
+  <link rel="stylesheet" type="text/css" href="template-custom.style.min.css">
+
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed text-sm">
+
+  <div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-light navbar-warning">
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        </li>
+
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+            Message Start 
+              <div class="media">
+                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    John Pierce
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">I got your message bro</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+               Message End 
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          </div>
+        </li> -->
+        <!-- Notifications Dropdown Menu -->
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> Total 5 Meter
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li> -->
+        <li class="nav-item dropdown user-menu">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            <!-- <img src="../../dist/img/user2-160x160.jpg" class="user-image img-circle elevation-2" alt="User Image"> -->
+            <span id="spanUserName" class="d-none d-md-inline username"></span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <!-- User image -->
+            <li class="user-header bg-primary">
+              <img src="dist/img/AdminLTELogo.png" class="img-circle elevation-2" alt="User Image">
+
+              <p id="pUserName">
+                Alexander Pierce - Web Developer
+                <!-- <small>Member since Nov. 2012</small> -->
+              </p>
+            </li> 
+            <!-- Menu Body -->
+             <!-- <li class="user-body">
+              <div class="row">
+                <div class="col-4 text-center">
+                  <a href="#">Followers</a>
+                </div>
+                <div class="col-4 text-center">
+                  <a href="#">Sales</a>
+                </div>
+                <div class="col-4 text-center">
+                  <a href="#">Friends</a>
+                </div>
+              </div>
+              
+            </li> -->
+            <!-- Menu Footer-->
+            <li class="user-footer">
+              <a href="#" class="btn btn-default btn-flat">Profile</a>
+              <a href="#" onclick="logOut()" class="btn btn-default btn-flat float-right">Sign out</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link">
+        <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8" />
+        <span class="brand-text font-weight-light">PetroSoft</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <!-- <div class="image">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+          </div> -->
+          <div class="info">
+            <a href="#" class="d-block">Depam Fuel Station</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+            <li class="nav-item has-treeview menu-open">
+                <a href="javascript:void(0)" class="nav-link active" data-filepath="pages/dashboard.html">
+             <!-- <a href="pages/usercontrol/dashboard.html" class="nav-link active">-->
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                  <i class="right fas"></i>
+                </p>
+              </a>
+            </li>
+
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-copy"></i>
+                <p>
+                  Manage User
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link" data-filepath="pages/usercontrol/manage-user.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Users List</p>
+                  </a>
+                </li>
+               
+
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  Pump Setup
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+              
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/pumpsetup/product-infomation/productInfo.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Product Information</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/pumpsetup/vendor-information/vendorInfo.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Vendor Information</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/pumpsetup/customer-information/customer-information.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Customer Information</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link" data-filepath="pages/pumpsetup/tank-master.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Tank Master</p>
+                  </a>
+                </li>
+               
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/pumpsetup/expenses-group/expensesgroup.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Expenses Group</p>
+                  </a>
+                </li>
+              
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/pumpsetup/vehicle-master/vehicle-master.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Vehicle Master</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link" data-filepath="pages/pumpsetup/employee-master.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Employee Master</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                  data-filepath="pages/pumpsetup/product-rate-update/product-rate-update.html">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Product Rate Update</p>
+                </a>
+                </li>
+               
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tree"></i>
+                <p>
+                  Pump Operations
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                      <a href="javascript:void(0)" class="nav-link"
+                        data-filepath="pages/pumpdailyentries/duty-roster/duty-roster.html">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Duty Roster</p>
+                      </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="javascript:void(0)" class="nav-link"
+                        data-filepath="pages/pumpdailyentries/meter-reading/meter-reading.html">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Meter Reading</p>
+                      </a>
+                    </li>
+                    
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/pumpdailyentries/counter-billing/counter-billing-entry.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Counter Billing</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link" data-filepath="pages/pumpdailyentries/touch-bill.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Quick Billing</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/pumpdailyentries/cash-collection-from-salesman.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Cash Collection</p>
+                  </a>
+                </li>
+               
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/pumpdailyentries/expenses-track/expenses-track.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Expenses Track</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/pumpdailyentries/vault-transfer/vault-transfer.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Vault Transfer</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/pumpdailyentries/transfer-cash-to-bank/transfer-cash-to-bank.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Transfer Cash to Bank</p>
+                  </a>
+                </li>
+                
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Stock and Inventory
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/stockandinventory/purchese-invoice/purchese-invoice-add.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Purchase Invoice</p>
+                  </a>
+                </li>
+              
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/stockandinventory/calculates-closing-stock.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Calculates Closing stock</p>
+                  </a>
+                </li>
+              
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/stockandinventory/item-wise-value-wise-stock-report.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Stock Report</p>
+                  </a>
+                </li> 
+               
+               
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/stockandinventory/item-ledger-report.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Product Movement</p>
+                  </a>
+                </li>
+             
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                  Employee Pay
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/employeepay/employee-attendance.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Employee Attendance</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/employeepay/employee-loan-or-advance.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Employee Loan or Advance</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/employeepay/employee-salary-calculations.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Employee Salary Calculations</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link" data-filepath="pages/employeepay/employee-ledger.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Employee Statment</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                  Analytical Reports
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/analyticalreports/meter-reading-summery/meter-reading-summery.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Meter Reading Summery</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/analyticalreports/day-book-consolidated/day-book-consolidated.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Day Book - Consolidated</p>
+                  </a>
+                </li>
+
+                 <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/analyticalreports/location-wise-sales-and-purchase.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Sales Report</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link"
+                    data-filepath="pages/analyticalreports/location-wise-sales-and-purchase.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Purchase Report</p>
+                  </a>
+                </li>
+              
+              </ul>
+            </li>
+
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                  Demo
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link" data-filepath="pages/demo/sample/sample.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Sample</p>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link" data-filepath="pages/demo/bill-entry/bill-entry.html">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Bill Print</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div id="root" class="content-wrapper">
+
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <strong>Copyright &copy; 2019-2020 <a href="javascript:void(0)"></a>PetroSoft</strong>
+      All rights reserved.
+      <div class="float-right d-none d-sm-inline-block">
+        Develop by <b>Matrix Web Technologies</b> Ver. 1.0
+      </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <script src="plaugin-library.js"></script>
+  <script src="template-custom-js.js"></script>
+
+  <script src="framework-global-js.js"></script>
+
+
+
+
+  <script>
+    $.widget.bridge('uibutton', $.ui.button)
+  </script>
+
+
+
+  <script>
+
+    $(document).ready(function () {
+      $.getMultiScripts(scripts, "").then(function () {
+        console.info("all scripts loaded");
+        
+        loadHtml("pages/dashboard.html")
+        addnavigation();
+        common.GetLoggedinUser()
+        $('#root').css({ 'background-image': 'url(' + localStorage.getItem('bgimage') + ')' });
+      });
+
+      logOut = function () {
+        sessionStorage.removeItem('token');
+        window.location.href = "login.html";
+      }
+
+
+
+    })
+
+
+
+  </script>
+
+</body>
+
+</html>
