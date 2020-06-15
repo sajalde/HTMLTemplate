@@ -37,8 +37,8 @@
       
       <div class="nav_contact d-flex">
         <div class="mr-4">
-        <a><i class="fas fa-mail-bulk"></i> dravijit@gmail.com</a><br>
-        <a><i class="fas fa-phone"></i>  + 91 72  3456  7861</a>
+        <a><i class="fas fa-mail-bulk"></i> drkbhar@gmail.com</a><br>
+        <a><i class="fas fa-phone"></i> 9433434489</a>
         </div>
         <div class="d-flex my-3">
           <a href="https://www.facebook.com/wix" class="text-white" target="_blank"><i class="fab fa-facebook-f mr-3"></i></a>
@@ -69,7 +69,134 @@
           </li>
         </ul>
         <div class="nav_login">
-            <a><i class="fas fa-user-circle mr-2" style="font-size: 23px;"></i> Login</a>
+          <a onclick="openLoginModal()" style="cursor:pointer;"><i class="fas fa-user-circle mr-2" style="font-size: 23px;"></i> Login</a>
+
+          <div id="login" class="login-modal">
+              <div>
+                <span onclick="closeLoginModal()" class="login-close">&times;</span>
+              </div>
+            <form class="login-modal-content animate" action="/action_page.php" method="post">
+              
+              <div class="container">
+                  <div id="SignUp">
+                    <div class="login_page_head" style="margin:0 auto;">
+                      <h1>Sign Up</h1>
+                      <p><a onclick="switchToLogin()">Already a member? <span> Log In</span></a></p>
+                    </div>
+
+                    <button type="button" class="btn btn-facebook btn-lg btn-block mb-3">
+                    <img src="img/facebook.svg" class="img-fluid float-left" alt="">
+                    Sign Up with Facebook
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block mb-3" style="border-radius: 0;"> 
+                    <img src="img/google.svg" class="img-fluid float-left" alt="">
+                    Sign Up with Google
+                    </button>
+
+                    <div class="OrBorder">
+                    <div><span class="OrBorder_text">or</span></div>
+                    </div>
+                    
+                    <button onclick="switchToSignUpWithEmail()" type="button" class="btn btn-default btn-lg btn-block mb-3"> 
+                    Sign Up with Email
+                    </button>
+                  </div>
+                  <div id="LogIn">
+                    <div class="login_page_head" style="margin:0 auto;">
+                      <h1>Log In</h1>
+                      <p><a onclick="switchToSignUp()">New member? <span> SignUp</span></a></p>
+                    </div>
+
+                    <button type="button" class="btn btn-facebook btn-lg btn-block mb-3">
+                    <img src="img/facebook.svg" class="img-fluid float-left" alt="">
+                    Log in with Facebook
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block mb-3" style="border-radius: 0;"> 
+                    <img src="img/google.svg" class="img-fluid float-left" alt="">
+                    Log in with Google
+                    </button>
+
+                    <div class="OrBorder">
+                    <div><span class="OrBorder_text">or</span></div>
+                    </div>
+                    
+                    <button onclick="switchToLogInWithEmail()" type="button" class="btn btn-default btn-lg btn-block mb-3"> 
+                    Log in with Email
+                    </button>
+                  </div>
+
+                  <div id="SignUpWithEmail">
+                    <div class="login_page_head" style="margin:0 auto;">
+                      <h1>Sign Up</h1>
+                      <p><a onclick="switchToLogin()">Already a member? <span> Log In</span></a></p>
+                    </div>
+                    <form>
+                          <div class="label-form-group">
+                            <input type="email" id="email" class="form-control customize-form-control"  required autofocus>
+                            <label for="email" class="ph-area">Email</label>
+                          </div>
+
+                          <div class="label-form-group">
+                            <input type="password" id="password" class="form-control customize-form-control"  required autofocus>
+                            <label for="password" class="ph-area">Password</label>
+                          </div>
+                          <button class="btn banner_btn btn-lg btn-block" type="submit" style="border-radius:0;">Sign Up</button>
+
+                          <div class="OrBorder">
+                          <div><span class="OrBorder_text">or sign up with</span></div>
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <img src="img/fb.svg" class="img-fluid mr-2" alt="">
+                            <img src="img/google.svg" class="img-fluid" alt="">
+                          </div>
+                    </form>
+                  </div>
+                  <div id="LogInWithEmail">
+                    <div class="login_page_head" style="margin:0 auto;">
+                      <h1>Log In</h1>
+                      <p><a onclick="switchToSignUp()">New member? <span> Sign Up</span></a></p>
+                    </div>
+                    <form>
+                          <div class="label-form-group">
+                            <input type="email" id="email" class="form-control customize-form-control"  required autofocus>
+                            <label for="email" class="ph-area">Email</label>
+                          </div>
+
+                          <div class="label-form-group">
+                            <input type="password" id="password" class="form-control customize-form-control"  required autofocus>
+                            <label for="password" class="ph-area">Password</label>
+                          </div>
+                          <p class="forgot_pass" onclick="ResetPassword()">Forgot password?</p>
+                          <button class="btn banner_btn btn-lg btn-block" type="submit" style="border-radius:0;">Log In</button>
+
+                          <div class="OrBorder">
+                          <div><span class="OrBorder_text">or sign up with</span></div>
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <img src="img/fb.svg" class="img-fluid mr-2" alt="">
+                            <img src="img/google.svg" class="img-fluid" alt="">
+                          </div>
+                    </form>
+                  </div>
+                  <div id="resetPassword">
+                    <div class="login_page_head" style="margin:0 auto;">
+                      <h1>Reset Password</h1>
+                      <p>Please enter email address</p>
+                    </div>
+                    <form>
+                          <div class="label-form-group">
+                            <input type="email" id="email" class="form-control customize-form-control"  required autofocus>
+                            <label for="email" class="ph-area">Email</label>
+                          </div>
+
+                          <button class="btn banner_btn btn-lg btn-block" type="submit" style="border-radius:0;">Reset Password</button>
+                    </form>
+                  </div>
+              </div>
+
+            </form>
+          </div>
+           
         </div>
       </div>
     </nav>
@@ -104,8 +231,8 @@
                         <a href="BookingCheckout_1.html" class="servicesImg"><img src="img/service1.png" class="img-fluid" alt=""></a>
                       </div>
                       <div class="col-md-6 mb-2">
-                        <h5><a href="BookingCheckout_1.html">Touch & Care Clinic, Gariahat (Personal)</a></h5>
-                        <p>Mon-Fri 5pm-8pm Sat-10 am-5pm</p>
+                        <h5><a href="BookingCheckout_1.html">SEVA BHAWAN</a></h5>
+                        <p>Monday-Friday 6-8PM</p>
                       </div>
                       <div class="col-md-4">
                         <a class="btn banner_btn btn-lg float-right"  style="font-size:15px;" href="#" role="button" data-toggle="modal" data-target="#exampleModal1">Book an Appointment</a>
@@ -136,8 +263,8 @@
                         <a href="BookingCheckout_2.html" class="servicesImg"><img src="img/service2.png" class="img-fluid" alt=""></a>
                       </div>
                       <div class="col-md-6 mb-2">
-                        <h5><a href="BookingCheckout_2.html">Apollo Clinic – New Town</a></h5>
-                        <p>Tue, Fri-10am to 11am Sat- 5pm to 6pm</p>
+                        <h5><a href="BookingCheckout_2.html">DREAMLAND NH</a></h5>
+                        <p>Thursday 4- 5pm</p>
                       </div>
                       <div class="col-md-4">
                         <a class="btn banner_btn btn-lg float-right"  style="font-size:15px;" href="#" role="button" data-toggle="modal" data-target="#exampleModal2">Book an Appointment</a>
@@ -165,11 +292,11 @@
                   <div class="service_row">
                     <div class="row">
                       <div class="col-md-2 mb-2">
-                        <a href="BookingCheckout_3.html" class="servicesImg"><img src="img/service3.png" class="img-fluid" alt=""></a>
+                        <a href="BookingCheckout_3.html" class="servicesImg"><img src="img/sunflowerNH.jpg" class="img-fluid" alt=""></a>
                       </div>
                       <div class="col-md-6 mb-2">
-                        <h5><a href="BookingCheckout_3.html">Fortis Hospital</a></h5>
-                        <p>Mon-Fri 5pm-8pm Sat-10 am-5pm</p>
+                        <h5><a href="BookingCheckout_3.html">SUNFLOWER NH</a></h5>
+                        <p>Goabagan St, Maniktala, Kolkata-6</p>
                       </div>
                       <div class="col-md-4">
                         <a class="btn banner_btn btn-lg float-right"  style="font-size:15px;" href="#" role="button" data-toggle="modal" data-target="#exampleModal3">Book an Appointment</a>
@@ -197,17 +324,49 @@
                   <div class="service_row">
                     <div class="row">
                       <div class="col-md-2 mb-2">
-                        <a href="BookingCheckout_4.html" class="servicesImg"><img src="img/service4.png" class="img-fluid" alt=""></a>
+                        <a href="BookingCheckout_4.html" class="servicesImg"><img src="img/VIPApex.png" class="img-fluid" alt=""></a>
                       </div>
                       <div class="col-md-6 mb-2">
-                        <h5><a href="BookingCheckout_4.html">The Calcutta Medical Research Institute</a></h5>
-                        <p>Mon, Wed, Fri, Sat- 10a.m-12 p.m</p>
+                        <h5><a href="BookingCheckout_4.html">VIP APEX HOSPITAL</a></h5>
+                        <p>Tuesday 4-5pm</p>
                       </div>
                       <div class="col-md-4">
-                        <a class="btn banner_btn btn-lg float-right"  style="font-size:15px;" href="#" role="button" data-toggle="modal" data-target="#exampleModal4">Book an Appointment</a>
+                        <a class="btn banner_btn btn-lg float-right"  style="font-size:15px;" href="#" role="button" data-toggle="modal" data-target="#exampleModal9">Book an Appointment</a>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content p-5">
+                              <div >
+                                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                Sorry, this service is not yet available for online bookings. Please contact us for more information.
+                              </div>
+                              <button type="button" class="btn btn-dark w-25 my-3" style="margin:0 auto" data-dismiss="modal">Got it</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="service_row">
+                    <div class="row">
+                      <div class="col-md-2 mb-2">
+                        <a href="BookingCheckout_5.html" class="servicesImg"><img src="img/spandan-hospital.jpg" class="img-fluid" alt=""></a>
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <h5><a href="BookingCheckout_5.html">SPANDAN HOSPITAL</a></h5>
+                        <p>Monday to Thursday  2-3pm </p>
+                      </div>
+                      <div class="col-md-4">
+                        <a class="btn banner_btn btn-lg float-right"  style="font-size:15px;" href="#" role="button" data-toggle="modal" data-target="#exampleModal10">Book an Appointment</a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content p-5">
                               <div >
@@ -228,6 +387,38 @@
                   </div>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="service_row">
+                    <div class="row">
+                      <div class="col-md-2 mb-2">
+                        <a href="BookingCheckout_6.html" class="servicesImg"><img src="img/MyMD.png" class="img-fluid" alt=""></a>
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <h5><a href="BookingCheckout_6.html">MYMD POLYCLINIC</a></h5>
+                        <p>Monday & Wednesday  4-5pm </p>
+                      </div>
+                      <div class="col-md-4">
+                        <a class="btn banner_btn btn-lg float-right"  style="font-size:15px;" href="#" role="button" data-toggle="modal" data-target="#exampleModal8">Book an Appointment</a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content p-5">
+                              <div >
+                                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                Sorry, this service is not yet available for online bookings. Please contact us for more information.
+                              </div>
+                              <button type="button" class="btn btn-dark w-25 my-3" style="margin:0 auto" data-dismiss="modal">Got it</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="service_row">
                     <div class="row">
                       <div class="col-md-2 mb-2">
@@ -344,16 +535,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/index.js" ></script>
-    <script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-      document.getElementById("chats").style.display = "none";
-    }
-
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-      document.getElementById("chats").style.display = "block";
-    }
-    </script>
   </body>
 </html>

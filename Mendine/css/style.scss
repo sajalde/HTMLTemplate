@@ -43,6 +43,141 @@ body {
         color:#000 !important;
     }
 }
+
+.login-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(255,255,255); 
+  padding-top: 60px;
+}
+
+
+.login-modal-content {
+  background-color: #fefefe;
+  margin: auto; 
+  padding:0;
+  width: 30%;
+  margin-top: 55px;
+//   text-align: center; 
+  color:#000;
+}
+
+
+.login-close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.login-close:hover,
+.login-close:focus {
+  color: red;
+  cursor: pointer;
+}
+.login_page_head h1{
+    font-size: 48px;
+    line-height: .8em;
+    text-align: center;
+}
+.login_page_head p{
+    cursor:pointer;
+    font-size: 20px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    text-align: center;
+    
+    span{
+        color: $ButtonBgColor;
+    }
+}
+.btn-facebook{
+    background:#3b5998;
+    color:#fff;
+    border-radius: 0;
+
+    &:hover{
+        background:#597bc2;
+    }
+}
+.OrBorder{
+    width: 369px;
+    text-align: center;
+    margin: 0 auto 40px;
+    height: 11px;
+    border-bottom: 1px solid;
+    border-color: #B5B1AE;
+    margin-top:30px
+}
+.OrBorder_text{
+    background: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.btn-default{
+    border-radius: 0;
+    border: 1px solid #ccc;
+
+    &:hover{
+        border: 1px solid #000;
+    }
+}
+.label-form-group{
+    position:relative;
+    margin-bottom:1.5rem;
+}
+.ph-area{
+    position:absolute;
+    top:0;
+    // padding:7px 0 0 13px;
+    transition:200ms;
+    opacity:0.5;
+    font-size:20px;
+}
+.customize-form-control{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.customize-form-control:focus + .ph-area,
+.customize-form-control:valid + .ph-area{
+    font-size:15px;
+    transform:translate3d(0,-100%,0);
+    opacity:1;
+    color:#5a5a5a;
+}
+
+.forgot_pass{
+    color:$ButtonBgColor;
+    text-decoration:underline;
+    font-size:20px;
+    cursor:pointer;
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
 .banner{
     position: relative;
     right: 0;
@@ -74,6 +209,11 @@ body {
 .banner_btn{
         background:$ButtonBgColor;
         color:$ButtonTextColor;
+
+        &:hover{
+            background:$ButtonHoverBgColor;
+            color:#fff;
+        }
 }
 .meet_doctors{
     background:$MeetDocBackgroundColor;
@@ -154,6 +294,10 @@ body {
 .consult_img_hover img:hover{
     opacity:0.5;
     cursor:pointer;
+}
+.servicesImg img{
+    width:84px;
+    height:84px;
 }
 .servicesImg img:hover{
     opacity:0.9;
