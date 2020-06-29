@@ -28511,3 +28511,42 @@ a.text-muted:hover {
   color: #ffffff
 }
 /*faloading*/
+.nav-tabs .nav-link{
+  background: #badfff;
+  color: #0603c5;
+}
+.nav-tabs .nav-link .close{
+  font-size: 18px;
+  color: #0603c5;
+}
+.nav-tabs .nav-link.active .close{
+  color: #fff;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+  color: #fff;
+  background-color: #0632a2;
+}
+.btn-info{
+  color: #1806af;
+  background-color: #e0e0ff;
+  border-color: #a78aff;
+  box-shadow: none;
+}
+.btn-info:hover{
+  color:#fff;
+  background-color:#0632a2;
+}
+label:not(.form-check-label):not(.custom-file-label){
+    font-size: 13px;
+}
+.table thead th{
+  border-bottom: 2px solid #887006;
+  background: #fff5b1;
+}
+.card-primary:not(.card-outline)>.card-header, .card-primary:not(.card-outline)>.card-header a{
+  color: #1806af;
+}
+.card-primary:not(.card-outline)>.card-header, .card-primary:not(.card-outline)>.card-header a:hover{
+  color:#fff;
+}
+

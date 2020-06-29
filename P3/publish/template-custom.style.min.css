@@ -28511,3 +28511,10 @@ a.text-muted:hover {
   color: #ffffff
 }
 /*faloading*/
+
+table thead{
+  background: #fde571;
+}
+.table-bordered th {
+    border: 0;
+}
