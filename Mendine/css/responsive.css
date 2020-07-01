@@ -24,9 +24,7 @@
     .testimonial p{
         height:auto;
     }
-    .chat{
-      right: 525px;
-    }
+    
     .about{
       padding: 46px;
   }
@@ -39,9 +37,7 @@
   .services{
       padding: 51px;
   }
-  .service_tab{
-        left: 24%;
-  }
+
   .tab-pane{
       padding:0;
   }
@@ -60,6 +56,12 @@
 }
 
 @media screen and (max-width:480px){
+	.font-40{
+	font-size:29px !important;
+	}
+	.carousel-caption h5{
+		font-size: 29px ;
+	}
   .navbar-brand{
       margin-left: 0;
       margin-right: 0px;
@@ -105,9 +107,7 @@
     .testimonial p{
         height:auto;
     }
-  .chat{
-      right: 259px;
-  }
+  
   .about{
       padding: 46px;
   }
@@ -120,9 +120,7 @@
   .services{
       padding:48px 15px;
   }
-  .service_tab{
-        left: 11%;
-  }
+
   .tab-pane{
       padding:0;
   }

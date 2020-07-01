@@ -437,9 +437,9 @@ body {
 }
 .service_tab {
     width: fit-content;
-    left: 41%;
     position: relative;
     margin-top:50px;
+	margin: 0 auto;
 }
 .nav-tabs .nav-link{
     font-size: 19px;
@@ -653,6 +653,8 @@ body {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-
+.font-40{
+ font-size:40px !important;
+}
 
 
