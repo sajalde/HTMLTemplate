@@ -62,8 +62,9 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
-  font-weight: 600;
-  font-size: 35px;
+  /* font-weight: 600;
+  font-size: 35px; */
+  width:16%;
 }
 
 .nav-masthead .nav-link {
@@ -281,6 +282,7 @@ body {
     margin-left:30px;
     width:50%;
 }
+
 .flip-box {
   background-color: transparent;
   width: 100%;
@@ -312,7 +314,8 @@ body {
 }
 .flip-box-back {
     background-color: #deec7e;
-    color: #000;
+    background: rgba(221, 10, 10, 0.42);
+    color: #fff;
     transform: rotateY(180deg);
     padding: 74px 25px;
 }
@@ -478,6 +481,42 @@ img.hover-shadow {
   transition: 0.3s;
 }
 /* Lightbox End */
+
+.clients img{
+    width: 90%;
+    height: 88px;
+    filter: grayscale(100%);
+    cursor:pointer;
+}
+.clients img:hover{
+    filter: grayscale(0%);
+}
+
+
+.flip-box {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+/* Style the buttons */
+.client_btn {
+  padding: 12px 16px;
+  /* background-color: #f1f1f1; */
+  cursor: pointer;
+}
+
+.client_btn:hover {
+  border-bottom:2px solid red;
+}
+
+.client_btn.active {
+  border-bottom:2px solid red;
+    
+}
 
 /* Responsive */
 
