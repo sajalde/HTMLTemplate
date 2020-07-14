@@ -493,10 +493,6 @@ img.hover-shadow {
 }
 
 
-.flip-box {
-  display: none;
-}
-
 .show {
   display: block;
 }
@@ -515,6 +511,44 @@ img.hover-shadow {
 
 .client_btn.active {
   border-bottom:2px solid red;
+    
+}
+
+.card-img{
+    width:100%;
+    height: 300px;
+    transition:0.5s;
+}
+.card-img:hover{
+  filter: grayscale(50%);
+  transform:scale(0.9);
+  box-shadow: 5px 5px 12px #565555;
+}
+
+.nav-pills {
+    padding:20px;
+}
+
+.nav-pills li a { 
+    margin:5px;
+    padding: 10px 12px;
+    font-size:16px; 
+    color:red; 
+    background: #000;
+    transition-duration: 0.4s;
+}
+.nav-pills a:hover { 
+    background:#fff; 
+}
+.nav-pills .active { 
+    background-color: #fff !important;
+    color: red !important;
+    border-bottom: 4px solid red;
+}
+
+@keyframes winanim {
+    0%{opacity:0;transform:scale3d(.3,.3,.3)}
+    50%{opacity:1}
     
 }
 
