@@ -131,7 +131,7 @@ body {
   min-height: 100%;
   opacity: 0.3;
   width: 1349px;
-  height: 759px;
+  /* height: 759px; */
   overflow-y:hidden;
 }
 .cover h1{
