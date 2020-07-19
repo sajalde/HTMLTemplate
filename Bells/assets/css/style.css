@@ -336,7 +336,7 @@ body {
 .about_person_heading{
   border-bottom:1px solid red;
   letter-spacing:0.5em;
-  width:50%;
+  width:51%;
   margin-top:50px;
 }
 .about_person_cont{
@@ -543,7 +543,7 @@ img.hover-shadow {
 .nav-pills .active { 
     background-color: #fff !important;
     color: red !important;
-    border-bottom: 4px solid red;
+    /* border-bottom: 4px solid red; */
 }
 
 @keyframes winanim {
