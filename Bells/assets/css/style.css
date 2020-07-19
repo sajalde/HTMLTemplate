@@ -308,8 +308,9 @@ body {
 .portfolio a:last-child{
     position: relative;
     top: -49px;
-    left: -173px;
+    left: 41px;
     text-decoration:underline;
+    float: left;
     font-size:18px;
 }
 .portfolio a:hover{
@@ -362,7 +363,7 @@ body {
   width: 231px;
   height: 289px;
 }
-#about_first,#about_sec{
+#about_first,#about_sec,#about_third{
   padding:100px 0;
 }
 .about_person_heading{
