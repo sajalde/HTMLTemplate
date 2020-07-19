@@ -630,6 +630,9 @@ img.hover-shadow {
   .lightbox_modal_content1 .container{
     overflow-y: scroll;
   }
+  .portfolio a:last-child{
+    left: -265px;
+  }
 }
 
 @media (max-width:480px){
@@ -663,4 +666,7 @@ img.hover-shadow {
   .lightbox_modal_content1 .container{
     overflow-y: scroll;
   }
+  .portfolio a:last-child {
+    left: -131px;
+}
 }
