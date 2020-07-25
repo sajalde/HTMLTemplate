@@ -221,7 +221,7 @@ body {
   font-size: 57px;
   font-weight: 700;
   width:85%;
-  margin-bottom:63px;
+  margin-bottom: 26px;
   margin-top: 90px;
 }
 .number h2 span{
@@ -232,7 +232,7 @@ body {
   font: normal normal normal 15px/1.4em proxima-n-w01-reg,sans-serif;
   color: #ABABAB;
   width:85%;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 }
 .number .view{
   letter-spacing:0.5em;
@@ -249,7 +249,7 @@ body {
   color:#f1f1f1;
 }
 .our_clients{
-  margin-top:63px;
+  margin-top:26px;
   width:90%;
 }
 .our_clients h1{
