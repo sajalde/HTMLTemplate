@@ -69,6 +69,7 @@ body {
   font: normal normal normal 30px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
   font-weight: 600;
   transition: color 0.4s ease 0s;
+  z-index: 1;
 }
 .masthead-brand:hover{
   color:red;
@@ -210,6 +211,7 @@ body {
   color: red;
   cursor: pointer;
   left: 89%;
+  z-index: 1;
 }
 
 .number h1{
@@ -647,9 +649,7 @@ img.hover-shadow {
   .masthead .inner {
     margin: 17px 0;
   }
-  .masthead-brand{
-    position: relative;
-  }
+  
   .ml-5{
     margin-left: 4px !important;
   }
@@ -683,9 +683,8 @@ img.hover-shadow {
     width:100%;
   }
   .inner span{
-    top: -23px;
-    left: -177%;
-    position: relative;
+    top: 21px;
+    left: 83%;
   }
 }
 
@@ -713,9 +712,7 @@ img.hover-shadow {
     display: flex;
     justify-content: space-between;
   }
-  .masthead-brand{
-    position: relative;
-  }
+  
   .masthead .inner {
     margin: 17px 0;
   }
@@ -758,8 +755,7 @@ img.hover-shadow {
     width:100%;
   }
   .inner span{
-    top: -14px;
-    left: -187%;
-    position: relative;
+    top: 21px;
+    left: 83%;
   }
 }
