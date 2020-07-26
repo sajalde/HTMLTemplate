@@ -611,6 +611,9 @@ img.hover-shadow {
 .submit:hover{
   color:red;
 }
+.media_row{
+  margin:0 ;
+}
 @keyframes winanim {
     0%{opacity:0;transform:scale3d(.3,.3,.3)}
     50%{opacity:1}
@@ -736,14 +739,9 @@ img.hover-shadow {
     overflow-y: scroll;
   }
   .portfolio a:last-child {
-    left: 40px;
+    left: 27px;
   }
-  .portfolio h2{
-    padding: 8px 12px;
-  }
-  .portfolio p{
-    padding: 15px 28px;
-  }
+  
   .our_clients{
     width: 100%;
   }
@@ -769,12 +767,19 @@ img.hover-shadow {
     left: 83%;
   }
   .portfolio h2{
-        font-size: 47px;
-        top: 38px;
+    font-size: 39px;
+    top: 110px;
+    margin-left: 12px;
+    padding: 8px 12px;
   }
   .portfolio p{
     width:100%;
     top: 167px;
+    margin-left: 12px;
+    padding: 15px 12px;
     font:normal normal normal 14px/1.4em proxima-n-w01-reg,sans-serif;
+  }
+  .media_row{
+    margin:0 11px;
   }
 }
