@@ -779,6 +779,10 @@ img.hover-shadow {
     padding: 15px 12px;
     font:normal normal normal 14px/1.4em proxima-n-w01-reg,sans-serif;
   }
+  .nav-pills li a{
+    margin:0;
+    padding: 7px 9px;
+  }
   .media_row{
     margin:0 11px;
   }
