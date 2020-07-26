@@ -121,7 +121,7 @@ body {
  */
 .cover {
   padding: 0 1.5rem;
-  padding-left: 100px;
+  padding-left: 111px;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -384,12 +384,11 @@ body {
   height: 289px;
 }
 #about_first,#about_sec,#about_third{
-  padding:100px 0;
+  padding:76px 0;
 }
 .about_person_heading{
   border-bottom:1px solid red;
   letter-spacing:0.5em;
-  width:86%;
   margin-top:50px;
 }
 .about_person_cont{
@@ -397,6 +396,15 @@ body {
   color: #ABABAB;
   width:80%;
   margin-top:50px;
+}
+.member1{
+  width:55%;
+}
+.member2{
+  width:46%;
+}
+.member3{
+  width:21%;
 }
 .carousel-caption{
   top:70px;
@@ -549,14 +557,17 @@ img.hover-shadow {
 .show {
   display: block;
 }
-.form-control{
+.form-row input,.form-row textarea{
       background-color: #000;
       border: 1px solid #000;
       border-bottom: 1px solid #fff;
 }
-.form-control:focus{
+.form-row input:focus{
     background-color: rgba(255, 64, 64, 0.1);
     border: 1px solid red;
+}
+.form-row textarea:focus{
+  background-color: #000;
 }
 /* Style the buttons */
 .client_btn {
@@ -655,7 +666,7 @@ img.hover-shadow {
   }
   
   .ml-5{
-    margin-left: 4px !important;
+    margin-left: 0px !important;
   }
   .carousel-caption h1{
     font-size: 46px;
@@ -717,7 +728,7 @@ img.hover-shadow {
     top: 92px;
     right: 74px;
   }
-  .sidenav a {font-size: 35px;padding: 8px 63px 8px 20px;}
+  .sidenav a {font-size: 35px;padding: 8px 10px 8px 20px;}
   .nav-masthead a{
     display:none;
   }
@@ -730,7 +741,7 @@ img.hover-shadow {
     margin: 17px 0;
   }
   .ml-5{
-    margin-left: 4px !important;
+    margin-left: 0px !important;
   }
   .carousel-caption h1{
     font-size: 46px;
@@ -761,6 +772,7 @@ img.hover-shadow {
   }
   .about_person_heading,.about_person_cont{
     width:100%;
+    text-align: center;
   }
   .inner span{
     top: 21px;
@@ -785,5 +797,17 @@ img.hover-shadow {
   }
   .media_row{
     margin:0 11px;
+  }
+  .member1{
+  width:89%;
+  margin: 29px auto;
+  }
+  .member2{
+    width:92%;
+    margin: 29px auto;
+  }
+  .member3{
+    width:44%;
+    margin: 29px auto;
   }
 }
