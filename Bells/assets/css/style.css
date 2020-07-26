@@ -162,7 +162,7 @@ body {
 .cover p{
   font-size:30px;
   font-weight: 700;
-  width:59%;
+  width:61%;
   line-height: 1.1em;
 }
 
@@ -384,7 +384,8 @@ body {
   height: 289px;
 }
 #about_first,#about_sec,#about_third{
-  padding:76px 0;
+  /* padding:76px 0; */
+  margin-bottom: 26px;
 }
 .about_person_heading{
   border-bottom:1px solid red;
@@ -395,7 +396,7 @@ body {
   font-size:14px;
   color: #ABABAB;
   width:80%;
-  margin-top:50px;
+  margin-top:26px;
 }
 .member1{
   width:55%;
@@ -562,11 +563,8 @@ img.hover-shadow {
       border: 1px solid #000;
       border-bottom: 1px solid #fff;
 }
-.form-row input:focus{
-    background-color: rgba(255, 64, 64, 0.1);
-    border: 1px solid red;
-}
-.form-row textarea:focus{
+
+.form-row input:focus,.form-row textarea:focus{
   background-color: #000;
 }
 /* Style the buttons */
