@@ -51,6 +51,7 @@ body {
 }
 
 
+
 /*
  * Header
  */
@@ -70,6 +71,7 @@ body {
   font-weight: 600;
   transition: color 0.4s ease 0s;
   z-index: 1;
+  margin-left:-55px;
 }
 .masthead-brand:hover{
   color:red;
@@ -596,12 +598,41 @@ img.hover-shadow {
 }
 
 .nav-pills {
-    padding:20px;
+    padding:20px 20px 20px 10px;
 }
 
+.nav-pills li a:hover{position: relative;}
+.nav-pills li a:hover::after {
+  background-color: red; 
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 40%;
+  position: absolute;
+  transform: translate(-50%,0);
+  width: 50px;
+}
+.nav-pills .active{position: relative;}
+.nav-pills .active::after {
+  background-color: red!important; 
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 40%;
+  position: absolute;
+  transform: translate(-50%,0);
+  width: 50px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #000000!important;
+}
 .nav-pills li a { 
     margin:5px;
-    padding: 10px 12px;
+    padding: 10px 18px 10px 0px;
     font-size:16px; 
     color:#fff; 
     background: #000;
@@ -609,11 +640,11 @@ img.hover-shadow {
     border-radius: 1px !important;
 }
 .nav-pills a:hover { 
-    border-bottom: 1px solid red;
+    /*border-bottom: 1px solid red;*/
 }
 .nav-pills .active { 
-  background: #000 !important;
-   border-bottom: 1px solid red;
+  /*background: #000 !important;
+   border-bottom: 1px solid red;*/
 }
 .submit{
   color:#fff;
@@ -651,8 +682,12 @@ img.hover-shadow {
     width: 100%;
     font-size: 22px;
   }
+  .number h2 span{text-align:center;}
+  .masthead-brand{margin-left:0px;}
+
   .sidenav {padding-top: 45px;}
   .sidenav a {font-size: 18px;}
+ 
   .nav-masthead a{
     display:none;
   }
@@ -724,9 +759,10 @@ img.hover-shadow {
   .cover p{
     width: 100%;
   }
-  .sidenav {padding-top: 50%;padding-bottom: 50%;}
+  .number h2 span{text-align:center;}
+  .sidenav {padding-top: 50%;padding-bottom: 50%; overflow-y: hidden;}
   .sidenav .closebtn{
-    top: 92px;
+    top: 50px;/*92*/
     right: 36px;
   }
   .sidenav a {font-size: 35px;padding: 8px 10px 8px 20px;}
